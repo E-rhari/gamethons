@@ -75,7 +75,7 @@
         "alwaysLoaded": false,
         "file": "assets/pressed.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/pressed.png\"}",
         "name": "pressed",
         "smoothed": false,
         "userAdded": false
@@ -95,6 +95,24 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "tap",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/standard.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/standard.png\"}",
+        "name": "standard",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/pressed2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "pressed2",
         "smoothed": false,
         "userAdded": false
       }
@@ -132,6 +150,12 @@
       "variables": [
         {
           "folded": true,
+          "name": "BPM",
+          "type": "number",
+          "value": 120
+        },
+        {
+          "folded": true,
           "name": "active",
           "type": "boolean",
           "value": true
@@ -147,7 +171,7 @@
           "persistentUuid": "46a6103c-c45e-4de2-8cf1-f22261e99e37",
           "width": 0,
           "x": 1376,
-          "y": 544,
+          "y": 512,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -215,13 +239,13 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": true,
+                  "looping": false,
                   "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
-                      "image": "NewSprite",
+                      "hasCustomCollisionMask": true,
+                      "image": "standard",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -234,7 +258,62 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ],
+                        [
+                          {
+                            "x": 27,
+                            "y": 0
+                          },
+                          {
+                            "x": 37,
+                            "y": 0
+                          },
+                          {
+                            "x": 37,
+                            "y": 64
+                          },
+                          {
+                            "x": 27,
+                            "y": 64
+                          }
+                        ],
+                        [
+                          {
+                            "x": 12,
+                            "y": 0
+                          },
+                          {
+                            "x": 52,
+                            "y": 1
+                          },
+                          {
+                            "x": 52,
+                            "y": 64
+                          },
+                          {
+                            "x": 12,
+                            "y": 64
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -245,13 +324,13 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": true,
+                  "looping": false,
                   "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
-                      "image": "pressed",
+                      "hasCustomCollisionMask": true,
+                      "image": "pressed2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -264,7 +343,62 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ],
+                        [
+                          {
+                            "x": 27,
+                            "y": 0
+                          },
+                          {
+                            "x": 37,
+                            "y": 0
+                          },
+                          {
+                            "x": 37,
+                            "y": 64
+                          },
+                          {
+                            "x": 27,
+                            "y": 64
+                          }
+                        ],
+                        [
+                          {
+                            "x": 12,
+                            "y": 0
+                          },
+                          {
+                            "x": 52,
+                            "y": 1
+                          },
+                          {
+                            "x": 52,
+                            "y": 64
+                          },
+                          {
+                            "x": 12,
+                            "y": 64
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -278,7 +412,14 @@
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "hittable",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [
             {
@@ -298,13 +439,13 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "tap",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 32,
+                        "y": 32
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -312,7 +453,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14,
+                            "y": 0
+                          },
+                          {
+                            "x": 50,
+                            "y": 0
+                          },
+                          {
+                            "x": 50,
+                            "y": 64
+                          },
+                          {
+                            "x": 14,
+                            "y": 64
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -356,47 +516,55 @@
             "",
             "let taps = runtimeScene.getObjects(\"tap\")",
             "",
-            "if(runtimeScene.getGame().getInputManager().isKeyPressed(13)){",
-            "    console.log(taps.indexOf(taps[taps.length - 1]))",
-            "    console.dir(taps)",
-            "}",
-            "",
-            "taps.forEach(tap => { walkX(tap, 5) })",
+            "taps.forEach(tap => { walkX(tap, 10) })",
             "",
             "if(runtimeScene.getTimeManager().isFirstFrame()){",
             "    runtimeScene.getTimeManager().addTimer(\"createBeat\")",
-            "    console.dir(runtimeScene.getGame())",
+            "    // runtimeScene.getTimeManager().addTimer(\"beatTempo\")",
             "}",
             "",
-            "if(runtimeScene.getTimeManager().getTimer(\"createBeat\").getTime() >= 4000){",
+            "const beatTempo = 1 / (runtimeScene.getScene().getVariables().get(\"BPM\").getValue() / 60) * 1000",
+            "console.dir(beatTempo) ",
+            "",
+            "if(runtimeScene.getTimeManager().getTimer(\"createBeat\").getTime() >= beatTempo){",
             "    let newBeat = runtimeScene.createObject(\"tap\")",
             "    newBeat.setPosition(0, runtimeScene.getGame()._gameResolutionHeight / 2)",
             "    newBeat.setLayer(\"\")",
             "    newBeat.setZOrder(2)",
             "",
             "    runtimeScene.getTimeManager().getTimer(\"createBeat\").reset()",
-            "}"
+            "}",
+            "",
+            ""
           ],
           "parameterObjects": "tap",
           "useStrict": true,
-          "eventsSheetExpanded": false
+          "eventsSheetExpanded": true
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
             "const Hit = runtimeScene.getObjects(\"hit\")[0]",
             "",
-            "let taps = runtimeScene.getObjects(\"tap\")",
-            "",
-            "if(taps.length != 0){",
-            "    let hitTap = taps[0]",
-            "    if(gdjs.RuntimeObject.collisionTest(Hit, hitTap)){",
-            "        if(runtimeScene.getGame().getInputManager().isKeyPressed(90)){",
-            "            hitTap.deleteFromScene(hitTap.getInstanceContainer())",
-            "        }",
-            "    }",
+            "if(runtimeScene.getTimeManager().isFirstFrame()){",
+            "    console.dir(Hit)",
             "}",
             "",
+            "let taps = runtimeScene.getObjects(\"tap\")",
+            "",
+            "",
+            "if(runtimeScene.getGame().getInputManager().isKeyPressed(90)){",
+            "    Hit.setAnimation(1)",
+            "    if(taps.length != 0){",
+            "        let hitTap = taps[0]",
+            "        if(gdjs.RuntimeObject.collisionTest(Hit, hitTap)){",
+            "            hitTap.deleteFromScene(hitTap.getInstanceContainer())",
+            "        }",
+            "    }   ",
+            "}",
+            "else{",
+            "    Hit.setAnimation(0)",
+            "}",
             ""
           ],
           "parameterObjects": "hit",
