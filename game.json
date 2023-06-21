@@ -120,7 +120,7 @@
         "alwaysLoaded": false,
         "file": "assets/Flat Bar Red Fill Bar.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Flat Bar Red Fill Bar.png\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "Flat Bar Red Fill Bar.png",
         "smoothed": false,
         "userAdded": false,
@@ -179,6 +179,33 @@
         "name": "paletasDeCores\\Termo.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/modo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\modo.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/teste.png.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\teste.png.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/cidade.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\cidade.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -207,7 +234,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5653158055126306,
+        "zoomFactor": 0.23089183385224868,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -272,6 +299,51 @@
           "x": 896,
           "y": 288,
           "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 432,
+          "layer": "UI",
+          "name": "cidade",
+          "persistentUuid": "d9e95a18-c1f9-4fa7-ae64-2095e5b83238",
+          "width": 864,
+          "x": 512,
+          "y": 496,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "botaoModo",
+          "persistentUuid": "d220986a-2bca-4350-a0d7-a37652d50c1c",
+          "width": 0,
+          "x": -64,
+          "y": 896,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "botaoModo",
+          "persistentUuid": "962e18cf-6b12-49bf-a490-d936a10ea3e2",
+          "width": 0,
+          "x": 1728,
+          "y": 864,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -634,6 +706,128 @@
               }
             }
           }
+        },
+        {
+          "assetStoreId": "",
+          "name": "botaoModo",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "ColorMap",
+              "name": "corEolica",
+              "doubleParameters": {
+                "mix": 100
+              },
+              "stringParameters": {
+                "colorMapTexture": "paletasDeCores\\Eolica.jpg"
+              },
+              "booleanParameters": {
+                "nearest": false
+              }
+            },
+            {
+              "effectType": "ColorMap",
+              "name": "corHidro",
+              "doubleParameters": {
+                "mix": 100
+              },
+              "stringParameters": {
+                "colorMapTexture": "paletasDeCores\\Hidro.png"
+              },
+              "booleanParameters": {
+                "nearest": false
+              }
+            },
+            {
+              "effectType": "ColorMap",
+              "name": "corTermo",
+              "doubleParameters": {
+                "mix": 100
+              },
+              "stringParameters": {
+                "colorMapTexture": "paletasDeCores\\Termo.png"
+              },
+              "booleanParameters": {
+                "nearest": false
+              }
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\modo.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "cidade",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\cidade.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -668,12 +862,6 @@
             "    runtimeScene.setBackgroundColor(rgbObject.r, rgbObject.g, rgbObject.b)",
             "}",
             "",
-            "function swapObjects(obj1, obj2){",
-            "    const aux = {...obj1}",
-            "    obj1 = {...obj2}",
-            "    obj2 = {...aux}",
-            "}",
-            "",
             "",
             "// setup",
             "const Modos = {",
@@ -703,12 +891,24 @@
             "                  }",
             "}",
             "",
+            "",
+            "let BotoesModo = runtimeScene.getObjects(\"botaoModo\")",
             "let ModosNaFaseGlobal = runtimeScene.getScene().getVariables().get(\"ModosNaFase\")",
+            "",
             "if(runtimeScene.getTimeManager().isFirstFrame()){",
             "    ModosNaFaseGlobal.addChild(\"0\", Modos.hidro);",
             "    ModosNaFaseGlobal.addChild(\"1\", Modos.eolica);",
             "    ModosNaFaseGlobal.addChild(\"2\", Modos.termica);",
             "",
+            "    // const Modos = ModosNaFaseGlobal._children",
+            "",
+            "    console.dir(BotoesModo)",
+            "",
+            "    BotoesModo[0].enableEffect(ModosNaFaseGlobal._children[0].efeito, false);",
+            "    BotoesModo[0].enableEffect(ModosNaFaseGlobal._children[2].efeito, false);",
+            "",
+            "    BotoesModo[1].enableEffect(ModosNaFaseGlobal._children[0].efeito, false);",
+            "    BotoesModo[1].enableEffect(ModosNaFaseGlobal._children[1].efeito, false);",
             "    ",
             "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFaseGlobal._children[0].efeito, true)",
             "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFaseGlobal._children[1].efeito, false)",
@@ -736,11 +936,14 @@
             "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFase[0].efeito, false)",
             "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFase[1].efeito, true)",
             "",
+            "    BotoesModo[0].enableEffect(ModosNaFase[0].efeito, true);",
+            "    BotoesModo[0].enableEffect(ModosNaFase[1].efeito, false);",
+            "",
             "    // swapObjects(ModosNaFase[0], ModosNaFase[1])",
             "    const aux = {...ModosNaFase[0]}",
             "    ModosNaFase[0] = {...ModosNaFase[1]}",
             "    ModosNaFase[1] = {...aux}",
-            "",
+            "    console.dir(ModosNaFase[0])",
             "}",
             "",
             "else if(runtimeScene.getGame().getInputManager().isKeyPressed(39) && ModosNaFase[2].carga >= 100){",
@@ -749,6 +952,9 @@
             "    setBackgroundColorThroughObject(ModosNaFase[2].cor)",
             "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFase[0].efeito, false)",
             "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFase[2].efeito, true)",
+            "",
+            "    BotoesModo[1].enableEffect(ModosNaFase[0].efeito, true);",
+            "    BotoesModo[1].enableEffect(ModosNaFase[2].efeito, false);",
             "",
             "    // swapObjects(ModosNaFase[0], ModosNaFase[2])",
             "    const aux = {...ModosNaFase[0]}",
@@ -836,7 +1042,7 @@
           ],
           "parameterObjects": "hit",
           "useStrict": true,
-          "eventsSheetExpanded": true
+          "eventsSheetExpanded": false
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
@@ -876,7 +1082,7 @@
           ],
           "parameterObjects": "tap",
           "useStrict": true,
-          "eventsSheetExpanded": false
+          "eventsSheetExpanded": true
         }
       ],
       "layers": [
