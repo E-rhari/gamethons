@@ -152,6 +152,33 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/3bd40ac788d44626fd640ec67ef04ab0364816b5e8c831f2077bff8805cfe689_Roboto-Bold.ttf",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "paletasDeCores/Hidro.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "paletasDeCores\\Hidro.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "paletasDeCores/Eolica.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "paletasDeCores\\Eolica.jpg",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "paletasDeCores/Termo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "paletasDeCores\\Termo.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -655,21 +682,24 @@
             "                    \"sustentabilidade\": 20,",
             "                    \"recargaVelocidade\": 1.12,",
             "                    \"carga\": 100,",
-            "                    \"cor\": {\"r\": 100, \"g\": 200, \"b\":100}",
+            "                    \"cor\": {\"r\": 100, \"g\": 200, \"b\":100},",
+            "                    \"efeito\": \"corEolica\"",
             "                 },",
             "        \"hidro\": {",
             "                    \"producao\": 10,",
             "                    \"sustentabilidade\": 10,",
             "                    \"recargaVelocidade\": 1.54,",
             "                    \"carga\": 100,",
-            "                    \"cor\": {\"r\": 100, \"g\": 100, \"b\":200}",
+            "                    \"cor\": {\"r\": 100, \"g\": 100, \"b\":200},",
+            "                    \"efeito\": \"corHidro\"",
             "                 },",
             "        \"termica\":{",
             "                    \"producao\": 20,",
             "                    \"sustentabilidade\": -5,",
             "                    \"recargaVelocidade\": 1.24,",
             "                    \"carga\": 100,",
-            "                    \"cor\": {\"r\": 200, \"g\": 100, \"b\":100}",
+            "                    \"cor\": {\"r\": 200, \"g\": 100, \"b\":100},",
+            "                    \"efeito\": \"corTermo\"",
             "                  }",
             "}",
             "",
@@ -678,14 +708,33 @@
             "    ModosNaFaseGlobal.addChild(\"0\", Modos.hidro);",
             "    ModosNaFaseGlobal.addChild(\"1\", Modos.eolica);",
             "    ModosNaFaseGlobal.addChild(\"2\", Modos.termica);",
+            "",
+            "    ",
+            "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFaseGlobal._children[0].efeito, true)",
+            "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFaseGlobal._children[1].efeito, false)",
+            "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFaseGlobal._children[2].efeito, false)",
+            "",
             "    console.dir(ModosNaFaseGlobal)",
             "}",
             "let ModosNaFase = ModosNaFaseGlobal._children",
             "",
+            "// function CreateModo (producao, sustentabilidade, recargaVelocidade, carga, cor) {",
+            "//     this.producao = producao;",
+            "//     this.sustentabilidade = sustentabilidade;",
+            "//     this.recargaVelocidade = recargaVelocidade;",
+            "//     this.carga = carga;",
+            "//     this.cor = cor;",
+            "// }",
+            "",
+            "// const modoEolica = new CreateModo(...ModosNaFaseGlobal)",
+            "",
             "",
             "if(runtimeScene.getGame().getInputManager().isKeyPressed(37) && ModosNaFase[1].carga >= 100){",
-            "    setBackgroundColorThroughObject(ModosNaFase[1].cor)",
             "    ModosNaFase[0].carga = 0;",
+            "",
+            "    setBackgroundColorThroughObject(ModosNaFase[1].cor)",
+            "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFase[0].efeito, false)",
+            "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFase[1].efeito, true)",
             "",
             "    // swapObjects(ModosNaFase[0], ModosNaFase[1])",
             "    const aux = {...ModosNaFase[0]}",
@@ -695,8 +744,11 @@
             "}",
             "",
             "else if(runtimeScene.getGame().getInputManager().isKeyPressed(39) && ModosNaFase[2].carga >= 100){",
-            "    setBackgroundColorThroughObject(ModosNaFase[2].cor)",
             "    ModosNaFase[0].carga = 0;",
+            "",
+            "    setBackgroundColorThroughObject(ModosNaFase[2].cor)",
+            "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFase[0].efeito, false)",
+            "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFase[2].efeito, true)",
             "",
             "    // swapObjects(ModosNaFase[0], ModosNaFase[2])",
             "    const aux = {...ModosNaFase[0]}",
@@ -869,7 +921,47 @@
           "renderingType": "",
           "visibility": true,
           "cameras": [],
-          "effects": []
+          "effects": [
+            {
+              "effectType": "ColorMap",
+              "name": "corEolica",
+              "doubleParameters": {
+                "mix": 100
+              },
+              "stringParameters": {
+                "colorMapTexture": "paletasDeCores\\Eolica.jpg"
+              },
+              "booleanParameters": {
+                "nearest": false
+              }
+            },
+            {
+              "effectType": "ColorMap",
+              "name": "corTermo",
+              "doubleParameters": {
+                "mix": 100
+              },
+              "stringParameters": {
+                "colorMapTexture": "paletasDeCores\\Termo.png"
+              },
+              "booleanParameters": {
+                "nearest": false
+              }
+            },
+            {
+              "effectType": "ColorMap",
+              "name": "corHidro",
+              "doubleParameters": {
+                "mix": 100
+              },
+              "stringParameters": {
+                "colorMapTexture": "paletasDeCores\\Hidro.png"
+              },
+              "booleanParameters": {
+                "nearest": false
+              }
+            }
+          ]
         }
       ],
       "behaviorsSharedData": []
