@@ -8,6 +8,8 @@
   },
   "properties": {
     "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
     "folderProject": false,
     "orientation": "default",
     "packageName": "com.example.gamename",
@@ -25,7 +27,7 @@
     "windowHeight": 1080,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
-    "minFPS": 20,
+    "minFPS": 60,
     "verticalSync": false,
     "platformSpecificAssets": {},
     "loadingScreen": {
@@ -206,6 +208,43 @@
         "name": "assets\\cidade.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/paletasDeCores/Eolica.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\paletasDeCores\\Eolica.jpg",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/paletasDeCores/Hidro.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\paletasDeCores\\Hidro.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/paletasDeCores/Termo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\paletasDeCores\\Termo.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/musicas/Undertale Ost_ 077 - ASGORE (320 kbps).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\musicas\\Undertale Ost_ 077 - ASGORE (320 kbps).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -234,7 +273,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.23089183385224868,
+        "zoomFactor": 0.23867758270257836,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -243,13 +282,7 @@
           "folded": true,
           "name": "BPM",
           "type": "number",
-          "value": 120
-        },
-        {
-          "folded": true,
-          "name": "active",
-          "type": "boolean",
-          "value": true
+          "value": 115
         },
         {
           "name": "ModosNaFase",
@@ -275,14 +308,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 35,
           "layer": "UI",
           "name": "demanda",
           "persistentUuid": "14f19cdb-9ce6-4f7d-9f70-67ba787e84a4",
-          "width": 0,
-          "x": 800,
-          "y": 352,
+          "width": 960,
+          "x": 512,
+          "y": 351,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -311,8 +344,8 @@
           "name": "cidade",
           "persistentUuid": "d9e95a18-c1f9-4fa7-ae64-2095e5b83238",
           "width": 864,
-          "x": 512,
-          "y": 496,
+          "x": 571,
+          "y": 528,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -327,7 +360,7 @@
           "persistentUuid": "d220986a-2bca-4350-a0d7-a37652d50c1c",
           "width": 0,
           "x": -64,
-          "y": 896,
+          "y": 864,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -344,6 +377,21 @@
           "x": 1728,
           "y": 864,
           "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "frameRate",
+          "persistentUuid": "77a848a5-34f1-448f-9c81-64790b489a3b",
+          "width": 0,
+          "x": 704,
+          "y": 992,
+          "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -620,7 +668,7 @@
         },
         {
           "assetStoreId": "",
-          "bold": false,
+          "bold": true,
           "italic": true,
           "name": "performance",
           "smoothed": true,
@@ -635,9 +683,9 @@
           "textAlignment": "center",
           "characterSize": 50,
           "color": {
-            "b": 0,
+            "b": 68,
             "g": 0,
-            "r": 0
+            "r": 255
           }
         },
         {
@@ -722,7 +770,7 @@
                 "mix": 100
               },
               "stringParameters": {
-                "colorMapTexture": "paletasDeCores\\Eolica.jpg"
+                "colorMapTexture": "assets\\paletasDeCores\\Eolica.jpg"
               },
               "booleanParameters": {
                 "nearest": false
@@ -735,7 +783,7 @@
                 "mix": 100
               },
               "stringParameters": {
-                "colorMapTexture": "paletasDeCores\\Hidro.png"
+                "colorMapTexture": "assets\\paletasDeCores\\Hidro.png"
               },
               "booleanParameters": {
                 "nearest": false
@@ -748,7 +796,7 @@
                 "mix": 100
               },
               "stringParameters": {
-                "colorMapTexture": "paletasDeCores\\Termo.png"
+                "colorMapTexture": "assets\\paletasDeCores\\Termo.png"
               },
               "booleanParameters": {
                 "nearest": false
@@ -828,12 +876,48 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "frameRate",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "FPSDisplayer",
+              "type": "FPS::FPSDisplayer",
+              "prefix": ""
+            }
+          ],
+          "string": "Frame:",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "DepartScene"
@@ -851,6 +935,18 @@
               "parameters": [
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\musicas\\Undertale Ost_ 077 - ASGORE (320 kbps).mp3",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -866,7 +962,7 @@
             "// setup",
             "const Modos = {",
             "        \"eolica\":{",
-            "                    \"producao\": 5,",
+            "                    \"producao\": 2,",
             "                    \"sustentabilidade\": 20,",
             "                    \"recargaVelocidade\": 1.12,",
             "                    \"carga\": 100,",
@@ -971,10 +1067,10 @@
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
             "// setup",
-            "const Hit = runtimeScene.getObjects(\"hit\")[0]",
-            "let Taps = runtimeScene.getObjects(\"tap\")",
-            "const Performance = runtimeScene.getObjects(\"performance\")[0]",
-            "const BarraDemanda = runtimeScene.getObjects(\"demanda\")[0]",
+            "const Hit = runtimeScene.getObjects(\"hit\")[0];",
+            "let Taps = runtimeScene.getObjects(\"tap\");",
+            "const Performance = runtimeScene.getObjects(\"performance\")[0];",
+            "const BarraDemanda = runtimeScene.getObjects(\"demanda\")[0];",
             "",
             "let ModosNaFase = runtimeScene.getScene().getVariables().get(\"ModosNaFase\")._children",
             "let ModoAtual = ModosNaFase[0]",
@@ -1000,7 +1096,7 @@
             "})",
             "",
             "",
-            "const multiplicador = ModoAtual.producao * 5",
+            "const multiplicador = ModoAtual.producao * 5;",
             "if(runtimeScene.getGame().getInputManager().isKeyPressed(90)){",
             "    Hit.setAnimation(1)",
             "",
@@ -1013,7 +1109,6 @@
             "            hitTap.deleteFromScene(hitTap.getInstanceContainer())",
             "            for(let i = 1; i <= 2; i++){",
             "                ModosNaFase[i].carga += ModosNaFase[i].recargaVelocidade * 20",
-            "                console.dir(ModosNaFase[i].carga)",
             "            }",
             "        }",
             "",
@@ -1042,7 +1137,7 @@
           ],
           "parameterObjects": "hit",
           "useStrict": true,
-          "eventsSheetExpanded": false
+          "eventsSheetExpanded": true
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
@@ -1054,31 +1149,51 @@
             "",
             "function createObject(objectName, x, y, z){",
             "    let newObject = runtimeScene.createObject(objectName)",
-            "    newObject.setPosition(x, y)",
-            "    newObject.setZOrder(z)",
+            "    newObject.setPosition(x, y);",
+            "    newObject.setZOrder(z);",
             "    return newObject;",
             "}",
             "",
             "",
-            "// setup",
-            "const Hit = runtimeScene.getObjects(\"hit\")[0]",
-            "let Taps = runtimeScene.getObjects(\"tap\")",
-            "const BPM = runtimeScene.getScene().getVariables().get(\"BPM\").getValue()",
-            "const BEAT_TEMPO = 1 / ( BPM / 60) * 1000",
-            "",
-            "if(runtimeScene.getTimeManager().isFirstFrame()){",
-            "    runtimeScene.setBackgroundColor(100,100,240);",
-            "    runtimeScene.getTimeManager().addTimer(\"createBeat\")",
+            "function setBackgroundColorThroughObject(rgbObject){",
+            "    runtimeScene.setBackgroundColor(rgbObject.r, rgbObject.g, rgbObject.b)",
             "}",
             "",
             "",
+            "// setup",
+            "const Hit = runtimeScene.getObjects(\"hit\")[0];",
+            "let Taps = runtimeScene.getObjects(\"tap\");",
+            "const FrameRate = runtimeScene.getObjects(\"frameRate\")[0]._str",
+            "const BPM = runtimeScene.getScene().getVariables().get(\"BPM\").getValue();",
+            "const BEAT_TEMPO = (1 / (BPM / 60) * 1000)",
+            "",
+            "if(runtimeScene.getTimeManager().isFirstFrame()){",
+            "    runtimeScene.setBackgroundColor(100,100,240);",
+            "    runtimeScene.getTimeManager().addTimer(\"createBeat\");",
+            "    runtimeScene.getTimeManager().addTimer(\"test\");",
+            "    console.log(BEAT_TEMPO)",
+            "    ",
+            "    const FPS = runtimeScene.getObjects(\"frameRate\")[0].getBehavior(\"FPSDisplayer\")",
+            "    console.dir(FPS)",
+            "}",
+            "",
+            "",
+            "let ModosNaFaseGlobal = runtimeScene.getScene().getVariables().get(\"ModosNaFase\")",
+            "let ModosNaFase = ModosNaFaseGlobal._children",
+            "",
             "// code",
             "Taps.forEach(tap => { moveX(tap, BPM / 10) })",
+            "let createBeatCurrentTimer = runtimeScene.getTimeManager().getTimer(\"createBeat\").getTime() + 2;",
             "",
-            "if(runtimeScene.getTimeManager().getTimer(\"createBeat\").getTime() > BEAT_TEMPO - 16){",
-            "    createObject(\"tap\", 0, Hit.y, 2);",
-            "    runtimeScene.getTimeManager().getTimer(\"createBeat\").reset()",
-            "}"
+            "if(createBeatCurrentTimer >= BEAT_TEMPO){",
+            "    console.log(`Object Created: ${(createBeatCurrentTimer)}`)",
+            "    console.dir(runtimeScene.getObjects(\"frameRate\")[0]._str)",
+            "    runtimeScene.getTimeManager().getTimer(\"createBeat\").setTime(createBeatCurrentTimer - BEAT_TEMPO)",
+            "    console.log(`Current time: ${createBeatCurrentTimer = runtimeScene.getTimeManager().getTimer(\"createBeat\").getTime()}`)",
+            "    const newTap = createObject(\"tap\", Hit.x - 800, Hit.y, 2);",
+            "    newTap.setLayer(\"UI\");",
+            "}",
+            ""
           ],
           "parameterObjects": "tap",
           "useStrict": true,
@@ -1135,7 +1250,7 @@
                 "mix": 100
               },
               "stringParameters": {
-                "colorMapTexture": "paletasDeCores\\Eolica.jpg"
+                "colorMapTexture": "assets\\paletasDeCores\\Eolica.jpg"
               },
               "booleanParameters": {
                 "nearest": false
@@ -1148,7 +1263,7 @@
                 "mix": 100
               },
               "stringParameters": {
-                "colorMapTexture": "paletasDeCores\\Termo.png"
+                "colorMapTexture": "assets\\paletasDeCores\\Termo.png"
               },
               "booleanParameters": {
                 "nearest": false
@@ -1161,7 +1276,7 @@
                 "mix": 100
               },
               "stringParameters": {
-                "colorMapTexture": "paletasDeCores\\Hidro.png"
+                "colorMapTexture": "assets\\paletasDeCores\\Hidro.png"
               },
               "booleanParameters": {
                 "nearest": false
@@ -1170,11 +1285,177 @@
           ]
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "FPSDisplayer",
+          "type": "FPS::FPSDisplayer"
+        }
+      ]
     }
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "author": "Ahnaf30e",
+      "category": "Advanced",
+      "extensionNamespace": "",
+      "fullName": "FPS",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBkPSJNMzAsM2gtMkg0SDJDMS40LDMsMSwzLjQsMSw0czAuNCwxLDEsMWgxdjE2YzAsMC42LDAuNCwxLDEsMWg5LjhsLTUuNSw2LjNjLTAuNCwwLjQtMC4zLDEsMC4xLDEuNEM4LjUsMjkuOSw4LjgsMzAsOSwzMA0KCWMwLjMsMCwwLjYtMC4xLDAuOC0wLjNsNS4yLTZWMjhjMCwwLjYsMC40LDEsMSwxczEtMC40LDEtMXYtNC4zbDUuMiw2YzAuMiwwLjIsMC41LDAuMywwLjgsMC4zYzAuMiwwLDAuNS0wLjEsMC43LTAuMg0KCWMwLjQtMC40LDAuNS0xLDAuMS0xLjRMMTguMiwyMkgyOGMwLjYsMCwxLTAuNCwxLTFWNWgxYzAuNiwwLDEtMC40LDEtMVMzMC42LDMsMzAsM3ogTTI0LjgsOC42bC00LDZjLTAuMywwLjQtMC44LDAuNi0xLjMsMC4zDQoJTDE1LjgsMTNoLTMuNGwtMy43LDMuN0M4LjUsMTYuOSw4LjMsMTcsOCwxN3MtMC41LTAuMS0wLjctMC4zYy0wLjQtMC40LTAuNC0xLDAtMS40bDQtNGMwLjItMC4yLDAuNC0wLjMsMC43LTAuM2g0DQoJYzAuMiwwLDAuMywwLDAuNCwwLjFsMy4yLDEuNmwzLjUtNS4zYzAuMy0wLjUsMC45LTAuNiwxLjQtMC4zQzI1LDcuNSwyNS4xLDguMSwyNC44LDguNnoiLz4NCjwvc3ZnPg0K",
+      "name": "FPS",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/Glyphster Pack/Master/SVG/SEO/SEO_board_performance_profit.svg",
+      "shortDescription": "Adds expressions and a behavior to get and display the game FPS.",
+      "version": "1.0.0",
+      "description": [
+        "Adds expressions to get the current FPS and a behavior to display the current FPS easily.",
+        "",
+        "The FPS, Frames Per Second, describes how many times in the last second your game got updated. An update consists in running all the behaviors, objects, and events sheet code, before rendering the new game state into the game window. The higher the FPS, the more it manages to update in a second, influencing how fluid and performant your game looks."
+      ],
+      "origin": {
+        "identifier": "FPS",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "fps",
+        "frames",
+        "per",
+        "second",
+        "performance",
+        "speed"
+      ],
+      "authorIds": [
+        "onPsboRtDkUHNOsx7OPr8R8G1oj2"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [
+        {
+          "description": "Return your game's current FPS count.",
+          "fullName": "FPS (Frames per second)",
+          "functionType": "Expression",
+          "name": "FPS",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "ceil(1/TimeDelta())"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "Return your game's current FPS count, with more control over rounding.",
+          "fullName": "Precise FPS (Frames per second)",
+          "functionType": "Expression",
+          "name": "PreciseFPS",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "(ceil(1/TimeDelta()*(GetArgumentAsNumber(\"accuracy\") * 10))) / (GetArgumentAsNumber(\"accuracy\") * 10)"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "The accuracy of the FPS",
+              "longDescription": "This tells how many numbers after the period should be shown.",
+              "name": "accuracy",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Makes a text object display the current FPS.",
+          "fullName": "FPS Displayer",
+          "name": "FPSDisplayer",
+          "objectType": "TextObject::Text",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.Behavior::Propertyprefix() + ToString(FPS::FPS())"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "TextObject::Text",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "FPS::FPSDisplayer",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "FPS: ",
+              "type": "String",
+              "label": "The prefix before the FPS count",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "prefix"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": []
+    },
     {
       "author": "",
       "category": "User interface",
