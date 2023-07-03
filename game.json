@@ -34,7 +34,7 @@
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
       "backgroundImageResourceName": "",
-      "gdevelopLogoStyle": "light",
+      "gdevelopLogoStyle": "dark-colored",
       "logoAndProgressFadeInDuration": 0.2,
       "logoAndProgressLogoFadeInDelay": 0.2,
       "minDuration": 1.5,
@@ -47,7 +47,7 @@
       "showProgressBar": true
     },
     "watermark": {
-      "placement": "bottom-left",
+      "placement": "top-right",
       "showWatermark": true
     },
     "authorIds": [],
@@ -451,6 +451,15 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/848f861767e7ce4581dba9e122ee7bafeaca57987655cebe1f78ab31d1300f0f_Square White Slider Thumb.png",
           "name": "Square White Slider Thumb.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gameCenter.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "gameCenter",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -515,7 +524,6 @@
       ]
     },
     {
-      "folded": true,
       "name": "unlockedLevels",
       "type": "structure",
       "children": [
@@ -546,12 +554,12 @@
         {
           "name": "producao",
           "type": "number",
-          "value": 12730.56473926
+          "value": 0
         },
         {
           "name": "sustentabilidade",
           "type": "number",
-          "value": 341
+          "value": 0
         }
       ]
     }
@@ -751,13 +759,13 @@
           "angle": 270,
           "customSize": true,
           "depth": 32,
-          "height": 224,
+          "height": 227,
           "layer": "",
           "name": "botaoModo",
           "persistentUuid": "0590dfd4-68a4-4fe2-bd30-927a915c5768",
           "width": 224,
-          "x": 1696,
-          "y": 864,
+          "x": 1695,
+          "y": 862,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -866,6 +874,21 @@
           "x": 800,
           "y": 576,
           "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "gameCenter",
+          "persistentUuid": "fdd0cef1-1048-46be-a28d-03b29b9cb49b",
+          "width": 0,
+          "x": 960,
+          "y": 544,
+          "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1579,6 +1602,48 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "name": "gameCenter",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "gameCenter",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "gameCenter",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 32,
+                        "y": 32
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -1964,6 +2029,8 @@
             "////////LEVEL////////",
             "/////////////////////",
             "if(!runtimeScene.getLayer(\"GameOver\").isVisible() && levelTimer.getTime() >= 156746){",
+            "    const levelUnlockedStatus = runtimeScene.getGame().getVariables().get(\"unlockedLevels\")._children",
+            "    levelUnlockedStatus.level02.setBoolean(true)",
             "    runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"pontuacao\")",
             "}",
             "",
@@ -2376,7 +2443,7 @@
           ],
           "parameterObjects": "tap",
           "useStrict": true,
-          "eventsSheetExpanded": true
+          "eventsSheetExpanded": false
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
@@ -2386,11 +2453,23 @@
             "    const stringPerda = runtimeScene.getObjects(\"motivoDaPerda\")[0];",
             "    stringPerda.setString(reason)",
             "    const song = runtimeScene.getGame().getSoundManager().getMusicOnChannel(0)",
+            "    positionGameOverScreen();",
             "",
             "    isLevelRunning.setBoolean(false)",
             "    song.fade(song.getVolume(), 0, 3000)",
             "    runtimeScene.getLayer(\"GameOver\").show(true)",
             "    runtimeScene.getTimeManager().setTimeScale(0)",
+            "}",
+            "",
+            "const positionGameOverScreen = () => {",
+            "    const getMiddleScreenX   = obj => gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)/2  - obj.getWidth()/2;",
+            "    const setToMiddleScreenX = obj => obj.setPosition(getMiddleScreenX(obj), obj.y, 1)",
+            "",
+            "    const stringPerda = runtimeScene.getObjects(\"motivoDaPerda\")[0];",
+            "    const gameOver = runtimeScene.getObjects(\"gameOver\")[0];",
+            "    const texts = [btn_exit, btn_mainMenu, btn_recomecar, stringPerda]",
+            "",
+            "    texts.forEach(text => setToMiddleScreenX(text));",
             "}",
             "",
             "const isClicked = obj => {",
@@ -2413,6 +2492,7 @@
             "const btn_recomecar = runtimeScene.getObjects(\"btn_recomecar\")[0];",
             "const btn_mainMenu = runtimeScene.getObjects(\"btn_mainMenu\")[0];",
             "const btn_exit = runtimeScene.getObjects(\"btn_exit\")[0];",
+            "",
             "",
             "",
             "// code",
@@ -2439,13 +2519,47 @@
             "            runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"titleScreen\")    ",
             "        // const song = runtimeScene.getGame().getSoundManager().getMusicOnChannel(0)",
             "        // song.stop()",
-            "        runtimeScene.getSoundManager().get",
+            "        // runtimeScene.getSoundManager().get",
             "    }",
             "}"
           ],
           "parameterObjects": "gameOver",
           "useStrict": true,
           "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            " if(runtimeScene.getTimeManager().isFirstFrame()){",
+            "// functions",
+            "    const getMiddleScreenX   = obj => gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)/2  - obj.getWidth()/2;",
+            "    const setToMiddleScreenX = obj => obj.setPosition(getMiddleScreenX(obj), obj.y, 1)",
+            "",
+            "",
+            "// setup",
+            "    const gameCenter = runtimeScene.getObjects(\"gameCenter\")[0];",
+            "    let BotoesModo = runtimeScene.getObjects(\"botaoModo\")",
+            "",
+            "",
+            "// code",
+            "    // gameCenter.hide(true);",
+            "    // gameCenter.setPosition(runtimeScene.getGame().getOriginalWidth()/2, runtimeScene.getGame().getOriginalHeight()/2)",
+            "    ",
+            "    // const cameraBase = runtimeScene.getLayer(\"Camada Base\");",
+            "    // cameraBase.setCameraX(gameCenter.x, 0);",
+            "    // const ui = runtimeScene.getLayer(\"UI\");",
+            "    // ui.setCameraX(gameCenter.x, 0);",
+            "    // console.log(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)/2, ui, cameraBase)",
+            "",
+            "    // const BarraDemanda          = runtimeScene.getObjects(\"demanda\")[0];",
+            "    // BotoesModo[0].setPosition(BarraDemanda.x, BotoesModo[0].y)",
+            "    // BotoesModo[2].setPosition(runtimeScene.getGame().getGameResolutionWidth(), BotoesModo[0].y)",
+            "    // BotoesModo[1].setPosition(BotoesModo[0].x - runtimeScene.getGame().getGameResolutionWidth()/2, BotoesModo[0].y)",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
         }
       ],
       "layers": [
@@ -2648,31 +2762,10 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.29879853636069054,
+        "zoomFactor": 0.23689563725446572,
         "windowMask": false
       },
-      "objectsGroups": [
-        {
-          "name": "textDoido",
-          "objects": [
-            {
-              "name": "title"
-            },
-            {
-              "name": "btn_jogar"
-            },
-            {
-              "name": "btn_sair"
-            },
-            {
-              "name": "btn_creditos"
-            },
-            {
-              "name": "btn_configuracoes"
-            }
-          ]
-        }
-      ],
+      "objectsGroups": [],
       "variables": [],
       "instances": [
         {
@@ -2945,10 +3038,27 @@
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": "",
+          "inlineCode": [
+            "// functions",
+            "const getMiddleScreenX   = obj => gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)/2  - obj.getWidth()/2;",
+            "const setToMiddleScreenX = obj => obj.setPosition(getMiddleScreenX(obj), obj.y, 1) ",
+            "",
+            "",
+            "// setup",
+            "const titulo = runtimeScene.getObjects(\"title\")[0];",
+            "const btn_jogar         = runtimeScene.getObjects(\"btn_jogar\")[0];",
+            "const btn_creditos      = runtimeScene.getObjects(\"btn_creditos\")[0];",
+            "const btn_configuracoes = runtimeScene.getObjects(\"btn_configuracoes\")[0];",
+            "const btn_sair          = runtimeScene.getObjects(\"btn_sair\")[0];",
+            "",
+            "const texts = [titulo, btn_jogar, btn_creditos, btn_configuracoes, btn_sair]",
+            "",
+            "// code",
+            "texts.forEach(text => setToMiddleScreenX(text));"
+          ],
           "parameterObjects": "",
           "useStrict": true,
-          "eventsSheetExpanded": true
+          "eventsSheetExpanded": false
         }
       ],
       "layers": [
@@ -3092,7 +3202,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "levelDescriptions",
+          "name": "levelDescription",
           "persistentUuid": "179ed7ba-2479-4cc9-ad57-4ec8d04cc197",
           "width": 0,
           "x": 244,
@@ -3107,7 +3217,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "levelDescriptions",
+          "name": "levelDescription",
           "persistentUuid": "44c6f4a2-66ef-4324-84f4-19f7f9fe204c",
           "width": 0,
           "x": 864,
@@ -3122,7 +3232,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "levelDescriptions",
+          "name": "levelDescription",
           "persistentUuid": "00a31348-bf3d-49f9-b6fd-34e6b2fabc2d",
           "width": 0,
           "x": 1470,
@@ -3208,7 +3318,17 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "BlackAndWhite",
+              "name": "locked",
+              "doubleParameters": {
+                "opacity": 1
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": [],
           "animations": [
             {
@@ -3304,7 +3424,7 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "levelDescriptions",
+          "name": "levelDescription",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
@@ -3349,6 +3469,7 @@
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
+            "// functions",
             "const isClicked = obj => {",
             "    if(obj.isCollidingWithPoint(runtimeScene.getGame().getInputManager().getMouseX(), runtimeScene.getGame().getInputManager().getMouseY()))",
             "        return true;",
@@ -3357,13 +3478,23 @@
             "}",
             "",
             "",
-            "runtimeScene.setBackgroundColor(0,0,0);",
-            "",
+            "// setup",
             "const btn_levels = runtimeScene.getObjects(\"btn_level\");",
             "const btn_menu   = runtimeScene.getObjects(\"btn_menu\")[0];",
+            "const levelDescriptions = runtimeScene.getObjects(\"levelDescription\");",
+            "const imgs_levels       = runtimeScene.getObjects(\"img_levels\");",
+            "",
+            "const levelUnlockedStatus = Object.values(runtimeScene.getGame().getVariables().get(\"unlockedLevels\")._children)",
+            "",
+            "",
+            "// code",
+            "runtimeScene.setBackgroundColor(0,0,0);",
             "",
             "if(runtimeScene.getTimeManager().isFirstFrame()){",
             "    for(let i = 0; i < 3; i++){",
+            "        if(levelUnlockedStatus[i]._bool){",
+            "            imgs_levels[i].enableEffect(\"locked\", false)",
+            "        }",
             "        btn_levels[i].setString(`FASE ${i+1}`)",
             "    }",
             "}",
@@ -3386,7 +3517,41 @@
           ],
           "parameterObjects": "",
           "useStrict": true,
-          "eventsSheetExpanded": true
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// functions",
+            "const getMiddleScreenX   = obj => gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)/2  - obj.getWidth()/2;",
+            "const setToMiddleScreenX = obj => obj.setPosition(getMiddleScreenX(obj), obj.y, 1) ",
+            "",
+            "",
+            "// setup",
+            "const btn_levels        = runtimeScene.getObjects(\"btn_level\");",
+            "const levelDescriptions = runtimeScene.getObjects(\"levelDescription\")",
+            "const imgs_levels       = runtimeScene.getObjects(\"img_levels\");",
+            "const btn_menu          = runtimeScene.getObjects(\"btn_menu\")[0];",
+            "",
+            "const levelCards = [btn_levels, levelDescriptions, imgs_levels]",
+            "",
+            "",
+            "// ",
+            "if(runtimeScene.getTimeManager().isFirstFrame()){",
+            "    setToMiddleScreenX(btn_menu);",
+            "",
+            "    levelCards.forEach(element => setToMiddleScreenX(element[1]));",
+            "",
+            "    levelCards.forEach(element => {",
+            "        element[0].setPosition(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)/5 - element[0].getWidth()/2, element[0].y, 1)});",
+            "",
+            "    levelCards.forEach(element => {",
+            "        element[2].setPosition((gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)*4)/5 - element[2].getWidth()/2, element[2].y, 1)});",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
         }
       ],
       "layers": [
@@ -3515,7 +3680,7 @@
           "persistentUuid": "40d2f19f-f45b-4bf0-8a1a-91afa3528dd3",
           "width": 0,
           "x": 1116,
-          "y": 803,
+          "y": 792,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -3532,21 +3697,6 @@
           "x": 513,
           "y": 792,
           "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "btn_menu",
-          "persistentUuid": "37a2ab17-60ab-499f-9674-99430094a786",
-          "width": 0,
-          "x": 853,
-          "y": 960,
-          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3683,28 +3833,6 @@
             "g": 255,
             "r": 255
           }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "btn_menu",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Menu",
-          "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
-          "textAlignment": "left",
-          "characterSize": 55,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
         }
       ],
       "events": [
@@ -3724,7 +3852,6 @@
             "const sliderEfeito = runtimeScene.getObjects(\"slider\")[1];",
             "",
             "const btn_apply = runtimeScene.getObjects(\"btn_apply\")[0];",
-            "const btn_menu = runtimeScene.getObjects(\"btn_menu\")[0];",
             "const btn_reset = runtimeScene.getObjects(\"btn_reset\")[0];",
             "",
             "const labels = runtimeScene.getObjects(\"optionLabel\");",
@@ -3752,13 +3879,8 @@
             "}",
             "",
             "if(runtimeScene.getGame().getInputManager().isMouseButtonPressed(0) && runtimeScene.getOnceTriggers().triggerOnce()){",
-            "    if(isClicked(btn_menu)){",
+            "    if(isClicked(btn_apply)){",
             "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"titleScreen\")",
-            "        volume.efeito.setValue(sliderEfeito.Value()/100);",
-            "        volume.musica.setValue(sliderMusica.Value()/100);",
-            "    }",
-            "",
-            "    else if(isClicked(btn_apply)){",
             "        volume.efeito.setValue(sliderEfeito.Value()/100);",
             "        volume.musica.setValue(sliderMusica.Value()/100);",
             "    }",
@@ -3773,7 +3895,36 @@
           ],
           "parameterObjects": "",
           "useStrict": true,
-          "eventsSheetExpanded": true
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// functions",
+            "const getMiddleScreenX   = obj => gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)/2  - obj.getWidth()/2;",
+            "const setToMiddleScreenX = obj => obj.setPosition(getMiddleScreenX(obj), obj.y, 1) ",
+            "",
+            "",
+            "// setup",
+            "const sliderMusica = runtimeScene.getObjects(\"slider\")[0];",
+            "const sliderEfeito = runtimeScene.getObjects(\"slider\")[1];",
+            "",
+            "const btn_apply = runtimeScene.getObjects(\"btn_apply\")[0];",
+            "const btn_reset = runtimeScene.getObjects(\"btn_reset\")[0];",
+            "",
+            "const labels = runtimeScene.getObjects(\"optionLabel\");",
+            "",
+            "const toCentralize = [labels[0], labels[1], sliderMusica, sliderEfeito]",
+            "",
+            "",
+            "//code",
+            "toCentralize.forEach(obj => setToMiddleScreenX(obj));",
+            "btn_apply.setPosition(getMiddleScreenX(btn_apply) + 300, btn_apply.y, 1)",
+            "btn_reset.setPosition(getMiddleScreenX(btn_reset) - 300, btn_reset.y, 1)"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
         }
       ],
       "layers": [
@@ -4217,7 +4368,7 @@
           ],
           "parameterObjects": "",
           "useStrict": true,
-          "eventsSheetExpanded": true
+          "eventsSheetExpanded": false
         }
       ],
       "layers": [
