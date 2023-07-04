@@ -11,7 +11,7 @@
     "antialiasingMode": "MSAA",
     "antialisingEnabledOnMobile": false,
     "folderProject": false,
-    "orientation": "default",
+    "orientation": "landscape",
     "packageName": "com.example.gamename",
     "pixelsRounding": true,
     "projectUuid": "a5372228-2a69-4a2d-9433-b130d3b1e665",
@@ -34,7 +34,7 @@
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
       "backgroundImageResourceName": "",
-      "gdevelopLogoStyle": "dark-colored",
+      "gdevelopLogoStyle": "dark",
       "logoAndProgressFadeInDuration": 0.2,
       "logoAndProgressLogoFadeInDelay": 0.2,
       "minDuration": 1.5,
@@ -460,6 +460,35 @@
         "name": "gameCenter",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/musicas/titleTheme.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\musicas\\titleTheme.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/musicas/ElectricConductorTitleTheme.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\musicas\\ElectricConductorTitleTheme.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -524,6 +553,7 @@
       ]
     },
     {
+      "folded": true,
       "name": "unlockedLevels",
       "type": "structure",
       "children": [
@@ -548,6 +578,13 @@
       ]
     },
     {
+      "folded": true,
+      "name": "hasGameStarted",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "folded": true,
       "name": "pontuacao",
       "type": "structure",
       "children": [
@@ -889,6 +926,22 @@
           "x": 960,
           "y": 544,
           "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 1792,
+          "layer": "fade",
+          "name": "fundoGameOver",
+          "persistentUuid": "afd2dfec-1fa7-4270-b704-aa94ea81830d",
+          "width": 3136,
+          "x": -544,
+          "y": -288,
+          "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1741,7 +1794,7 @@
             "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFaseGlobal._children[1].efeito, false)",
             "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFaseGlobal._children[2].efeito, false)",
             "",
-            "    console.dir(runtimeScene.getObjects(\"BlueFlatBar\")[0])",
+            "    console.dir(runtimeScene.getLayer(\"gameOver\"))",
             "}",
             "let ModosNaFase = ModosNaFaseGlobal._children",
             "",
@@ -1898,7 +1951,7 @@
           ],
           "parameterObjects": "hit",
           "useStrict": true,
-          "eventsSheetExpanded": false
+          "eventsSheetExpanded": true
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
@@ -2003,6 +2056,15 @@
             "    return false",
             "}",
             "",
+            "const fade =(obj, speed, way) => {",
+            "    if(way == \"out\")",
+            "        if(obj.opacity != 0)",
+            "            obj.setOpacity(obj.opacity - speed)",
+            "    if(way == \"in\")",
+            "        if(obj.opacity != 255)",
+            "            obj.setOpacity(obj.opacity + speed)",
+            "}",
+            "",
             "",
             "// setup",
             "const Hit   = runtimeScene.getObjects(\"hit\")[0];",
@@ -2016,6 +2078,13 @@
             "",
             "if(runtimeScene.getTimeManager().isFirstFrame()){",
             "    runtimeScene.getTimeManager().addTimer(\"levelTimer\");",
+            "    runtimeScene.getLayer(\"fade\").show(true);",
+            "    runtimeScene.getObjects(\"fundoGameOver\")[1].setOpacity(1);",
+            "    const Acertos = runtimeScene.getGame().getVariables().get(\"acertos\")._children",
+            "    const Score   = runtimeScene.getGame().getVariables().get(\"pontuacao\")._children",
+            "    Object.values(Acertos).forEach(valor => valor.setValue(0));",
+            "    Object.values(Score).forEach(valor => valor.setValue(0));",
+            "    ",
             "}",
             "const levelTimer = runtimeScene.getTimeManager().getTimer(\"levelTimer\");",
             "",
@@ -2024,16 +2093,21 @@
             "    runtimeScene.getGame().getSoundManager().playMusicOnChannel(\"assets\\\\musicas\\\\asgoreTheme.mp3\", 0, false, volume.musica._value * 100, 1)",
             "}",
             "",
-            "",
-            "/////////////////////",
-            "////////LEVEL////////",
-            "/////////////////////",
             "if(!runtimeScene.getLayer(\"GameOver\").isVisible() && levelTimer.getTime() >= 156746){",
             "    const levelUnlockedStatus = runtimeScene.getGame().getVariables().get(\"unlockedLevels\")._children",
             "    levelUnlockedStatus.level02.setBoolean(true)",
             "    runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"pontuacao\")",
             "}",
             "",
+            "if(!runtimeScene.getLayer(\"GameOver\").isVisible() && levelTimer.getTime() >= 155746){",
+            "    const cover = runtimeScene.getObjects(\"fundoGameOver\")[1];",
+            "    fade(cover, 13, \"in\")",
+            "}",
+            "",
+            "",
+            "/////////////////////",
+            "////////LEVEL////////",
+            "/////////////////////",
             "createBeat(0, 0)",
             "createBeat(299, 1)",
             "createBeat(702, 2)",
@@ -2443,22 +2517,30 @@
           ],
           "parameterObjects": "tap",
           "useStrict": true,
-          "eventsSheetExpanded": false
+          "eventsSheetExpanded": true
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
             "// functions",
             "const displayGameOver = (reason) =>{",
+            "    const gameOver = runtimeScene.getObjects(\"gameOver\")[0];",
             "    const stringPerda = runtimeScene.getObjects(\"motivoDaPerda\")[0];",
+            "    const fundoGameOver = runtimeScene.getObjects(\"fundoGameOver\")[0];",
             "    stringPerda.setString(reason)",
+            "    isLevelRunning.setBoolean(false)",
+            "",
+            "    const toFade = [stringPerda, gameOver, btn_exit, btn_mainMenu, btn_recomecar, fundoGameOver]",
+            "",
             "    const song = runtimeScene.getGame().getSoundManager().getMusicOnChannel(0)",
             "    positionGameOverScreen();",
             "",
-            "    isLevelRunning.setBoolean(false)",
+            "    if(!runtimeScene.getLayer(\"GameOver\").isVisible()){",
+            "        runtimeScene.getLayer(\"GameOver\").show(true)",
+            "        toFade.forEach(obj => obj.setOpacity(0))",
+            "    }",
+            "",
             "    song.fade(song.getVolume(), 0, 3000)",
-            "    runtimeScene.getLayer(\"GameOver\").show(true)",
-            "    runtimeScene.getTimeManager().setTimeScale(0)",
             "}",
             "",
             "const positionGameOverScreen = () => {",
@@ -2479,6 +2561,15 @@
             "        return false;",
             "}",
             "",
+            "const fade = (obj, speed, way) => {",
+            "    if(way == \"out\")",
+            "        if(obj.opacity != 0)",
+            "            obj.setOpacity(obj.opacity - speed)",
+            "    if(way == \"in\")",
+            "        if(obj.opacity != 255)",
+            "            obj.setOpacity(obj.opacity + speed)",
+            "}",
+            "",
             "",
             "// setup",
             "const BarraDemanda          = runtimeScene.getObjects(\"demanda\")[0];",
@@ -2493,6 +2584,14 @@
             "const btn_mainMenu = runtimeScene.getObjects(\"btn_mainMenu\")[0];",
             "const btn_exit = runtimeScene.getObjects(\"btn_exit\")[0];",
             "",
+            "if(runtimeScene.getTimeManager().isFirstFrame()){",
+            "    const stringPerda = runtimeScene.getObjects(\"motivoDaPerda\")[0];",
+            "    const gameOver = runtimeScene.getObjects(\"gameOver\")[0];",
+            "    const fundoGameOver = runtimeScene.getObjects(\"fundoGameOver\")[0];",
+            "    runtimeScene.getLayer(\"GameOver\").show(false)",
+            "    const toFade = [stringPerda, gameOver, btn_exit, btn_mainMenu, btn_recomecar, fundoGameOver]",
+            "    toFade.forEach(obj => obj.setOpacity(0))",
+            "}",
             "",
             "",
             "// code",
@@ -2516,16 +2615,19 @@
             "            runtimeScene.requestChange(gdjs.SceneChangeRequest.STOP_GAME, \"base\")",
             "",
             "        else if(isClicked(btn_mainMenu))",
-            "            runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"titleScreen\")    ",
-            "        // const song = runtimeScene.getGame().getSoundManager().getMusicOnChannel(0)",
-            "        // song.stop()",
-            "        // runtimeScene.getSoundManager().get",
-            "    }",
+            "            runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"titleScreen\") ",
+            "    }   ",
+            "    const gameOver = runtimeScene.getObjects(\"gameOver\")[0];",
+            "    const stringPerda = runtimeScene.getObjects(\"motivoDaPerda\")[0];",
+            "    const fundoGameOver = runtimeScene.getObjects(\"fundoGameOver\")[0];",
+            "",
+            "    const toFade = [stringPerda, gameOver, btn_exit, btn_mainMenu, btn_recomecar, fundoGameOver]",
+            "    toFade.forEach(obj => fade(obj, 13, \"in\"))",
             "}"
           ],
           "parameterObjects": "gameOver",
           "useStrict": true,
-          "eventsSheetExpanded": false
+          "eventsSheetExpanded": true
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
@@ -2539,23 +2641,25 @@
             "// setup",
             "    const gameCenter = runtimeScene.getObjects(\"gameCenter\")[0];",
             "    let BotoesModo = runtimeScene.getObjects(\"botaoModo\")",
+            "    gameCenter.hide(true);",
             "",
             "",
             "// code",
-            "    // gameCenter.hide(true);",
-            "    // gameCenter.setPosition(runtimeScene.getGame().getOriginalWidth()/2, runtimeScene.getGame().getOriginalHeight()/2)",
+            "    gameCenter.hide(true);",
+            "    gameCenter.setPosition(runtimeScene.getGame().getOriginalWidth()/2, runtimeScene.getGame().getOriginalHeight()/2)",
             "    ",
-            "    // const cameraBase = runtimeScene.getLayer(\"Camada Base\");",
-            "    // cameraBase.setCameraX(gameCenter.x, 0);",
-            "    // const ui = runtimeScene.getLayer(\"UI\");",
-            "    // ui.setCameraX(gameCenter.x, 0);",
-            "    // console.log(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)/2, ui, cameraBase)",
+            "    const cameraBase = runtimeScene.getLayer(\"Camada Base\");",
+            "    cameraBase.setCameraX(gameCenter.x, 0);",
+            "    const ui = runtimeScene.getLayer(\"UI\");",
+            "    ui.setCameraX(gameCenter.x, 0);",
+            "    console.log(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)/2, ui, cameraBase)",
             "",
             "    // const BarraDemanda          = runtimeScene.getObjects(\"demanda\")[0];",
             "    // BotoesModo[0].setPosition(BarraDemanda.x, BotoesModo[0].y)",
             "    // BotoesModo[2].setPosition(runtimeScene.getGame().getGameResolutionWidth(), BotoesModo[0].y)",
             "    // BotoesModo[1].setPosition(BotoesModo[0].x - runtimeScene.getGame().getGameResolutionWidth()/2, BotoesModo[0].y)",
-            "}"
+            "}",
+            ""
           ],
           "parameterObjects": "",
           "useStrict": true,
@@ -2733,6 +2837,22 @@
               }
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "fade",
+          "renderingType": "",
+          "visibility": false,
+          "cameras": [],
+          "effects": []
         }
       ],
       "behaviorsSharedData": [
@@ -2766,23 +2886,15 @@
         "windowMask": false
       },
       "objectsGroups": [],
-      "variables": [],
-      "instances": [
+      "variables": [
         {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "title",
-          "persistentUuid": "cfdf80d8-4a34-4972-8233-234b39e9e7ff",
-          "width": 0,
-          "x": 594,
-          "y": 60,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
+          "folded": true,
+          "name": "alreadyUnfaded",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "instances": [
         {
           "angle": 0,
           "customSize": false,
@@ -2842,31 +2954,41 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 1598,
+          "layer": "fade",
+          "name": "cover",
+          "persistentUuid": "7af69cb6-476e-4e7f-8243-8baab7d7bf4c",
+          "width": 2742,
+          "x": -441,
+          "y": -229,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 266,
+          "layer": "",
+          "name": "title",
+          "persistentUuid": "8696c688-2593-41aa-b090-983f5671e14a",
+          "width": 1008,
+          "x": 461,
+          "y": 92,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
-        {
-          "assetStoreId": "",
-          "bold": true,
-          "italic": true,
-          "name": "title",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Electrical \nConductor ",
-          "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
-          "textAlignment": "center",
-          "characterSize": 100,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
         {
           "assetStoreId": "",
           "bold": false,
@@ -2954,6 +3076,88 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "assetStoreId": "",
+          "name": "cover",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\New image.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "title",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\logo.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -2976,7 +3180,7 @@
               },
               "parameters": [
                 "",
-                "assets\\musicas\\unstopping.mp3"
+                "assets\\musicas\\ElectricConductorTitleTheme.wav"
               ]
             }
           ]
@@ -2985,15 +3189,25 @@
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
             "if(runtimeScene.getTimeManager().isFirstFrame()){",
-            "    const songName = \"unstopping.mp3\"",
+            "    const songName = \"ElectricConductorTitleTheme.wav\"",
             "    if(runtimeScene.getSoundManager().getMusicOnChannel(0) == null || runtimeScene.getSoundManager().getMusicOnChannel(0)._howl._src != songName)",
             "        runtimeScene.getSoundManager().playMusicOnChannel(songName, 0, true, 100, 1)",
-            "    console.log(runtimeScene.getSoundManager().getMusicOnChannel(0))",
-            "}"
+            "}",
+            "",
+            "const alreadyUnfaded = runtimeScene.getGame().getVariables().get(\"hasGameStarted\")",
+            "const fade = runtimeScene.getObjects(\"cover\")[0];",
+            "if(fade.opacity != 0 && !alreadyUnfaded._bool){",
+            "    runtimeScene.getLayer(\"fade\").show(true);",
+            "    fade.setOpacity(fade.opacity - 1.5)",
+            "}",
+            "else{",
+            "    alreadyUnfaded.setBoolean(true)",
+            "}",
+            ""
           ],
           "parameterObjects": "",
           "useStrict": true,
-          "eventsSheetExpanded": false
+          "eventsSheetExpanded": true
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
@@ -3099,9 +3313,9 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "main",
+          "name": "fade",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": []
         }
@@ -3978,7 +4192,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3526904934771226,
+        "zoomFactor": 0.40272258333259153,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -4306,6 +4520,47 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "assetStoreId": "",
+          "name": "cover",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\New image.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -4357,11 +4612,11 @@
             "",
             "",
             "if(runtimeScene.getGame().getInputManager().isMouseButtonPressed(0) && runtimeScene.getOnceTriggers().triggerOnce()){",
-            "    if(isClicked(btn_menu)){",
+            "    if(isClicked(btn_menu) && !btn_menu.hidden){",
             "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"titleScreen\")",
             "    }",
             "",
-            "    else if(isClicked(btn_nextLevel)){",
+            "    else if(isClicked(btn_nextLevel) && !btn_nextLevel.hidden){",
             "        console.log(\"Proxima fase\"); // placeholder",
             "    }",
             "}"
@@ -4369,6 +4624,65 @@
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// functions",
+            "const fade = (obj, speed, way) => {",
+            "    if(way == \"out\")",
+            "        if(obj.opacity != 0)",
+            "            obj.setOpacity(obj.opacity - speed)",
+            "    if(way == \"in\")",
+            "        if(obj.opacity != 255)",
+            "            obj.setOpacity(obj.opacity + speed)",
+            "}",
+            "",
+            "",
+            "// setup",
+            "const btn_menu       = runtimeScene.getObjects(\"btn\")[0];",
+            "const btn_nextLevel  = runtimeScene.getObjects(\"btn\")[1];",
+            "const acertoLabels   = runtimeScene.getObjects(\"acertoLabel\");",
+            "const acertosScore   = runtimeScene.getObjects(\"acertos\");",
+            "const pontuacoes     = runtimeScene.getObjects(\"score\");",
+            "const pontuacaoLabels = runtimeScene.getObjects(\"scoreLabel\");",
+            "",
+            "let interacoes = 0;",
+            "",
+            "",
+            "// code",
+            "if(runtimeScene.getTimeManager().isFirstFrame()){",
+            "    btn_menu.hide(true);",
+            "    btn_nextLevel.hide(true);",
+            "    acertoLabels.forEach(label => label.hide(true));",
+            "    acertosScore.forEach(score => score.hide(true));",
+            "    pontuacoes.forEach(pontuacao => pontuacao.hide(true));",
+            "    pontuacaoLabels.forEach(label => label.hide(true));",
+            "",
+            "    runtimeScene.getTimeManager().addTimer(\"revelaPontuacao\");",
+            "}",
+            "",
+            "",
+            "if(interacoes == 0 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 1500){",
+            "    interacoes++;",
+            "    acertoLabels.forEach(label => label.hide(false));",
+            "    acertosScore.forEach(score => score.hide(false));",
+            "}",
+            "",
+            "if(interacoes == 1 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 3500){",
+            "    interacoes++;",
+            "    pontuacoes.forEach(pontuacao => pontuacao.hide(false));",
+            "    pontuacaoLabels.forEach(label => label.hide(false));",
+            "}",
+            "",
+            "if(interacoes == 2 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 6000){",
+            "    btn_menu.hide(false);",
+            "    btn_nextLevel.hide(false);",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
         }
       ],
       "layers": [
@@ -4397,6 +4711,22 @@
               "width": 0
             }
           ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "fade",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
           "effects": []
         }
       ],
