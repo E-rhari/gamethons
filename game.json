@@ -489,6 +489,83 @@
         "name": "assets\\logo.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite3.png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/aviso.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/aviso.png\"}",
+        "name": "aviso",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/aviso2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/aviso2.png\"}",
+        "name": "aviso2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tap2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "tap2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/inicio.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/inicio.png\"}",
+        "name": "inicio",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/inicio.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\inicio.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/inicio2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "inicio2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Vermin Vibes 1989.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\Vermin Vibes 1989.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "assets/Kenney Pixel Square.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\Kenney Pixel Square.ttf",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -923,8 +1000,8 @@
           "name": "gameCenter",
           "persistentUuid": "fdd0cef1-1048-46be-a28d-03b29b9cb49b",
           "width": 0,
-          "x": 960,
-          "y": 544,
+          "x": 1952,
+          "y": -288,
           "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
@@ -942,6 +1019,22 @@
           "x": -544,
           "y": -288,
           "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 128,
+          "layer": "",
+          "name": "avisoSemCarga",
+          "persistentUuid": "c92aea92-0e21-4e2d-8f5a-827d7d5c9ed2",
+          "width": 128,
+          "x": 1008,
+          "y": 973,
+          "zOrder": 24,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1206,25 +1299,58 @@
         },
         {
           "assetStoreId": "",
-          "bold": true,
-          "italic": true,
-          "name": "performance",
-          "smoothed": true,
+          "name": "inicio",
           "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "folded": true,
+              "name": "hittable",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
-          "behaviors": [],
-          "string": "",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 50,
-          "color": {
-            "b": 68,
-            "g": 0,
-            "r": 255
-          }
+          "behaviors": [
+            {
+              "name": "DestruirFora",
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 20
+            }
+          ],
+          "animations": [
+            {
+              "name": "inicio",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "inicio2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 32,
+                        "y": 32
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "assetStoreId": "3d6c54e76a9a06cbd7629c1e78388d4ab808bbf36d644c61d6a14c9ad34d4f89",
@@ -1294,6 +1420,72 @@
           }
         },
         {
+          "assetStoreId": "3d6c54e76a9a06cbd7629c1e78388d4ab808bbf36d644c61d6a14c9ad34d4f89",
+          "name": "sustentabilidade",
+          "tags": "",
+          "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "PreviousHighValueDuration": 0,
+            "ShowLabel": false,
+            "BarTopPadding": 4,
+            "BarBottomPadding": 6,
+            "BarLeftPadding": 4,
+            "BarRightPadding": 4,
+            "MaxValue": 100,
+            "InitialValue": 50
+          },
+          "childrenContent": {
+            "Background": {
+              "bottomMargin": 6,
+              "height": 34,
+              "leftMargin": 4,
+              "rightMargin": 4,
+              "texture": "Flat Bar White Border.png",
+              "tiled": true,
+              "topMargin": 6,
+              "width": 224
+            },
+            "Buffer": {
+              "bottomMargin": 0,
+              "height": 24,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "Flat Bar Red Fill Bar.png",
+              "tiled": true,
+              "topMargin": 0,
+              "width": 24
+            },
+            "FillBar": {
+              "bottomMargin": 0,
+              "height": 24,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "assets\\NewSprite2.png",
+              "tiled": true,
+              "topMargin": 0,
+              "width": 24
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "8 / 16",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 16,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            }
+          }
+        },
+        {
           "assetStoreId": "",
           "name": "cidade",
           "tags": "",
@@ -1333,34 +1525,6 @@
               ]
             }
           ]
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "frameRate",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "FPSDisplayer",
-              "type": "FPS::FPSDisplayer",
-              "prefix": ""
-            }
-          ],
-          "string": "Frame:",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 50,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
         },
         {
           "assetStoreId": "0a398f1656e34f64758c909a71ca17cd69fd41bd251d89ff5a640303c4279f50",
@@ -1469,69 +1633,112 @@
           }
         },
         {
-          "assetStoreId": "3d6c54e76a9a06cbd7629c1e78388d4ab808bbf36d644c61d6a14c9ad34d4f89",
-          "name": "sustentabilidade",
+          "assetStoreId": "",
+          "name": "avisoSemCarga",
           "tags": "",
-          "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "content": {
-            "PreviousHighValueDuration": 0,
-            "ShowLabel": false,
-            "BarTopPadding": 4,
-            "BarBottomPadding": 6,
-            "BarLeftPadding": 4,
-            "BarRightPadding": 4,
-            "MaxValue": 100,
-            "InitialValue": 50
-          },
-          "childrenContent": {
-            "Background": {
-              "bottomMargin": 6,
-              "height": 34,
-              "leftMargin": 4,
-              "rightMargin": 4,
-              "texture": "Flat Bar White Border.png",
-              "tiled": true,
-              "topMargin": 6,
-              "width": 224
-            },
-            "Buffer": {
-              "bottomMargin": 0,
-              "height": 24,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "Flat Bar Red Fill Bar.png",
-              "tiled": true,
-              "topMargin": 0,
-              "width": 24
-            },
-            "FillBar": {
-              "bottomMargin": 0,
-              "height": 24,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\NewSprite2.png",
-              "tiled": true,
-              "topMargin": 0,
-              "width": 24
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "8 / 16",
-              "font": "",
-              "textAlignment": "center",
-              "characterSize": 16,
-              "color": {
-                "b": 255,
-                "g": 255,
-                "r": 255
-              }
+          "animations": [
+            {
+              "name": "aviso",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.5,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "aviso",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 32,
+                        "y": 32
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "aviso2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 32,
+                        "y": 32
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
             }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": true,
+          "name": "performance",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 68,
+            "g": 0,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "frameRate",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "FPSDisplayer",
+              "type": "FPS::FPSDisplayer",
+              "prefix": ""
+            }
+          ],
+          "string": "Frame:",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
           }
         },
         {
@@ -1547,7 +1754,7 @@
           "effects": [],
           "behaviors": [],
           "string": "GAME OVER ",
-          "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+          "font": "assets\\Kenney Pixel Square.ttf",
           "textAlignment": "center",
           "characterSize": 200,
           "color": {
@@ -1772,9 +1979,10 @@
             "                  }",
             "}",
             "",
-            "let BotoesModo = runtimeScene.getObjects(\"botaoModo\")",
-            "let ModosNaFaseGlobal = runtimeScene.getScene().getVariables().get(\"ModosNaFase\")",
-            "const ModoCoolDown = runtimeScene.getScene().getVariables().get(\"modoCoolDown\")",
+            "let BotoesModo = runtimeScene.getObjects(\"botaoModo\");",
+            "const Aviso    = runtimeScene.getObjects(\"avisoSemCarga\")[0];",
+            "let ModosNaFaseGlobal = runtimeScene.getScene().getVariables().get(\"ModosNaFase\");",
+            "const ModoCoolDown    = runtimeScene.getScene().getVariables().get(\"modoCoolDown\");",
             "",
             "if(runtimeScene.getTimeManager().isFirstFrame()){",
             "    ModosNaFaseGlobal.addChild(\"0\", Modos.hidro);",
@@ -1794,7 +2002,6 @@
             "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFaseGlobal._children[1].efeito, false)",
             "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFaseGlobal._children[2].efeito, false)",
             "",
-            "    console.dir(runtimeScene.getLayer(\"gameOver\"))",
             "}",
             "let ModosNaFase = ModosNaFaseGlobal._children",
             "",
@@ -1848,7 +2055,13 @@
             "    ModosNaFase[2] = {...aux}",
             "",
             "    // ModoCoolDown.setBoolean(false)",
-            "}"
+            "}",
+            "",
+            "",
+            "if(ModosNaFase[0].carga > 0)",
+            "    Aviso.hide(true)",
+            "else",
+            "    Aviso.hide(false)"
           ],
           "parameterObjects": "",
           "useStrict": true,
@@ -1876,14 +2089,14 @@
             "// code",
             "Demanda -= 5;",
             "",
+            "const hitWidth = Hit.getWidth()",
             "let tappableBeats = []",
             "Taps.forEach(tap => {",
-            "    if(tap.x < Hit.x + 65){",
+            "    if(tap.x < Hit.x + hitWidth * 2){",
             "        tappableBeats.push(tap)",
-            "        // tap.deleteFromScene(tap.getInstanceContainer())",
-            "        // console.dir(tappableBeats)",
             "    }",
             "})",
+            "let hitTap = tappableBeats[0]",
             "",
             "const multiplicador = ModoAtual.producao * 300/BPM;",
             "if(runtimeScene.getGame().getInputManager().isKeyPressed(90) && HitCoolDown._bool){",
@@ -1891,60 +2104,72 @@
             "    const Acertos = runtimeScene.getGame().getVariables().get(\"acertos\")._children",
             "    const Score   = runtimeScene.getGame().getVariables().get(\"pontuacao\")._children",
             "    HitCoolDown.setBoolean(false)",
-            "    Sustentabilidade += ModoAtual.sustentabilidade",
-            "    BarraSustentabilidade.SetValue(Sustentabilidade)",
-            "    Score.sustentabilidade.setValue(Score.sustentabilidade.getValue() + ModoAtual.sustentabilidade)",
-            "    console.log(Score.sustentabilidade.getValue())",
             "",
             "    if(Taps.length != 0){",
-            "        let hitTap = tappableBeats[0]",
             "        const tapToHitDistance = hitTap.getDistanceToObject(Hit)",
-            "        const hitWidth = Hit.getWidth()",
             "        let pontos = 0;",
             "",
-            "        if(tapToHitDistance < hitWidth * 1.5){",
-            "            hitTap.deleteFromScene(hitTap.getInstanceContainer())",
-            "            for(let i = 1; i <= 2; i++){",
-            "                if(ModosNaFase[i].carga >= 100)",
-            "                    ModosNaFase[i].carga = 100",
+            "        if(ModoAtual.carga > 0){",
+            "            if(tapToHitDistance < hitWidth * 1.5){",
+            "                hitTap.deleteFromScene(hitTap.getInstanceContainer())",
+            "                Sustentabilidade += ModoAtual.sustentabilidade",
+            "                BarraSustentabilidade.SetValue(Sustentabilidade)",
+            "                Score.sustentabilidade.setValue(Score.sustentabilidade.getValue() + ModoAtual.sustentabilidade)",
+            "                for(let i = 1; i <= 2; i++){",
+            "                    if(ModosNaFase[i].carga >= 100)",
+            "                        ModosNaFase[i].carga = 100",
+            "                    else",
+            "                        ModosNaFase[i].carga += ModosNaFase[i].recargaVelocidade * 10/BPM;",
+            "                    BotoesModo[i].SetValue(ModosNaFase[i].carga)",
+            "                }",
+            "                if(ModosNaFase[0].carga <= 0)",
+            "                    ModosNaFase[0].carga = 0",
             "                else",
-            "                    ModosNaFase[i].carga += ModosNaFase[i].recargaVelocidade * 10/BPM;",
-            "                BotoesModo[i].SetValue(ModosNaFase[i].carga)",
+            "                    ModosNaFase[0].carga -= (100 - ModosNaFase[0].descargaVelocidade) * 10/BPM;",
+            "                BotoesModo[0].SetValue(ModosNaFase[0].carga)",
             "            }",
-            "            if(ModosNaFase[0].carga <= 0)",
-            "                ModosNaFase[0].carga = 0",
-            "            else",
-            "                ModosNaFase[0].carga -= (100 - ModosNaFase[0].descargaVelocidade) * 10/BPM;",
-            "            BotoesModo[0].SetValue(ModosNaFase[0].carga)",
-            "        }",
             "",
-            "        if(tapToHitDistance <= hitWidth * 0.30){",
-            "            Performance.setString(\"Eficiente!\")",
-            "            pontos = 3 * multiplicador;",
-            "            Acertos.eficiente.setValue(Acertos.eficiente.getValue() + 1);",
+            "            if(tapToHitDistance <= hitWidth * 0.30){",
+            "                Performance.setString(\"Eficiente!\")",
+            "                pontos = 3 * multiplicador;",
+            "                Acertos.eficiente.setValue(Acertos.eficiente.getValue() + 1);",
+            "            }",
+            "            else if(tapToHitDistance <= hitWidth * 0.50){",
+            "                Performance.setString(\"Ok\")",
+            "                pontos = 2 * multiplicador",
+            "                Acertos.ok.setValue(Acertos.ok.getValue() + 1)",
+            "            }",
+            "            else if(tapToHitDistance <= hitWidth * 0.75){",
+            "                Performance.setString(\"Ruim...\")",
+            "                pontos = 1 * multiplicador",
+            "                Acertos.ruim.setValue(Acertos.ruim.getValue() + 1)",
+            "            }",
+            "            else if(tapToHitDistance < hitWidth * 1.5){",
+            "                Performance.setString(\"Errou?!\")",
+            "                Acertos.errou.setValue(Acertos.errou.getValue() + 1)",
+            "            }",
+            "",
+            "            Score.producao.setValue(Score.producao.getValue() + pontos);",
+            "            Demanda += pontos;",
             "        }",
-            "        else if(tapToHitDistance <= hitWidth * 0.50){",
-            "            Performance.setString(\"Ok\")",
-            "            pontos = 2 * multiplicador",
-            "            Acertos.ok.setValue(Acertos.ok.getValue() + 1)",
+            "        else{",
+            "            Performance.setString(\"SEM CARGA!\")",
             "        }",
-            "        else if(tapToHitDistance <= hitWidth * 0.75){",
-            "            Performance.setString(\"Ruim...\")",
-            "            pontos = 1 * multiplicador",
-            "            Acertos.ruim.setValue(Acertos.ruim.getValue() + 1)",
-            "        }",
-            "        else if(tapToHitDistance < hitWidth * 1.5){",
-            "            Performance.setString(\"Errou?!\")",
-            "            Acertos.errou.setValue(Acertos.errou.getValue() + 1)",
-            "        }",
-            "        Score.producao.setValue(Score.producao.getValue() + pontos);",
-            "        Demanda += pontos;",
             "    }   ",
             "}",
             "else{",
             "    Hit.setAnimation(0)",
             "    if(runtimeScene.getGame().getInputManager().wasKeyReleased(90))",
             "        HitCoolDown.setBoolean(true)",
+            "        ",
+            "    if(Taps.length != 0){",
+            "        const tapToHitDistance = hitTap.getDistanceToObject(Hit)",
+            "        if(hitTap.x > Hit.x + hitWidth * 1.5){",
+            "            Performance.setString(\"Errou?!\")",
+            "            const Acertos = runtimeScene.getGame().getVariables().get(\"acertos\")._children",
+            "            Acertos.errou.setValue(Acertos.errou.getValue() + 1)",
+            "        }",
+            "    }",
             "}",
             "",
             "BarraDemanda.SetValue(Demanda)"
@@ -2042,7 +2267,15 @@
             "const createBeat = (time, index) => {",
             "    if(levelTimer.getTime() >= time && !Object.values(alreadyAwayArray).includes(time)){",
             "        const newBeat = createObject(\"tap\", Hit.x - 800, Hit.y, 2, \"UI\");",
-            "        newBeat.addForce(115 * 5,0,1)",
+            "        newBeat.addForce(BPM * 5, 0, 1)",
+            "        alreadyAway.addChild(index, time)",
+            "    }  ",
+            "}",
+            "",
+            "const createStartFlag = (time, index) => {",
+            "    if(levelTimer.getTime() >= time && !Object.values(alreadyAwayArray).includes(time)){",
+            "        const newBeat = createObject(\"inicio\", Hit.x - 800, Hit.y, 2, \"UI\");",
+            "        newBeat.addForce(BPM * 5, 0, 1)",
             "        alreadyAway.addChild(index, time)",
             "    }  ",
             "}",
@@ -2069,9 +2302,11 @@
             "// setup",
             "const Hit   = runtimeScene.getObjects(\"hit\")[0];",
             "let Tap     = runtimeScene.getObjects(\"tap\")[0];",
+            "const StartFlag = runtimeScene.getObjects(\"inicio\")[0];",
             "",
             "const volume            = runtimeScene.getGame().getVariables().get(\"volume\")._children;",
             "",
+            "const BPM = runtimeScene.getScene().getVariables().get(\"BPM\").getValue();",
             "const hasLevelStarted   = runtimeScene.getScene().getVariables().get(\"hasLevelStarted\");",
             "const alreadyAway       = runtimeScene.getScene().getVariables().get(\"alreadyAway\");",
             "let alreadyAwayArray    = alreadyAway._children;",
@@ -2088,7 +2323,8 @@
             "}",
             "const levelTimer = runtimeScene.getTimeManager().getTimer(\"levelTimer\");",
             "",
-            "if(!hasLevelStarted._bool && Tap && Tap.getDistanceToObject(Hit) <= Hit.getWidth() * 0.1){ ",
+            "",
+            "if(!hasLevelStarted._bool && StartFlag && StartFlag.getDistanceToObject(Hit) <= Hit.getWidth() * 0.2){ ",
             "    hasLevelStarted.setBoolean(true)",
             "    runtimeScene.getGame().getSoundManager().playMusicOnChannel(\"assets\\\\musicas\\\\asgoreTheme.mp3\", 0, false, volume.musica._value * 100, 1)",
             "}",
@@ -2108,7 +2344,7 @@
             "/////////////////////",
             "////////LEVEL////////",
             "/////////////////////",
-            "createBeat(0, 0)",
+            "createStartFlag(0, 0)",
             "createBeat(299, 1)",
             "createBeat(702, 2)",
             "createBeat(967, 3)",
@@ -2640,6 +2876,7 @@
             "",
             "// setup",
             "    const gameCenter = runtimeScene.getObjects(\"gameCenter\")[0];",
+            "    const Aviso      = runtimeScene.getObjects(\"avisoSemCarga\")[0];",
             "    let BotoesModo = runtimeScene.getObjects(\"botaoModo\")",
             "    gameCenter.hide(true);",
             "",
@@ -2652,7 +2889,10 @@
             "    cameraBase.setCameraX(gameCenter.x, 0);",
             "    const ui = runtimeScene.getLayer(\"UI\");",
             "    ui.setCameraX(gameCenter.x, 0);",
-            "    console.log(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)/2, ui, cameraBase)",
+            "",
+            "    Aviso.setPosition(BotoesModo[0].x + Aviso.getWidth(), Aviso.y)",
+            "    // setToMiddleScreenX(Aviso)",
+            "    // console.log(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)/2, ui, cameraBase)",
             "",
             "    // const BarraDemanda          = runtimeScene.getObjects(\"demanda\")[0];",
             "    // BotoesModo[0].setPosition(BarraDemanda.x, BotoesModo[0].y)",
@@ -2692,36 +2932,7 @@
               "width": 0
             }
           ],
-          "effects": [
-            {
-              "effectType": "",
-              "name": "Effect",
-              "doubleParameters": {},
-              "stringParameters": {},
-              "booleanParameters": {}
-            },
-            {
-              "effectType": "CRT",
-              "name": "CRT",
-              "doubleParameters": {
-                "animationFrequency": 0,
-                "animationSpeed": 0.5,
-                "curvature": 1,
-                "lineContrast": 0.5,
-                "lineWidth": 2,
-                "noise": 0.3,
-                "noiseSize": 0,
-                "padding": 0,
-                "vignetting": 0,
-                "vignettingAlpha": 1,
-                "vignettingBlur": 0.3
-              },
-              "stringParameters": {},
-              "booleanParameters": {
-                "verticalLine": false
-              }
-            }
-          ]
+          "effects": []
         },
         {
           "ambientLightColorB": 200,
@@ -2776,27 +2987,6 @@
               "booleanParameters": {
                 "nearest": false
               }
-            },
-            {
-              "effectType": "CRT",
-              "name": "CRT",
-              "doubleParameters": {
-                "animationFrequency": 0,
-                "animationSpeed": 0.5,
-                "curvature": 1,
-                "lineContrast": 0.5,
-                "lineWidth": 2,
-                "noise": 0.3,
-                "noiseSize": 0,
-                "padding": 0,
-                "vignetting": 0,
-                "vignettingAlpha": 1,
-                "vignettingBlur": 0.3
-              },
-              "stringParameters": {},
-              "booleanParameters": {
-                "verticalLine": false
-              }
             }
           ]
         },
@@ -2814,29 +3004,7 @@
           "renderingType": "",
           "visibility": false,
           "cameras": [],
-          "effects": [
-            {
-              "effectType": "CRT",
-              "name": "CRT",
-              "doubleParameters": {
-                "animationFrequency": 0,
-                "animationSpeed": 0.5,
-                "curvature": 1,
-                "lineContrast": 0.5,
-                "lineWidth": 2,
-                "noise": 0.3,
-                "noiseSize": 0,
-                "padding": 0,
-                "vignetting": 0,
-                "vignettingAlpha": 1,
-                "vignettingBlur": 0.3
-              },
-              "stringParameters": {},
-              "booleanParameters": {
-                "verticalLine": false
-              }
-            }
-          ]
+          "effects": []
         },
         {
           "ambientLightColorB": 200,
@@ -4623,7 +4791,7 @@
           ],
           "parameterObjects": "",
           "useStrict": true,
-          "eventsSheetExpanded": false
+          "eventsSheetExpanded": true
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
