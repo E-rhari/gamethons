@@ -4015,7 +4015,7 @@
           ],
           "parameterObjects": "",
           "useStrict": true,
-          "eventsSheetExpanded": false
+          "eventsSheetExpanded": true
         },
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -4189,10 +4189,8 @@
             "}",
             "",
             "if(runtimeScene.getGame().getInputManager().isMouseButtonPressed(0) && runtimeScene.getOnceTriggers().triggerOnce()){",
-            "    if(isClicked(btn_levels[0])){",
-            "            runtimeScene.getLayer(\"levelSelection\").show(false)",
-            "            runtimeScene.getLayer(\"Camada Base\").show(true)",
-            "        }",
+            "    if(isClicked(btn_levels[0]))",
+            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"base\")",
             "",
             "    else if(isClicked(btn_levels[1]))",
             "        console.log(\"level2\") // placeholder",
