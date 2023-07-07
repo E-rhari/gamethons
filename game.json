@@ -517,7 +517,844 @@
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "assetStoreId": "0a398f1656e34f64758c909a71ca17cd69fd41bd251d89ff5a640303c4279f50",
+      "name": "botaoModo",
+      "tags": "",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "ColorMap",
+          "name": "corHidro",
+          "doubleParameters": {
+            "mix": 100
+          },
+          "stringParameters": {
+            "colorMapTexture": "assets\\paletasDeCores\\Hidro.png"
+          },
+          "booleanParameters": {
+            "nearest": false
+          }
+        },
+        {
+          "effectType": "ColorMap",
+          "name": "corTermo",
+          "doubleParameters": {
+            "mix": 100
+          },
+          "stringParameters": {
+            "colorMapTexture": "assets\\paletasDeCores\\Termo.png"
+          },
+          "booleanParameters": {
+            "nearest": false
+          }
+        },
+        {
+          "effectType": "ColorMap",
+          "name": "corEolica",
+          "doubleParameters": {
+            "mix": 100
+          },
+          "stringParameters": {
+            "colorMapTexture": "assets\\paletasDeCores\\Eolica.jpg"
+          },
+          "booleanParameters": {
+            "nearest": false
+          }
+        }
+      ],
+      "behaviors": [],
+      "content": {
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": false,
+        "BarTopPadding": 4,
+        "BarBottomPadding": 6,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "MaxValue": 100,
+        "InitialValue": 50
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 6,
+          "height": 34,
+          "leftMargin": 4,
+          "rightMargin": 4,
+          "texture": "Flat Bar White Border.png2",
+          "tiled": true,
+          "topMargin": 6,
+          "width": 224
+        },
+        "Buffer": {
+          "bottomMargin": 0,
+          "height": 24,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Flat Bar Blue Fill Bar.png",
+          "tiled": true,
+          "topMargin": 0,
+          "width": 24
+        },
+        "FillBar": {
+          "bottomMargin": 0,
+          "height": 24,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Flat Bar Blue Fill Bar.png2",
+          "tiled": true,
+          "topMargin": 0,
+          "width": 24
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 16,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "hit",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "standard",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "standard",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 32,
+                    "y": 32
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ],
+                    [
+                      {
+                        "x": 27,
+                        "y": 0
+                      },
+                      {
+                        "x": 37,
+                        "y": 0
+                      },
+                      {
+                        "x": 37,
+                        "y": 64
+                      },
+                      {
+                        "x": 27,
+                        "y": 64
+                      }
+                    ],
+                    [
+                      {
+                        "x": 12,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 1
+                      },
+                      {
+                        "x": 52,
+                        "y": 64
+                      },
+                      {
+                        "x": 12,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pressed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "pressed2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 32,
+                    "y": 32
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ],
+                    [
+                      {
+                        "x": 27,
+                        "y": 0
+                      },
+                      {
+                        "x": 37,
+                        "y": 0
+                      },
+                      {
+                        "x": 37,
+                        "y": 64
+                      },
+                      {
+                        "x": 27,
+                        "y": 64
+                      }
+                    ],
+                    [
+                      {
+                        "x": 12,
+                        "y": 0
+                      },
+                      {
+                        "x": 52,
+                        "y": 1
+                      },
+                      {
+                        "x": 52,
+                        "y": 64
+                      },
+                      {
+                        "x": 12,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "tap",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "hittable",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "DestruirFora",
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 20
+        }
+      ],
+      "animations": [
+        {
+          "name": "tap",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tap",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 32,
+                    "y": 32
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14,
+                        "y": 0
+                      },
+                      {
+                        "x": 50,
+                        "y": 0
+                      },
+                      {
+                        "x": 50,
+                        "y": 64
+                      },
+                      {
+                        "x": 14,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "inicio",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "hittable",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "DestruirFora",
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 20
+        }
+      ],
+      "animations": [
+        {
+          "name": "inicio",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\inicio.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 32,
+                    "y": 32
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "3d6c54e76a9a06cbd7629c1e78388d4ab808bbf36d644c61d6a14c9ad34d4f89",
+      "name": "demanda",
+      "tags": "",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": false,
+        "BarTopPadding": 4,
+        "BarBottomPadding": 6,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "MaxValue": 1000,
+        "InitialValue": 1000,
+        "EasingDuration": 0
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 6,
+          "height": 34,
+          "leftMargin": 4,
+          "rightMargin": 4,
+          "texture": "Flat Bar White Border.png",
+          "tiled": true,
+          "topMargin": 6,
+          "width": 224
+        },
+        "Buffer": {
+          "bottomMargin": 0,
+          "height": 24,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Flat Bar Red Fill Bar.png2",
+          "tiled": true,
+          "topMargin": 0,
+          "width": 24
+        },
+        "FillBar": {
+          "bottomMargin": 0,
+          "height": 24,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Flat Bar Red Fill Bar.png",
+          "tiled": true,
+          "topMargin": 0,
+          "width": 24
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "8 / 16",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 16,
+          "color": {
+            "b": 205,
+            "g": 205,
+            "r": 227
+          }
+        }
+      }
+    },
+    {
+      "assetStoreId": "3d6c54e76a9a06cbd7629c1e78388d4ab808bbf36d644c61d6a14c9ad34d4f89",
+      "name": "sustentabilidade",
+      "tags": "",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": false,
+        "BarTopPadding": 4,
+        "BarBottomPadding": 6,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "MaxValue": 1000,
+        "InitialValue": 500
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 6,
+          "height": 34,
+          "leftMargin": 4,
+          "rightMargin": 4,
+          "texture": "Flat Bar White Border.png",
+          "tiled": true,
+          "topMargin": 6,
+          "width": 224
+        },
+        "Buffer": {
+          "bottomMargin": 0,
+          "height": 24,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Flat Bar Red Fill Bar.png",
+          "tiled": true,
+          "topMargin": 0,
+          "width": 24
+        },
+        "FillBar": {
+          "bottomMargin": 0,
+          "height": 24,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\NewSprite2.png",
+          "tiled": true,
+          "topMargin": 0,
+          "width": 24
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "8 / 16",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 16,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "cidade",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\cidade.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "avisoSemCarga",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "aviso",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.5,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "aviso",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 32,
+                    "y": 32
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "aviso2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 32,
+                    "y": 32
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": true,
+      "name": "performance",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 50,
+      "color": {
+        "b": 68,
+        "g": 0,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": true,
+      "name": "gameOver",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "GAME OVER ",
+      "font": "assets\\Kenney Pixel Square.ttf",
+      "textAlignment": "center",
+      "characterSize": 200,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "motivoDaPerda",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "[Motivo da Perda]",
+      "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+      "textAlignment": "center",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "btn_mainMenu",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Menu Principal",
+      "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+      "textAlignment": "center",
+      "characterSize": 50,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "btn_exit",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Sair",
+      "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+      "textAlignment": "center",
+      "characterSize": 50,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "btn_recomecar",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Recomeçar",
+      "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+      "textAlignment": "center",
+      "characterSize": 50,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "fundoGameOver",
+      "tags": "",
+      "texture": "New image",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "name": "gameCenter",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "gameCenter",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "gameCenter",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 32,
+                    "y": 32
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "objectsGroups": [],
   "variables": [
     {
@@ -636,7 +1473,7 @@
       "title": "",
       "v": 209,
       "uiSettings": {
-        "grid": false,
+        "grid": true,
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
@@ -644,8 +1481,8 @@
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.6406912462476497,
+        "snap": true,
+        "zoomFactor": 0.35312094722640874,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -854,8 +1691,8 @@
           "name": "btn_menu",
           "persistentUuid": "ba6b6bd1-2a0c-433a-91cd-584f01ce4799",
           "width": 0,
-          "x": 73,
-          "y": 999,
+          "x": 864,
+          "y": 832,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -995,6 +1832,37 @@
           "x": 1271,
           "y": 218,
           "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "creditos",
+          "name": "btn_menu",
+          "persistentUuid": "bd2a0344-6e46-46de-8865-735b880cc85d",
+          "width": 0,
+          "x": 862,
+          "y": 864,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 168,
+          "layer": "creditos",
+          "name": "creditos",
+          "persistentUuid": "28ef921a-fcfb-4240-83d6-cba68cc1474e",
+          "width": 1856,
+          "x": 25,
+          "y": 47,
+          "zOrder": 26,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1476,6 +2344,25 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "assetStoreId": "",
+          "name": "creditos",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "[size=100][b]Enlightening Game Orchestra[/b][/size]\n\n\n\n[b]Programação[/b]_____________Evandro Rhari\n\n[b]Gráficos[/b]________________Gaspar G. Vieira\n\n[b]Composição Sonora[/b]_______Gaspar G. Vieira\n\n[b]Professor auxiliador[/b]_Anderson Fernandes\n\n[b]Auxiliador da ONS[/b]____________Elvis Galiza",
+            "opacity": 255,
+            "fontSize": 40,
+            "visible": true,
+            "color": "255;255;255",
+            "fontFamily": "assets\\Kenney Pixel Square.ttf",
+            "align": "center",
+            "wordWrap": true
+          }
         }
       ],
       "events": [
@@ -1596,9 +2483,10 @@
             "        runtimeScene.getLayer(\"levelSelection\").show(true);",
             "    }",
             "",
-            "    else if(isClicked(btn_creditos))",
-            "        console.log(\"crêditos\") // placeholder",
-            "",
+            "    else if(isClicked(btn_creditos)){",
+            "        runtimeScene.getLayer(\"Camada Base\").show(false);",
+            "        runtimeScene.getLayer(\"creditos\").show(true);",
+            "    }",
             "    else if(isClicked(btn_configuracoes)){",
             "        runtimeScene.getLayer(\"Camada Base\").show(false);",
             "        runtimeScene.getLayer(\"config\").show(true);",
@@ -1802,7 +2690,7 @@
           ],
           "parameterObjects": "",
           "useStrict": true,
-          "eventsSheetExpanded": false
+          "eventsSheetExpanded": true
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
@@ -1837,6 +2725,53 @@
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "creditos"
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// functions",
+            "const getMiddleScreenX   = obj => gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)/2  - obj.getWidth()/2;",
+            "const setToMiddleScreenX = obj => obj.setPosition(getMiddleScreenX(obj), obj.y, 1) ",
+            "",
+            "const isClicked = obj => {",
+            "    if(obj.isCollidingWithPoint(runtimeScene.getGame().getInputManager().getMouseX(), runtimeScene.getGame().getInputManager().getMouseY()))",
+            "        return true;",
+            "    else",
+            "        return false;",
+            "}",
+            "",
+            "// setup[0];",
+            "const creditos = runtimeScene.getObjects(\"creditos\")[0];",
+            "const btn_menu = runtimeScene.getObjects(\"btn_menu\")[1];",
+            "",
+            "const toCentralize = [btn_menu, creditos]",
+            "",
+            "",
+            "//code",
+            "toCentralize.forEach(obj => setToMiddleScreenX(obj));",
+            "",
+            "if(runtimeScene.getGame().getInputManager().isMouseButtonPressed(0) && runtimeScene.getOnceTriggers().triggerOnce()){",
+            "    if(isClicked(btn_menu)){",
+            "        runtimeScene.getLayer(\"creditos\").show(false);",
+            "        runtimeScene.getLayer(\"Camada Base\").show(true);",
+            "    }",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
         }
       ],
       "layers": [
@@ -1910,6 +2845,22 @@
           "isLightingLayer": false,
           "isLocked": false,
           "name": "fade",
+          "renderingType": "",
+          "visibility": false,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "creditos",
           "renderingType": "",
           "visibility": false,
           "cameras": [],
@@ -4882,7 +5833,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.122956213107855,
+        "zoomFactor": 0.1956110053676938,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -4986,21 +5937,6 @@
           "x": 1568,
           "y": 208,
           "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "frameRate",
-          "persistentUuid": "77a848a5-34f1-448f-9c81-64790b489a3b",
-          "width": 0,
-          "x": 7,
-          "y": 8,
-          "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5224,872 +6160,7 @@
           "initialVariables": []
         }
       ],
-      "objects": [
-        {
-          "assetStoreId": "",
-          "name": "hit",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "standard",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "standard",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 32,
-                        "y": 32
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 0,
-                            "y": 64
-                          }
-                        ],
-                        [
-                          {
-                            "x": 27,
-                            "y": 0
-                          },
-                          {
-                            "x": 37,
-                            "y": 0
-                          },
-                          {
-                            "x": 37,
-                            "y": 64
-                          },
-                          {
-                            "x": 27,
-                            "y": 64
-                          }
-                        ],
-                        [
-                          {
-                            "x": 12,
-                            "y": 0
-                          },
-                          {
-                            "x": 52,
-                            "y": 1
-                          },
-                          {
-                            "x": 52,
-                            "y": 64
-                          },
-                          {
-                            "x": 12,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "pressed",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "pressed2",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 32,
-                        "y": 32
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 0,
-                            "y": 64
-                          }
-                        ],
-                        [
-                          {
-                            "x": 27,
-                            "y": 0
-                          },
-                          {
-                            "x": 37,
-                            "y": 0
-                          },
-                          {
-                            "x": 37,
-                            "y": 64
-                          },
-                          {
-                            "x": 27,
-                            "y": 64
-                          }
-                        ],
-                        [
-                          {
-                            "x": 12,
-                            "y": 0
-                          },
-                          {
-                            "x": 52,
-                            "y": 1
-                          },
-                          {
-                            "x": 52,
-                            "y": 64
-                          },
-                          {
-                            "x": 12,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "name": "tap",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "folded": true,
-              "name": "hittable",
-              "type": "boolean",
-              "value": false
-            }
-          ],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "DestruirFora",
-              "type": "DestroyOutsideBehavior::DestroyOutside",
-              "extraBorder": 20
-            }
-          ],
-          "animations": [
-            {
-              "name": "tap",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "tap",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 32,
-                        "y": 32
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 14,
-                            "y": 0
-                          },
-                          {
-                            "x": 50,
-                            "y": 0
-                          },
-                          {
-                            "x": 50,
-                            "y": 64
-                          },
-                          {
-                            "x": 14,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "name": "inicio",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "folded": true,
-              "name": "hittable",
-              "type": "boolean",
-              "value": false
-            }
-          ],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "DestruirFora",
-              "type": "DestroyOutsideBehavior::DestroyOutside",
-              "extraBorder": 20
-            }
-          ],
-          "animations": [
-            {
-              "name": "inicio",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets\\inicio.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 32,
-                        "y": 32
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "3d6c54e76a9a06cbd7629c1e78388d4ab808bbf36d644c61d6a14c9ad34d4f89",
-          "name": "demanda",
-          "tags": "",
-          "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "PreviousHighValueDuration": 0,
-            "ShowLabel": false,
-            "BarTopPadding": 4,
-            "BarBottomPadding": 6,
-            "BarLeftPadding": 4,
-            "BarRightPadding": 4,
-            "MaxValue": 1000,
-            "InitialValue": 1000,
-            "EasingDuration": 0
-          },
-          "childrenContent": {
-            "Background": {
-              "bottomMargin": 6,
-              "height": 34,
-              "leftMargin": 4,
-              "rightMargin": 4,
-              "texture": "Flat Bar White Border.png",
-              "tiled": true,
-              "topMargin": 6,
-              "width": 224
-            },
-            "Buffer": {
-              "bottomMargin": 0,
-              "height": 24,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "Flat Bar Red Fill Bar.png2",
-              "tiled": true,
-              "topMargin": 0,
-              "width": 24
-            },
-            "FillBar": {
-              "bottomMargin": 0,
-              "height": 24,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "Flat Bar Red Fill Bar.png",
-              "tiled": true,
-              "topMargin": 0,
-              "width": 24
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "8 / 16",
-              "font": "",
-              "textAlignment": "center",
-              "characterSize": 16,
-              "color": {
-                "b": 205,
-                "g": 205,
-                "r": 227
-              }
-            }
-          }
-        },
-        {
-          "assetStoreId": "3d6c54e76a9a06cbd7629c1e78388d4ab808bbf36d644c61d6a14c9ad34d4f89",
-          "name": "sustentabilidade",
-          "tags": "",
-          "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "PreviousHighValueDuration": 0,
-            "ShowLabel": false,
-            "BarTopPadding": 4,
-            "BarBottomPadding": 6,
-            "BarLeftPadding": 4,
-            "BarRightPadding": 4,
-            "MaxValue": 1000,
-            "InitialValue": 500
-          },
-          "childrenContent": {
-            "Background": {
-              "bottomMargin": 6,
-              "height": 34,
-              "leftMargin": 4,
-              "rightMargin": 4,
-              "texture": "Flat Bar White Border.png",
-              "tiled": true,
-              "topMargin": 6,
-              "width": 224
-            },
-            "Buffer": {
-              "bottomMargin": 0,
-              "height": 24,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "Flat Bar Red Fill Bar.png",
-              "tiled": true,
-              "topMargin": 0,
-              "width": 24
-            },
-            "FillBar": {
-              "bottomMargin": 0,
-              "height": 24,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "assets\\NewSprite2.png",
-              "tiled": true,
-              "topMargin": 0,
-              "width": 24
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "8 / 16",
-              "font": "",
-              "textAlignment": "center",
-              "characterSize": 16,
-              "color": {
-                "b": 255,
-                "g": 255,
-                "r": 255
-              }
-            }
-          }
-        },
-        {
-          "assetStoreId": "",
-          "name": "cidade",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets\\cidade.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "0a398f1656e34f64758c909a71ca17cd69fd41bd251d89ff5a640303c4279f50",
-          "name": "botaoModo",
-          "tags": "",
-          "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-          "variables": [],
-          "effects": [
-            {
-              "effectType": "ColorMap",
-              "name": "corHidro",
-              "doubleParameters": {
-                "mix": 100
-              },
-              "stringParameters": {
-                "colorMapTexture": "assets\\paletasDeCores\\Hidro.png"
-              },
-              "booleanParameters": {
-                "nearest": false
-              }
-            },
-            {
-              "effectType": "ColorMap",
-              "name": "corTermo",
-              "doubleParameters": {
-                "mix": 100
-              },
-              "stringParameters": {
-                "colorMapTexture": "assets\\paletasDeCores\\Termo.png"
-              },
-              "booleanParameters": {
-                "nearest": false
-              }
-            },
-            {
-              "effectType": "ColorMap",
-              "name": "corEolica",
-              "doubleParameters": {
-                "mix": 100
-              },
-              "stringParameters": {
-                "colorMapTexture": "assets\\paletasDeCores\\Eolica.jpg"
-              },
-              "booleanParameters": {
-                "nearest": false
-              }
-            }
-          ],
-          "behaviors": [],
-          "content": {
-            "PreviousHighValueDuration": 0,
-            "ShowLabel": false,
-            "BarTopPadding": 4,
-            "BarBottomPadding": 6,
-            "BarLeftPadding": 4,
-            "BarRightPadding": 4,
-            "MaxValue": 100,
-            "InitialValue": 50
-          },
-          "childrenContent": {
-            "Background": {
-              "bottomMargin": 6,
-              "height": 34,
-              "leftMargin": 4,
-              "rightMargin": 4,
-              "texture": "Flat Bar White Border.png2",
-              "tiled": true,
-              "topMargin": 6,
-              "width": 224
-            },
-            "Buffer": {
-              "bottomMargin": 0,
-              "height": 24,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "Flat Bar Blue Fill Bar.png",
-              "tiled": true,
-              "topMargin": 0,
-              "width": 24
-            },
-            "FillBar": {
-              "bottomMargin": 0,
-              "height": 24,
-              "leftMargin": 0,
-              "rightMargin": 0,
-              "texture": "Flat Bar Blue Fill Bar.png2",
-              "tiled": true,
-              "topMargin": 0,
-              "width": 24
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "",
-              "font": "",
-              "textAlignment": "center",
-              "characterSize": 16,
-              "color": {
-                "b": 255,
-                "g": 255,
-                "r": 255
-              }
-            }
-          }
-        },
-        {
-          "assetStoreId": "",
-          "name": "avisoSemCarga",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "aviso",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.5,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "aviso",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 32,
-                        "y": 32
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "aviso2",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 32,
-                        "y": 32
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "bold": true,
-          "italic": true,
-          "name": "performance",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 50,
-          "color": {
-            "b": 68,
-            "g": 0,
-            "r": 255
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "frameRate",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "FPSDisplayer",
-              "type": "FPS::FPSDisplayer",
-              "prefix": ""
-            }
-          ],
-          "string": "Frame:",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 50,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": true,
-          "italic": true,
-          "name": "gameOver",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "GAME OVER ",
-          "font": "assets\\Kenney Pixel Square.ttf",
-          "textAlignment": "center",
-          "characterSize": 200,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "motivoDaPerda",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "[Motivo da Perda]",
-          "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
-          "textAlignment": "center",
-          "characterSize": 30,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "btn_mainMenu",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Menu Principal",
-          "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
-          "textAlignment": "center",
-          "characterSize": 50,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "btn_exit",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Sair",
-          "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
-          "textAlignment": "center",
-          "characterSize": 50,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "btn_recomecar",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Recomeçar",
-          "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
-          "textAlignment": "center",
-          "characterSize": 50,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "fundoGameOver",
-          "tags": "",
-          "texture": "New image",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
-        {
-          "assetStoreId": "",
-          "name": "gameCenter",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "gameCenter",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "gameCenter",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 32,
-                        "y": 32
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
+      "objects": [],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -6386,7 +6457,6 @@
             "// setup",
             "const Hit = runtimeScene.getObjects(\"hit\")[0];",
             "let Taps = runtimeScene.getObjects(\"tap\");",
-            "const FrameRate = runtimeScene.getObjects(\"frameRate\")[0]._str",
             "const BPM = runtimeScene.getScene().getVariables().get(\"BPM\").getValue();",
             "const BEAT_TEMPO = (1 / (BPM / 60) * 1000)",
             "",
@@ -7351,7 +7421,7 @@
           ],
           "parameterObjects": "",
           "useStrict": true,
-          "eventsSheetExpanded": false
+          "eventsSheetExpanded": true
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
@@ -7488,7 +7558,6 @@
             "// setup",
             "const Hit = runtimeScene.getObjects(\"hit\")[0];",
             "let Taps = runtimeScene.getObjects(\"tap\");",
-            "const FrameRate = runtimeScene.getObjects(\"frameRate\")[0]._str",
             "const BPM = runtimeScene.getScene().getVariables().get(\"BPM\").getValue();",
             "const BEAT_TEMPO = (1 / (BPM / 60) * 1000)",
             "",
@@ -14718,21 +14787,6 @@
           "x": 1570,
           "y": 193,
           "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "frameRate",
-          "persistentUuid": "1a23fb85-6b72-4095-a8c0-5a56c3c87f00",
-          "width": 0,
-          "x": 9,
-          "y": -7,
-          "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
