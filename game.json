@@ -275,7 +275,7 @@
         "alwaysLoaded": false,
         "file": "assets/Flat Bar Blue Fill Bar.png2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/Flat Bar Blue Fill Bar.png2.png\"}",
         "name": "Flat Bar Blue Fill Bar.png2",
         "smoothed": false,
         "userAdded": true
@@ -513,6 +513,169 @@
         "name": "aviso2",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/spr_omse.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/spr_omse.png\",\"extension\":\".png\"}",
+        "name": "assets\\spr_omse.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/spr_omse_standard.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/spr_omse_standard.png\",\"extension\":\".png\"}",
+        "name": "assets\\spr_omse_standard.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/standard2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "standard2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/standard3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/standard3.png\"}",
+        "name": "standard3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/spr_omse_ativo.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/spr_omse_ativo.png\",\"extension\":\".png\"}",
+        "name": "assets\\spr_omse_ativo.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/pressed3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "pressed3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/spr_beat16x16cor.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/spr_beat16x16cor.png\",\"extension\":\".png\"}",
+        "name": "assets\\spr_beat16x16cor.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/pressed4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "pressed4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tap3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "tap2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/usinahidraulica2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/usinahidraulica2.png\",\"extension\":\".png\"}",
+        "name": "assets\\usinahidraulica2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/usinaTermoeletrica.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\usinaTermoeletrica.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/baseEolica.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\baseEolica.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/corHidro.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "corHidro",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/heliceEolica.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\heliceEolica.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_heliceEolica.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_heliceEolica.png\"}",
+        "name": "assets\\heliceEolica",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_heliceEolica2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\heliceEolica2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_heliceEolica3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\heliceEolica3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/musicas/level-02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\musicas\\level-02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -645,18 +808,18 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "standard",
+                  "image": "standard3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 32,
-                    "y": 32
+                    "x": 20,
+                    "y": 28
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 20,
+                    "y": 28
                   },
                   "customCollisionMask": [
                     [
@@ -730,18 +893,18 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "pressed2",
+                  "image": "pressed4",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 32,
-                    "y": 32
+                    "x": 20,
+                    "y": 28
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 20,
+                    "y": 28
                   },
                   "customCollisionMask": [
                     [
@@ -840,7 +1003,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "tap",
+                  "image": "tap2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1353,6 +1516,148 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "helice",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "assets\\heliceEolica",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\heliceEolica3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 13.5,
+                    "y": 14.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 40.5,
+                    "y": 43.5
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "usina",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "corHidro",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "corHidro",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "corTermo",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\usinaTermoeletrica.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "corEolica",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\baseEolica.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsGroups": [],
@@ -1413,7 +1718,6 @@
       ]
     },
     {
-      "folded": true,
       "name": "unlockedLevels",
       "type": "structure",
       "children": [
@@ -1427,7 +1731,7 @@
           "folded": true,
           "name": "level02",
           "type": "boolean",
-          "value": false
+          "value": true
         },
         {
           "folded": true,
@@ -1482,7 +1786,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.35312094722640874,
+        "zoomFactor": 0.31967914722901397,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -2673,13 +2977,14 @@
             "}",
             "",
             "if(runtimeScene.getGame().getInputManager().isMouseButtonPressed(0) && runtimeScene.getOnceTriggers().triggerOnce()){",
-            "    if(isClicked(btn_levels[0]))",
-            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"tutorial01\")",
+            "    if(isClicked(btn_levels[0]) || isClicked(imgs_levels[0]))",
+            "        console.log(\"level01\") // placeholder",
+            "        // runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"tutorial01\")",
             "",
-            "    else if(isClicked(btn_levels[1]))",
-            "        console.log(\"level2\") // placeholder",
+            "    else if(isClicked(btn_levels[1]) || isClicked(imgs_levels[1]))",
+            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"level02\")",
             "",
-            "    else if(isClicked(btn_levels[2]))",
+            "    else if(isClicked(btn_levels[2]) || isClicked(imgs_levels[2]))",
             "        console.log(\"level3\") // placeholder",
             "        ",
             "    else if(isClicked(btn_menu)){",
@@ -2889,7 +3194,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3526904934771226,
+        "zoomFactor": 0.4598521426736333,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -2903,7 +3208,7 @@
           "name": "acertoLabel",
           "persistentUuid": "f90d592e-a52c-4973-bf5a-8fd7d5560859",
           "width": 0,
-          "x": 503,
+          "x": 505,
           "y": 307,
           "zOrder": 1,
           "numberProperties": [],
@@ -2934,7 +3239,7 @@
           "name": "acertoLabel",
           "persistentUuid": "ff50cd86-374b-44cc-bcc7-cf346bccdb68",
           "width": 0,
-          "x": 506,
+          "x": 505,
           "y": 497,
           "zOrder": 3,
           "numberProperties": [],
@@ -2964,7 +3269,7 @@
           "name": "score",
           "persistentUuid": "5353d2d5-9fab-4e60-81c6-1647322215a5",
           "width": 0,
-          "x": 1101,
+          "x": 1105,
           "y": 569,
           "zOrder": 5,
           "numberProperties": [],
@@ -2979,7 +3284,7 @@
           "name": "acertoLabel",
           "persistentUuid": "3b115c8d-152e-447f-9041-c425cb27dc5b",
           "width": 0,
-          "x": 506,
+          "x": 505,
           "y": 592,
           "zOrder": 6,
           "numberProperties": [],
@@ -3009,7 +3314,7 @@
           "name": "acertos",
           "persistentUuid": "0e985472-c007-4c0b-9606-83c96b93a4fa",
           "width": 0,
-          "x": 872,
+          "x": 865,
           "y": 392,
           "zOrder": 7,
           "numberProperties": [],
@@ -3024,7 +3329,7 @@
           "name": "acertos",
           "persistentUuid": "d8bd6537-ead4-4113-8ba5-b64782361009",
           "width": 0,
-          "x": 870,
+          "x": 865,
           "y": 492,
           "zOrder": 7,
           "numberProperties": [],
@@ -3039,7 +3344,7 @@
           "name": "acertos",
           "persistentUuid": "78706d37-24e2-4002-974d-44c4326dd7e0",
           "width": 0,
-          "x": 867,
+          "x": 865,
           "y": 588,
           "zOrder": 7,
           "numberProperties": [],
@@ -3054,7 +3359,7 @@
           "name": "scoreLabel",
           "persistentUuid": "9994f7dc-fdc6-48f0-90f3-78992054b8ac",
           "width": 0,
-          "x": 1100,
+          "x": 1105,
           "y": 433,
           "zOrder": 8,
           "numberProperties": [],
@@ -3069,7 +3374,7 @@
           "name": "scoreLabel",
           "persistentUuid": "549a1cf8-a7bf-441d-88cc-69f300a2de2f",
           "width": 0,
-          "x": 1099,
+          "x": 1105,
           "y": 549,
           "zOrder": 8,
           "numberProperties": [],
@@ -3102,6 +3407,36 @@
           "x": 1116,
           "y": 874,
           "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "avaliacao",
+          "persistentUuid": "b0e99a54-a28f-4967-b6a7-19f7df7b3070",
+          "width": 0,
+          "x": 1105,
+          "y": 292,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "avaliacaoLabel",
+          "persistentUuid": "19cf0c90-a2fb-4f77-9eb8-437566ae0fda",
+          "width": 0,
+          "x": 1105,
+          "y": 274,
+          "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3217,9 +3552,116 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "avaliacao",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "[AVA]",
+          "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+          "textAlignment": "left",
+          "characterSize": 80,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "avaliacaoLabel",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "O instrutor diz:",
+          "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         }
       ],
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// functions",
+            "const fade = (obj, speed, way) => {",
+            "    if(way == \"out\")",
+            "        if(obj.opacity != 0)",
+            "            obj.setOpacity(obj.opacity - speed)",
+            "    if(way == \"in\")",
+            "        if(obj.opacity != 255)",
+            "            obj.setOpacity(obj.opacity + speed)",
+            "}",
+            "",
+            "",
+            "// setup",
+            "const btn_menu        = runtimeScene.getObjects(\"btn\")[0];",
+            "const btn_nextLevel   = runtimeScene.getObjects(\"btn\")[1];",
+            "const acertoLabels    = runtimeScene.getObjects(\"acertoLabel\");",
+            "const acertosScore    = runtimeScene.getObjects(\"acertos\");",
+            "const pontuacoes      = runtimeScene.getObjects(\"score\");",
+            "const pontuacaoLabels = runtimeScene.getObjects(\"scoreLabel\");",
+            "const avaliacao       = runtimeScene.getObjects(\"avaliacao\")[0];",
+            "const avaliacaoLabel  = runtimeScene.getObjects(\"avaliacaoLabel\")[0];",
+            "",
+            "let interacoes = 0;",
+            "",
+            "",
+            "// code",
+            "if(runtimeScene.getTimeManager().isFirstFrame()){",
+            "    btn_menu.hide(true);",
+            "    btn_nextLevel.hide(true);",
+            "    acertoLabels.forEach(label => label.hide(true));",
+            "    acertosScore.forEach(score => score.hide(true));",
+            "    pontuacoes.forEach(pontuacao => pontuacao.hide(true));",
+            "    pontuacaoLabels.forEach(label => label.hide(true));",
+            "    avaliacao.hide(true);",
+            "    avaliacaoLabel.hide(true);",
+            "",
+            "    runtimeScene.getTimeManager().addTimer(\"revelaPontuacao\");",
+            "}",
+            "",
+            "",
+            "if(interacoes == 0 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 1500){",
+            "    interacoes++;",
+            "    acertoLabels.forEach(label => label.hide(false));",
+            "    acertosScore.forEach(score => score.hide(false));",
+            "}",
+            "",
+            "if(interacoes == 1 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 3500){",
+            "    interacoes++;",
+            "    pontuacoes.forEach(pontuacao => pontuacao.hide(false));",
+            "    pontuacaoLabels.forEach(label => label.hide(false));",
+            "}",
+            "",
+            "if(interacoes == 2 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 6000){",
+            "    btn_menu.hide(false);",
+            "    btn_nextLevel.hide(false);",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        },
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
@@ -3239,6 +3681,8 @@
             "const acertosScore   = runtimeScene.getObjects(\"acertos\");",
             "const pontuacoes     = runtimeScene.getObjects(\"score\");",
             "const pontuacaoLabels = runtimeScene.getObjects(\"scoreLabel\");",
+            "const avaliacao       = runtimeScene.getObjects(\"avaliacao\")[0];",
+            "const avaliacaoLabel  = runtimeScene.getObjects(\"avaliacaoLabel\")[0];",
             "",
             "const acertos   = runtimeScene.getGame().getVariables().get(\"acertos\")._children",
             "const pontuacao = runtimeScene.getGame().getVariables().get(\"pontuacao\")._children",
@@ -3263,6 +3707,11 @@
             "",
             "    btn_menu.setString(\"Menu\");",
             "    btn_nextLevel.setString(\"Prossegir\");",
+            "",
+            "    // const totalDeBeats = Object.values(acertos).reduce((acum, tipoAcerto) => acum + tipoAcerto.getValue(), 0);",
+            "    // if((pontuacao.producao.getValue() + pontuacao.sustentabilidade)/(totalDeBeats/4))",
+            "",
+            "    // avaliacao.setString();",
             "}",
             "",
             "",
@@ -3333,7 +3782,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.16448391304937504,
+        "zoomFactor": 0.11805730185029263,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3377,12 +3826,331 @@
           "name": "isLevelRunning",
           "type": "boolean",
           "value": true
+        },
+        {
+          "folded": true,
+          "name": "nomeLevel",
+          "type": "string",
+          "value": "level01"
         }
       ],
-      "instances": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 32,
+          "height": 35,
+          "layer": "UI",
+          "name": "demanda",
+          "persistentUuid": "82f1dc36-6368-4422-99ff-8dda9ba84a9a",
+          "width": 1000,
+          "x": 490,
+          "y": 270,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "name": "performance",
+          "persistentUuid": "eb3b76a3-4d91-4409-9ab4-f0b05b836205",
+          "width": 0,
+          "x": 1290,
+          "y": 605,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 432,
+          "layer": "UI",
+          "name": "cidade",
+          "persistentUuid": "d177ebdf-b62a-477c-ba05-19ef7edcadaf",
+          "width": 864,
+          "x": 1578,
+          "y": 190,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "depth": 32,
+          "height": 226,
+          "layer": "",
+          "name": "botaoModo",
+          "persistentUuid": "e4b030fa-3e10-4666-a5dc-48d25da3bfe9",
+          "width": 224,
+          "x": 907,
+          "y": 845,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "depth": 32,
+          "height": 226,
+          "layer": "",
+          "name": "botaoModo",
+          "persistentUuid": "b2b72763-1f8f-4111-9fa5-0f2c71817fa0",
+          "width": 224,
+          "x": 11,
+          "y": 845,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 32,
+          "height": 34,
+          "layer": "",
+          "name": "sustentabilidade",
+          "persistentUuid": "24c4a369-ce7e-4bda-8754-74da6f75be78",
+          "width": 1000,
+          "x": 490,
+          "y": 334,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "depth": 32,
+          "height": 227,
+          "layer": "",
+          "name": "botaoModo",
+          "persistentUuid": "5a32b837-ea8f-4eb0-b629-b416427d50e5",
+          "width": 224,
+          "x": 1705,
+          "y": 844,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 448,
+          "layer": "UI",
+          "name": "cidade",
+          "persistentUuid": "cb9f595d-095a-4319-90a4-2dfe5ec2ea8c",
+          "width": 896,
+          "x": -406,
+          "y": 174,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "GameOver",
+          "name": "gameOver",
+          "persistentUuid": "c7c6416e-2384-446e-b042-e3dabd6f7c91",
+          "width": 0,
+          "x": 324,
+          "y": 78,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "GameOver",
+          "name": "motivoDaPerda",
+          "persistentUuid": "81fd0bd1-005d-4a66-9ca5-1db6691465ff",
+          "width": 0,
+          "x": 810,
+          "y": 398,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "GameOver",
+          "name": "btn_mainMenu",
+          "persistentUuid": "65b3fc30-5f29-4153-8e92-66fa1236a7b8",
+          "width": 0,
+          "x": 769,
+          "y": 718,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "GameOver",
+          "name": "btn_exit",
+          "persistentUuid": "ba927d0c-64f8-4eff-9cb1-f245953d3f7e",
+          "width": 0,
+          "x": 928,
+          "y": 878,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 3008,
+          "layer": "GameOver",
+          "name": "fundoGameOver",
+          "persistentUuid": "a961d766-57f4-4553-b84c-7253fb9d0e23",
+          "width": 4064,
+          "x": -1078,
+          "y": -914,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "GameOver",
+          "name": "btn_recomecar",
+          "persistentUuid": "42793265-f22e-41a5-a452-070d42d88983",
+          "width": 0,
+          "x": 810,
+          "y": 558,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "gameCenter",
+          "persistentUuid": "6914dcaa-d5f0-48a3-9819-abccacd26ae7",
+          "width": 0,
+          "x": 1962,
+          "y": -306,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 1792,
+          "layer": "fade",
+          "name": "fundoGameOver",
+          "persistentUuid": "6122a8ea-3bb3-4564-9191-85415776eedf",
+          "width": 3136,
+          "x": -534,
+          "y": -306,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 128,
+          "layer": "",
+          "name": "avisoSemCarga",
+          "persistentUuid": "f24ea94f-646e-46c3-a7d5-0ded585e376c",
+          "width": 128,
+          "x": 1018,
+          "y": 955,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 161,
+          "layer": "UI",
+          "name": "hit",
+          "persistentUuid": "9bad9237-d683-4a54-8e09-91c69c92523c",
+          "width": 120,
+          "x": 1411,
+          "y": 529,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 134,
+          "layer": "UI",
+          "name": "usina",
+          "persistentUuid": "befcecfe-7673-44af-a3af-d4d4ca91af99",
+          "width": 134,
+          "x": 520,
+          "y": 484,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "name": "helice",
+          "persistentUuid": "2cf798fd-b418-4204-87e8-1c2ef344a2c3",
+          "width": 0,
+          "x": 555,
+          "y": 516,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
       "objects": [],
       "events": [
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3458,7 +4226,47 @@
           "renderingType": "",
           "visibility": true,
           "cameras": [],
-          "effects": []
+          "effects": [
+            {
+              "effectType": "ColorMap",
+              "name": "corEolica",
+              "doubleParameters": {
+                "mix": 100
+              },
+              "stringParameters": {
+                "colorMapTexture": "assets\\paletasDeCores\\Eolica.jpg"
+              },
+              "booleanParameters": {
+                "nearest": false
+              }
+            },
+            {
+              "effectType": "ColorMap",
+              "name": "corTermo",
+              "doubleParameters": {
+                "mix": 100
+              },
+              "stringParameters": {
+                "colorMapTexture": "assets\\paletasDeCores\\Termo.png"
+              },
+              "booleanParameters": {
+                "nearest": false
+              }
+            },
+            {
+              "effectType": "ColorMap",
+              "name": "corHidro",
+              "doubleParameters": {
+                "mix": 100
+              },
+              "stringParameters": {
+                "colorMapTexture": "assets\\paletasDeCores\\Hidro.png"
+              },
+              "booleanParameters": {
+                "nearest": false
+              }
+            }
+          ]
         },
         {
           "ambientLightColorB": 200,
@@ -3470,9 +4278,9 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "gameOver",
+          "name": "GameOver",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": []
         },
@@ -3488,7 +4296,905 @@
           "isLocked": false,
           "name": "fade",
           "renderingType": "",
+          "visibility": false,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "level02",
+      "name": "level02",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.1941505911274075,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [
+        {
+          "name": "ModosNaFase",
+          "type": "array",
+          "children": []
+        },
+        {
+          "folded": true,
+          "name": "BPM",
+          "type": "number",
+          "value": 80
+        },
+        {
+          "name": "alreadyAway",
+          "type": "array",
+          "children": []
+        },
+        {
+          "folded": true,
+          "name": "hitCoolDown",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "folded": true,
+          "name": "modoCoolDown",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "folded": true,
+          "name": "hasLevelStarted",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "folded": true,
+          "name": "isLevelRunning",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "folded": true,
+          "name": "nomeLevel",
+          "type": "string",
+          "value": "level02"
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 32,
+          "height": 35,
+          "layer": "UI",
+          "name": "demanda",
+          "persistentUuid": "ffe7f655-e308-43a7-b7f9-a206fb3370f4",
+          "width": 1000,
+          "x": 485,
+          "y": 285,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "name": "performance",
+          "persistentUuid": "081bbb2a-2577-4a4e-aff9-dbba838e2cd3",
+          "width": 0,
+          "x": 1285,
+          "y": 620,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 432,
+          "layer": "UI",
+          "name": "cidade",
+          "persistentUuid": "878589b9-b0a9-45ae-ba89-4ab64f6d70c6",
+          "width": 864,
+          "x": 1573,
+          "y": 205,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "depth": 32,
+          "height": 226,
+          "layer": "",
+          "name": "botaoModo",
+          "persistentUuid": "70c2fe38-6fef-4a90-856e-54c4419a7f43",
+          "width": 224,
+          "x": 902,
+          "y": 860,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "depth": 32,
+          "height": 226,
+          "layer": "",
+          "name": "botaoModo",
+          "persistentUuid": "809cb05c-b785-4356-b6d3-427e6ac107ad",
+          "width": 224,
+          "x": 6,
+          "y": 860,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 32,
+          "height": 34,
+          "layer": "",
+          "name": "sustentabilidade",
+          "persistentUuid": "3c4355de-1ee7-4f9b-a762-639889611d08",
+          "width": 1000,
+          "x": 485,
+          "y": 349,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "depth": 32,
+          "height": 227,
+          "layer": "",
+          "name": "botaoModo",
+          "persistentUuid": "53b5f964-c693-490a-a7fc-8b54d57f6e29",
+          "width": 224,
+          "x": 1700,
+          "y": 859,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 448,
+          "layer": "UI",
+          "name": "cidade",
+          "persistentUuid": "77795e51-f683-40ed-815c-aca81f6871a0",
+          "width": 896,
+          "x": -411,
+          "y": 189,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "GameOver",
+          "name": "gameOver",
+          "persistentUuid": "fdb54d2f-ed63-4909-97b9-897216ebcbd5",
+          "width": 0,
+          "x": 319,
+          "y": 93,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "GameOver",
+          "name": "motivoDaPerda",
+          "persistentUuid": "7c60cc22-83b6-452a-acaa-a797b662d9c8",
+          "width": 0,
+          "x": 805,
+          "y": 413,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "GameOver",
+          "name": "btn_mainMenu",
+          "persistentUuid": "9633f863-98dc-4d93-aa0e-f8282c55ea7d",
+          "width": 0,
+          "x": 764,
+          "y": 733,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "GameOver",
+          "name": "btn_exit",
+          "persistentUuid": "b42974c7-76ec-4416-b692-82d56555eea2",
+          "width": 0,
+          "x": 923,
+          "y": 893,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 3008,
+          "layer": "GameOver",
+          "name": "fundoGameOver",
+          "persistentUuid": "813217cc-4d61-4e98-a461-9588fe85a81e",
+          "width": 4064,
+          "x": -1083,
+          "y": -899,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "GameOver",
+          "name": "btn_recomecar",
+          "persistentUuid": "3daf2d74-b956-4bc1-8bf8-fedd3df45e51",
+          "width": 0,
+          "x": 805,
+          "y": 573,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "gameCenter",
+          "persistentUuid": "0d83b3b2-318d-457e-bdbd-76ad23b5e252",
+          "width": 0,
+          "x": 1957,
+          "y": -291,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 1792,
+          "layer": "fade",
+          "name": "fundoGameOver",
+          "persistentUuid": "3b567441-ab9f-4aa0-a277-a33476b9592c",
+          "width": 3136,
+          "x": -539,
+          "y": -291,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 128,
+          "layer": "",
+          "name": "avisoSemCarga",
+          "persistentUuid": "9a36b28d-a8c1-4cba-b6c5-85207f67614c",
+          "width": 128,
+          "x": 1013,
+          "y": 970,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 161,
+          "layer": "UI",
+          "name": "hit",
+          "persistentUuid": "8eedbd4f-a6e0-4c8c-bf43-376a3bd91f2c",
+          "width": 120,
+          "x": 1406,
+          "y": 544,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 134,
+          "layer": "UI",
+          "name": "usina",
+          "persistentUuid": "a76e9528-470e-47a1-96f8-843004bb0907",
+          "width": 134,
+          "x": 515,
+          "y": 499,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "name": "helice",
+          "persistentUuid": "2b8e0be1-1b92-47b3-9bb7-6f1bc359d53a",
+          "width": 0,
+          "x": 550,
+          "y": 531,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PreloadMusic"
+              },
+              "parameters": [
+                "",
+                "assets\\musicas\\level-02.wav"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "levelScript"
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// functions",
+            "const createObject = (objectName, x, y, z, layer=\"UI\") => {",
+            "    let newObject = runtimeScene.createObject(objectName)",
+            "",
+            "    newObject.setPosition(x, y);",
+            "    newObject.setZOrder(z);",
+            "    newObject.setLayer(layer)",
+            "    ",
+            "    return newObject;",
+            "}",
+            "",
+            "const createBeat = (time, index) => {",
+            "    if(levelTimer.getTime() >= time && !Object.values(alreadyAwayArray).includes(time)){",
+            "        const newBeat = createObject(\"tap\", Hit.x - 800, Hit.y, 2, \"UI\");",
+            "        newBeat.addForce(BPM * 5, 0, 1)",
+            "        alreadyAway.addChild(index, time)",
+            "    }  ",
+            "}",
+            "",
+            "const createStartFlag = (time, index) => {",
+            "    if(levelTimer.getTime() >= time && !Object.values(alreadyAwayArray).includes(time)){",
+            "        const newBeat = createObject(\"inicio\", Hit.x - 800, Hit.y, 2, \"UI\");",
+            "        newBeat.addForce(BPM * 5, 0, 1)",
+            "        alreadyAway.addChild(index, time)",
+            "    }  ",
+            "}",
+            "",
+            "const includes_Value = (array, value) => {",
+            "    array.forEach(obj => {",
+            "        if(obj._value == value){",
+            "            return true;",
+            "        }",
+            "    })",
+            "    return false",
+            "}",
+            "",
+            "const fade =(obj, speed, way) => {",
+            "    if(way == \"out\")",
+            "        if(obj.opacity != 0)",
+            "            obj.setOpacity(obj.opacity - speed)",
+            "    if(way == \"in\")",
+            "        if(obj.opacity != 255)",
+            "            obj.setOpacity(obj.opacity + speed)",
+            "}",
+            "",
+            "",
+            "// setup",
+            "const Hit   = runtimeScene.getObjects(\"hit\")[0];",
+            "let Tap     = runtimeScene.getObjects(\"tap\")[0];",
+            "const StartFlag = runtimeScene.getObjects(\"inicio\")[0];",
+            "const cover = runtimeScene.getObjects(\"fundoGameOver\")[1];",
+            "",
+            "const volume            = runtimeScene.getGame().getVariables().get(\"volume\")._children;",
+            "",
+            "const BPM = runtimeScene.getScene().getVariables().get(\"BPM\").getValue();",
+            "const hasLevelStarted   = runtimeScene.getScene().getVariables().get(\"hasLevelStarted\");",
+            "const alreadyAway       = runtimeScene.getScene().getVariables().get(\"alreadyAway\");",
+            "let alreadyAwayArray    = alreadyAway._children;",
+            "",
+            "if(runtimeScene.getTimeManager().isFirstFrame()){",
+            "    runtimeScene.getTimeManager().addTimer(\"levelTimer\");",
+            "    runtimeScene.getLayer(\"fade\").show(true);",
+            "    runtimeScene.getObjects(\"fundoGameOver\")[1].setOpacity(1);",
+            "    const Acertos = runtimeScene.getGame().getVariables().get(\"acertos\")._children",
+            "    const Score   = runtimeScene.getGame().getVariables().get(\"pontuacao\")._children",
+            "    Object.values(Acertos).forEach(valor => valor.setValue(0));",
+            "    Object.values(Score).forEach(valor => valor.setValue(0));",
+            "    cover.setOpacity(255)",
+            "    Hit.hide(false);",
+            "    Hit.setOpacity(255)",
+            "    runtimeScene.getLayer(\"Camada Base\").show(true);",
+            "}",
+            "const levelTimer = runtimeScene.getTimeManager().getTimer(\"levelTimer\");",
+            "",
+            "if(!hasLevelStarted._bool)",
+            "    fade(cover, 10, \"out\")",
+            "",
+            "if(!hasLevelStarted._bool && StartFlag && StartFlag.getDistanceToObject(Hit) <= Hit.getWidth() * 0.2){ ",
+            "    hasLevelStarted.setBoolean(true)",
+            "    runtimeScene.getGame().getSoundManager().playMusicOnChannel(\"assets\\\\musicas\\\\level-02.wav\", 0, false, volume.musica._value * 100, 1)",
+            "}",
+            "",
+            "if(!runtimeScene.getLayer(\"GameOver\").isVisible() && levelTimer.getTime() >= 80640){",
+            "    const levelUnlockedStatus = runtimeScene.getGame().getVariables().get(\"unlockedLevels\")._children",
+            "    levelUnlockedStatus.level03.setBoolean(true)",
+            "    runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"pontuacao\")",
+            "}",
+            "",
+            "if(!runtimeScene.getLayer(\"GameOver\").isVisible() && levelTimer.getTime() >= 79640){",
+            "    const cover = runtimeScene.getObjects(\"fundoGameOver\")[1];",
+            "    fade(cover, 13, \"in\")",
+            "}",
+            "",
+            "",
+            "/////////////////////",
+            "////////LEVEL////////",
+            "/////////////////////",
+            "createStartFlag(1, 0)",
+            "createBeat(380, 1)",
+            "createBeat(516, 2)",
+            "createBeat(894, 3)",
+            "createBeat(1286, 4)",
+            "createBeat(1485, 5)",
+            "createBeat(1669, 6)",
+            "createBeat(2055, 7)",
+            "createBeat(2429, 8)",
+            "createBeat(2619, 9)",
+            "createBeat(2827, 10)",
+            "createBeat(3241, 11)",
+            "createBeat(3592, 12)",
+            "createBeat(3792, 13)",
+            "createBeat(3988, 14)",
+            "createBeat(4336, 15)",
+            "createBeat(4716, 16)",
+            "createBeat(4917, 17)",
+            "createBeat(5140, 18)",
+            "createBeat(5532, 19)",
+            "createBeat(5919, 20)",
+            "createBeat(6077, 21)",
+            "createBeat(6261, 22)",
+            "createBeat(6642, 23)",
+            "createBeat(7023, 24)",
+            "createBeat(7209, 25)",
+            "createBeat(7396, 26)",
+            "createBeat(7779, 27)",
+            "createBeat(8149, 28)",
+            "createBeat(8360, 29)",
+            "createBeat(8537, 30)",
+            "createBeat(8919, 31)",
+            "createBeat(9277, 32)",
+            "createBeat(9499, 33)",
+            "createBeat(9676, 34)",
+            "createBeat(10057, 35)",
+            "createBeat(10407, 36)",
+            "createBeat(10607, 37)",
+            "createBeat(10837, 38)",
+            "createBeat(11186, 39)",
+            "createBeat(11564, 40)",
+            "createBeat(11767, 41)",
+            "createBeat(12000, 42)",
+            "createBeat(12345, 43)",
+            "createBeat(12697, 44)",
+            "createBeat(12903, 45)",
+            "createBeat(13174, 46)",
+            "createBeat(13476, 47)",
+            "createBeat(13849, 48)",
+            "createBeat(14041, 49)",
+            "createBeat(14235, 50)",
+            "createBeat(14604, 51)",
+            "createBeat(15042, 52)",
+            "createBeat(15205, 53)",
+            "createBeat(15366, 54)",
+            "createBeat(15730, 55)",
+            "createBeat(16149, 56)",
+            "createBeat(16317, 57)",
+            "createBeat(16485, 58)",
+            "createBeat(16871, 59)",
+            "createBeat(17377, 60)",
+            "createBeat(17649, 61)",
+            "createBeat(18049, 62)",
+            "createBeat(18435, 63)",
+            "createBeat(18817, 64)",
+            "createBeat(19176, 65)",
+            "createBeat(19584, 66)",
+            "createBeat(19759, 67)",
+            "createBeat(19947, 68)",
+            "createBeat(20315, 69)",
+            "createBeat(20705, 70)",
+            "createBeat(20875, 71)",
+            "createBeat(21066, 72)",
+            "createBeat(21419, 73)",
+            "createBeat(21893, 74)",
+            "createBeat(22022, 75)",
+            "createBeat(22227, 76)",
+            "createBeat(22623, 77)",
+            "createBeat(22977, 78)",
+            "createBeat(23147, 79)",
+            "createBeat(23337, 80)",
+            "createBeat(23726, 81)",
+            "createBeat(24147, 82)",
+            "createBeat(24332, 83)",
+            "createBeat(24475, 84)",
+            "createBeat(24849, 85)",
+            "createBeat(25269, 86)",
+            "createBeat(25464, 87)",
+            "createBeat(25633, 88)",
+            "createBeat(26038, 89)",
+            "createBeat(26425, 90)",
+            "createBeat(26609, 91)",
+            "createBeat(26791, 92)",
+            "createBeat(27125, 93)",
+            "createBeat(27524, 94)",
+            "createBeat(27735, 95)",
+            "createBeat(27901, 96)",
+            "createBeat(28299, 97)",
+            "createBeat(28646, 98)",
+            "createBeat(28841, 99)",
+            "createBeat(29088, 100)",
+            "createBeat(29415, 101)",
+            "createBeat(29823, 102)",
+            "createBeat(30018, 103)",
+            "createBeat(30205, 104)",
+            "createBeat(30562, 105)",
+            "createBeat(30976, 106)",
+            "createBeat(31123, 107)",
+            "createBeat(31310, 108)",
+            "createBeat(31685, 109)",
+            "createBeat(32049, 110)",
+            "createBeat(32263, 111)",
+            "createBeat(32457, 112)",
+            "createBeat(32805, 113)",
+            "createBeat(33215, 114)",
+            "createBeat(33397, 115)",
+            "createBeat(33621, 116)",
+            "createBeat(33995, 117)",
+            "createBeat(34390, 118)",
+            "createBeat(34573, 119)",
+            "createBeat(34741, 120)",
+            "createBeat(35117, 121)",
+            "createBeat(35519, 122)",
+            "createBeat(35717, 123)",
+            "createBeat(35881, 124)",
+            "createBeat(36244, 125)",
+            "createBeat(36663, 126)",
+            "createBeat(37044, 127)",
+            "createBeat(37204, 128)",
+            "createBeat(37420, 129)",
+            "createBeat(37597, 130)",
+            "createBeat(37801, 131)",
+            "createBeat(37977, 132)",
+            "createBeat(38154, 133)",
+            "createBeat(38384, 134)",
+            "createBeat(38539, 135)",
+            "createBeat(38725, 136)",
+            "createBeat(38919, 137)",
+            "createBeat(39125, 138)",
+            "createBeat(39307, 139)",
+            "createBeat(39483, 140)",
+            "createBeat(39683, 141)",
+            "createBeat(39861, 142)",
+            "createBeat(40041, 143)",
+            "createBeat(40229, 144)",
+            "createBeat(40435, 145)",
+            "createBeat(40624, 146)",
+            "createBeat(40813, 147)",
+            "createBeat(40999, 148)",
+            "createBeat(41228, 149)",
+            "createBeat(41379, 150)",
+            "createBeat(41554, 151)",
+            "createBeat(41757, 152)",
+            "createBeat(41942, 153)",
+            "createBeat(42162, 154)",
+            "createBeat(42334, 155)",
+            "createBeat(42526, 156)",
+            "createBeat(42745, 157)",
+            "createBeat(42911, 158)",
+            "createBeat(43135, 159)",
+            "createBeat(43266, 160)",
+            "createBeat(43456, 161)",
+            "createBeat(43645, 162)",
+            "createBeat(43859, 163)",
+            "createBeat(44045, 164)",
+            "createBeat(44259, 165)",
+            "createBeat(44397, 166)",
+            "createBeat(44635, 167)",
+            "createBeat(44787, 168)",
+            "createBeat(44988, 169)",
+            "createBeat(45193, 170)",
+            "createBeat(45395, 171)",
+            "createBeat(45587, 172)",
+            "createBeat(45737, 173)",
+            "createBeat(46911, 174)",
+            "createBeat(48022, 175)",
+            "createBeat(48652, 176)",
+            "createBeat(48823, 177)",
+            "createBeat(49242, 178)",
+            "createBeat(49749, 179)",
+            "createBeat(50289, 180)",
+            "createBeat(51417, 181)",
+            "createBeat(52209, 182)",
+            "createBeat(52393, 183)",
+            "createBeat(52593, 184)",
+            "createBeat(53161, 185)",
+            "createBeat(53733, 186)",
+            "createBeat(54291, 187)",
+            "createBeat(54855, 188)",
+            "createBeat(56226, 189)",
+            "createBeat(57359, 190)",
+            "createBeat(57551, 191)",
+            "createBeat(57733, 192)",
+            "createBeat(58049, 193)",
+            "createBeat(58499, 194)",
+            "createBeat(58664, 195)",
+            "createBeat(58899, 196)",
+            "createBeat(59216, 197)",
+            "createBeat(59641, 198)",
+            "createBeat(59826, 199)",
+            "createBeat(60003, 200)",
+            "createBeat(60371, 201)",
+            "createBeat(60816, 202)",
+            "createBeat(60972, 203)",
+            "createBeat(61180, 204)",
+            "createBeat(61513, 205)",
+            "createBeat(61917, 206)",
+            "createBeat(62097, 207)",
+            "createBeat(62312, 208)",
+            "createBeat(62645, 209)",
+            "createBeat(63071, 210)",
+            "createBeat(63249, 211)",
+            "createBeat(63435, 212)",
+            "createBeat(63805, 213)",
+            "createBeat(64206, 214)",
+            "createBeat(64395, 215)",
+            "createBeat(64548, 216)",
+            "createBeat(64919, 217)",
+            "createBeat(65313, 218)",
+            "createBeat(65507, 219)",
+            "createBeat(65689, 220)",
+            "createBeat(66061, 221)",
+            "createBeat(66520, 222)",
+            "createBeat(66653, 223)",
+            "createBeat(66873, 224)",
+            "createBeat(67205, 225)",
+            "createBeat(67563, 226)",
+            "createBeat(67789, 227)",
+            "createBeat(68014, 228)",
+            "createBeat(68359, 229)",
+            "createBeat(68742, 230)",
+            "createBeat(68885, 231)",
+            "createBeat(69130, 232)",
+            "createBeat(69460, 233)",
+            "createBeat(69877, 234)",
+            "createBeat(70062, 235)",
+            "createBeat(70282, 236)",
+            "createBeat(70654, 237)",
+            "createBeat(71016, 238)",
+            "createBeat(71179, 239)",
+            "createBeat(71425, 240)",
+            "createBeat(71795, 241)",
+            "createBeat(72174, 242)",
+            "createBeat(72371, 243)",
+            "createBeat(72543, 244)",
+            "createBeat(72887, 245)",
+            "createBeat(73301, 246)",
+            "createBeat(73477, 247)",
+            "createBeat(73695, 248)",
+            "createBeat(74018, 249)",
+            "createBeat(74448, 250)",
+            "createBeat(74636, 251)",
+            "createBeat(74843, 252)",
+            "createBeat(75640, 253)",
+            ""
+          ],
+          "parameterObjects": "tap",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
           "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "UI",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "ColorMap",
+              "name": "corEolica",
+              "doubleParameters": {
+                "mix": 100
+              },
+              "stringParameters": {
+                "colorMapTexture": "assets\\paletasDeCores\\Eolica.jpg"
+              },
+              "booleanParameters": {
+                "nearest": false
+              }
+            },
+            {
+              "effectType": "ColorMap",
+              "name": "corTermo",
+              "doubleParameters": {
+                "mix": 100
+              },
+              "stringParameters": {
+                "colorMapTexture": "assets\\paletasDeCores\\Termo.png"
+              },
+              "booleanParameters": {
+                "nearest": false
+              }
+            },
+            {
+              "effectType": "ColorMap",
+              "name": "corHidro",
+              "doubleParameters": {
+                "mix": 100
+              },
+              "stringParameters": {
+                "colorMapTexture": "assets\\paletasDeCores\\Hidro.png"
+              },
+              "booleanParameters": {
+                "nearest": false
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "GameOver",
+          "renderingType": "",
+          "visibility": false,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "fade",
+          "renderingType": "",
+          "visibility": false,
           "cameras": [],
           "effects": []
         }
@@ -3515,7 +5221,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.22169247275005177,
+        "zoomFactor": 0.41630252177333377,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3567,21 +5273,6 @@
           "x": 274,
           "y": 686,
           "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "naoMudaCor",
-          "name": "hit",
-          "persistentUuid": "09f0fb13-8cda-4356-b95a-6098aa2c82f8",
-          "width": 0,
-          "x": 1376,
-          "y": 507,
-          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3757,6 +5448,53 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 161,
+          "layer": "jogo",
+          "name": "hit",
+          "persistentUuid": "88c3a92d-a56b-4685-8e51-979e98140abe",
+          "width": 120,
+          "x": 1392,
+          "y": 508,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 134,
+          "layer": "jogo",
+          "name": "usina",
+          "persistentUuid": "8aba50e8-c670-4a78-aaa5-30b2ed2db5dd",
+          "width": 134,
+          "x": 500,
+          "y": 464,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "jogo",
+          "name": "helice",
+          "persistentUuid": "b41752d9-51a9-4fa1-b561-6db95303011e",
+          "width": 0,
+          "x": 535,
+          "y": 496,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -3800,262 +5538,6 @@
             "align": "center",
             "wordWrap": true
           }
-        },
-        {
-          "assetStoreId": "",
-          "name": "hit",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "standard",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "standard",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 32,
-                        "y": 32
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 0,
-                            "y": 64
-                          }
-                        ],
-                        [
-                          {
-                            "x": 27,
-                            "y": 0
-                          },
-                          {
-                            "x": 37,
-                            "y": 0
-                          },
-                          {
-                            "x": 37,
-                            "y": 64
-                          },
-                          {
-                            "x": 27,
-                            "y": 64
-                          }
-                        ],
-                        [
-                          {
-                            "x": 12,
-                            "y": 0
-                          },
-                          {
-                            "x": 52,
-                            "y": 1
-                          },
-                          {
-                            "x": 52,
-                            "y": 64
-                          },
-                          {
-                            "x": 12,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "pressed",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "pressed2",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 32,
-                        "y": 32
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 0,
-                            "y": 64
-                          }
-                        ],
-                        [
-                          {
-                            "x": 27,
-                            "y": 0
-                          },
-                          {
-                            "x": 37,
-                            "y": 0
-                          },
-                          {
-                            "x": 37,
-                            "y": 64
-                          },
-                          {
-                            "x": 27,
-                            "y": 64
-                          }
-                        ],
-                        [
-                          {
-                            "x": 12,
-                            "y": 0
-                          },
-                          {
-                            "x": 52,
-                            "y": 1
-                          },
-                          {
-                            "x": 52,
-                            "y": 64
-                          },
-                          {
-                            "x": 12,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "name": "tap",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "folded": true,
-              "name": "hittable",
-              "type": "boolean",
-              "value": false
-            }
-          ],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "DestruirFora",
-              "type": "DestroyOutsideBehavior::DestroyOutside",
-              "extraBorder": 20
-            }
-          ],
-          "animations": [
-            {
-              "name": "tap",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "tap",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 32,
-                        "y": 32
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 14,
-                            "y": 0
-                          },
-                          {
-                            "x": 50,
-                            "y": 0
-                          },
-                          {
-                            "x": 50,
-                            "y": 64
-                          },
-                          {
-                            "x": 14,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         },
         {
           "assetStoreId": "",
@@ -4572,7 +6054,7 @@
             "",
             "const criaDialogo = (numInteracoes, texto, espera=10, func=()=>{}) => {",
             "    if(interacoes._value == numInteracoes && runtimeScene.getTimeManager().getTimer(\"dialogo\").getTime() >= espera){",
-            "        if(runtimeScene.getGame().getInputManager().isKeyPressed(90) && runtimeScene.getOnceTriggers().triggerOnce()){",
+            "        if((runtimeScene.getGame().getInputManager().isKeyPressed(90) || runtimeScene.getGame().getInputManager().isKeyPressed(32)) && runtimeScene.getOnceTriggers().triggerOnce()){",
             "            runtimeScene.getTimeManager().getTimer(\"dialogo\").reset();",
             "            dialogo.setBBText(\"\")",
             "            interacoes.setValue(interacoes._value + 1);",
@@ -4598,6 +6080,7 @@
             "const Acertos = runtimeScene.getGame().getVariables().get(\"acertos\")._children",
             "const opcoes = runtimeScene.getObjects(\"btn_repetir\");",
             "const cover = runtimeScene.getObjects(\"cover\")[0];",
+            "const usina = runtimeScene.getObjects(\"usina\")[0];",
             "",
             "if(runtimeScene.getTimeManager().isFirstFrame()){",
             "    runtimeScene.getTimeManager().addTimer(\"dialogo\");",
@@ -4608,16 +6091,16 @@
             "    barraSustentabilidade.setOpacity(0);",
             "    botoes.forEach(botao => botao.setOpacity(0));",
             "    opcoes.forEach(opcao => opcao.setOpacity(0));",
+            "    usina.setOpacity(0);",
             "",
             "    runtimeScene.getLayer(\"cover\").show(true);",
             "    cover.hide(false)",
-            "    cover.setOpacity(255)",
             "}",
             "",
             "",
             "// code",
             "if(runtimeScene.getGame().getInputManager().isKeyPressed(27))",
-            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"base\")",
+            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"level01\")",
             "",
             "setToMiddleScreenX(dialogo)",
             "",
@@ -4671,6 +6154,9 @@
             "criaDialogo(15, \"Ela desce de acordo com o uso de energia da cidade.\\nEm outras palavras, quanto maior a cidade, mais rápido ela gasta energia e, logo, mais rápido a barra vai estar descendo\");",
             "criaDialogo(16, \"Outra característica dela é que ela está sempre descendo, ou seja, a cidade sempre esta gastando energia, e ela não vai voltar a subir até que a cidade seja suprida com eletricidade.\");",
             "criaDialogo(17, \"E você entra aí. Tá vendo aquela usina ali na frente? Ela vai te enviar um quantidade ideal de energia para suprir a demanda da região. Seu objetivo é seguir o ritmo dessa demanda e enviar a energia para lá, apertando [z], como você tinha feito antes!\");",
+            "",
+            "if(usina.opacity != 255 && interacoes._value >= 17)",
+            "    fade(usina, 3, \"in\");",
             "",
             "if(interacoes._value == 18 && Acertos.eficiente._value >= 8){",
             "    const volume = runtimeScene.getGame().getVariables().get(\"volume\")._children;",
@@ -4804,6 +6290,15 @@
             "        if(isClicked(opcoes[0])){",
             "            interacoes.setValue(1)",
             "            Acertos.eficiente.setValue(0)",
+            "            dialogo.setBBText(\"\")",
+            "            sair.setOpacity(0)",
+            "            hit.setOpacity(0);",
+            "            barraDemanda.setOpacity(0);",
+            "            barraSustentabilidade.setOpacity(0);",
+            "            botoes.forEach(botao => botao.setOpacity(0));",
+            "            opcoes.forEach(opcao => opcao.setOpacity(0));",
+            "            usina.setOpacity(0);",
+            "            runtimeScene.getObjects(\"performance\")[0].setString(\"\");",
             "        }",
             "        else if(isClicked(opcoes[1])){",
             "            interacoes.setValue(interacoes._value + 1);",
@@ -4832,7 +6327,7 @@
             "    fade(cover, 5, \"in\");",
             "",
             "    if(cover.opacity == 255)",
-            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"base\")",
+            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"level01\")",
             "}"
           ],
           "parameterObjects": "",
@@ -4891,10 +6386,13 @@
             "                  }",
             "}",
             "",
+            "const Usina           = runtimeScene.getObjects(\"usina\")[0];",
             "let BotoesModo = runtimeScene.getObjects(\"botaoModo\");",
             "const Aviso    = runtimeScene.getObjects(\"avisoSemCarga\")[0];",
+            "const Helice   = runtimeScene.getObjects(\"helice\")[0];",
             "let ModosNaFaseGlobal = runtimeScene.getScene().getVariables().get(\"ModosNaFase\");",
             "const ModoCoolDown    = runtimeScene.getScene().getVariables().get(\"modoCoolDown\");",
+            "const BPM = runtimeScene.getScene().getVariables().get(\"BPM\").getValue();",
             "",
             "if(runtimeScene.getTimeManager().isFirstFrame()){",
             "    ModosNaFaseGlobal.addChild(\"0\", Modos.hidro);",
@@ -4914,6 +6412,9 @@
             "    runtimeScene.getLayer(\"jogo\").enableEffect(ModosNaFaseGlobal._children[1].efeito, false)",
             "    runtimeScene.getLayer(\"jogo\").enableEffect(ModosNaFaseGlobal._children[2].efeito, false)",
             "",
+            "    // ModosNaFaseGlobal._children[0].efeito == \"corHidro\" ? Usina.setAnimation(0) : ModosNaFaseGlobal._children[0].efeito == \"corEolica\" ? Usina.setAnimation(0)",
+            "    // Hit.setAnimation(1)",
+            "",
             "}",
             "let ModosNaFase = ModosNaFaseGlobal._children",
             "",
@@ -4921,13 +6422,12 @@
             "",
             "",
             "// code",
-            "// if(!runtimeScene.getGame().getInputManager().isKeyPressed(37) && !runtimeScene.getGame().getInputManager().isKeyPressed(39)){",
-            "//     ModoCoolDown.setBoolean(true)",
-            "// }",
             "if(interacoes._value >= 30)",
             "if(runtimeScene.getGame().getInputManager().isKeyPressed(37) && runtimeScene.getOnceTriggers().triggerOnce()){",
             "    BotoesModo[0].SetValue(ModosNaFase[1].carga)",
             "    BotoesModo[1].SetValue(ModosNaFase[0].carga)",
+            "",
+            "    Usina.setAnimationName(ModosNaFase[1].efeito)",
             "",
             "    setBackgroundColorThroughObject(ModosNaFase[1].cor)",
             "    runtimeScene.getLayer(\"jogo\").enableEffect(ModosNaFase[0].efeito, false)",
@@ -4952,6 +6452,8 @@
             "    BotoesModo[0].SetValue(ModosNaFase[2].carga)",
             "    BotoesModo[2].SetValue(ModosNaFase[0].carga)",
             "",
+            "    Usina.setAnimationName(ModosNaFase[2].efeito)",
+            "",
             "    setBackgroundColorThroughObject(ModosNaFase[2].cor)",
             "    runtimeScene.getLayer(\"jogo\").enableEffect(ModosNaFase[0].efeito, false)",
             "    runtimeScene.getLayer(\"jogo\").enableEffect(ModosNaFase[2].efeito, true)",
@@ -4975,7 +6477,14 @@
             "if(ModosNaFase[0].carga > 0)",
             "    Aviso.hide(true)",
             "else",
-            "    Aviso.hide(false)"
+            "    Aviso.hide(false)",
+            "",
+            "    ",
+            "Helice.rotate(BPM)",
+            "if(ModosNaFase[0].efeito == \"corEolica\")",
+            "    Helice.hide(false);",
+            "else",
+            "    Helice.hide(true);"
           ],
           "parameterObjects": "",
           "useStrict": true,
@@ -5705,6 +7214,49 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "naoMudaCor",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
           "name": "jogo",
           "renderingType": "",
           "visibility": true,
@@ -5761,12 +7313,44 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "naoMudaCor",
+          "name": "cover",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": []
-        },
+        }
+      ],
+      "behaviorsSharedData": []
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "tutorial02",
+      "name": "tutorial02",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.3645833333333333,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [],
+      "objects": [],
+      "events": [],
+      "layers": [
         {
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
@@ -5793,22 +7377,6 @@
             }
           ],
           "effects": []
-        },
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 0.1,
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "cover",
-          "renderingType": "",
-          "visibility": false,
-          "cameras": [],
-          "effects": []
         }
       ],
       "behaviorsSharedData": []
@@ -5833,7 +7401,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.1956110053676938,
+        "zoomFactor": 0.18305734955560146,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -5877,6 +7445,12 @@
           "name": "isLevelRunning",
           "type": "boolean",
           "value": true
+        },
+        {
+          "folded": true,
+          "name": "nomeLevel",
+          "type": "string",
+          "value": "base"
         }
       ],
       "instances": [
@@ -6177,14 +7751,6 @@
           "actions": [
             {
               "type": {
-                "value": "PlayerAuthentication::DisplayAuthenticationBanner"
-              },
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "PreloadMusic"
               },
               "parameters": [
@@ -6417,7 +7983,7 @@
             "    if(runtimeScene.getGame().getInputManager().wasKeyReleased(90))",
             "        HitCoolDown.setBoolean(true)",
             "        ",
-            "    if(Taps.length != 0){",
+            "    if(tappableBeats.length != 0){",
             "        const tapToHitDistance = hitTap.getDistanceToObject(Hit)",
             "        if(hitTap.x > Hit.x + hitWidth * 1.5){",
             "            Performance.setString(\"Errou?!\")",
@@ -7011,7 +8577,6 @@
           "eventsSheetExpanded": true
         },
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
             "// functions",
@@ -7103,10 +8668,10 @@
             "    if(runtimeScene.getGame().getInputManager().isMouseButtonPressed(0) && runtimeScene.getOnceTriggers().triggerOnce()){",
             "        console.log(isClicked(btn_recomecar))",
             "        if(isClicked(btn_recomecar))",
-            "            runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"base\")",
+            "            runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, runtimeScene.getVariables().get(\"nomeLevel\")._str)",
             "            ",
             "        else if(isClicked(btn_exit))",
-            "            runtimeScene.requestChange(gdjs.SceneChangeRequest.STOP_GAME, \"base\")",
+            "            runtimeScene.requestChange(gdjs.SceneChangeRequest.STOP_GAME, runtimeScene.getVariables().get(\"nomeLevel\")._str)",
             "",
             "        else if(isClicked(btn_mainMenu))",
             "            runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"titleScreen\") ",
@@ -7335,10 +8900,13 @@
             "                  }",
             "}",
             "",
+            "const Usina   = runtimeScene.getObjects(\"usina\")[0];",
             "let BotoesModo = runtimeScene.getObjects(\"botaoModo\");",
             "const Aviso    = runtimeScene.getObjects(\"avisoSemCarga\")[0];",
+            "const Helice   = runtimeScene.getObjects(\"helice\")[0];",
             "let ModosNaFaseGlobal = runtimeScene.getScene().getVariables().get(\"ModosNaFase\");",
             "const ModoCoolDown    = runtimeScene.getScene().getVariables().get(\"modoCoolDown\");",
+            "const BPM             = runtimeScene.getScene().getVariables().get(\"BPM\").getValue();",
             "",
             "if(runtimeScene.getTimeManager().isFirstFrame()){",
             "    ModosNaFaseGlobal.addChild(\"0\", Modos.hidro);",
@@ -7357,19 +8925,17 @@
             "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFaseGlobal._children[0].efeito, true)",
             "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFaseGlobal._children[1].efeito, false)",
             "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFaseGlobal._children[2].efeito, false)",
-            "",
             "}",
             "let ModosNaFase = ModosNaFaseGlobal._children",
             "",
             "",
             "// code",
-            "// if(!runtimeScene.getGame().getInputManager().isKeyPressed(37) && !runtimeScene.getGame().getInputManager().isKeyPressed(39)){",
-            "//     ModoCoolDown.setBoolean(true)",
-            "// }",
             "",
             "if(runtimeScene.getGame().getInputManager().isKeyPressed(37) && runtimeScene.getOnceTriggers().triggerOnce()){",
             "    BotoesModo[0].SetValue(ModosNaFase[1].carga)",
             "    BotoesModo[1].SetValue(ModosNaFase[0].carga)",
+            "",
+            "    Usina.setAnimationName(ModosNaFase[1].efeito)",
             "",
             "    setBackgroundColorThroughObject(ModosNaFase[1].cor)",
             "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFase[0].efeito, false)",
@@ -7394,6 +8960,8 @@
             "    BotoesModo[0].SetValue(ModosNaFase[2].carga)",
             "    BotoesModo[2].SetValue(ModosNaFase[0].carga)",
             "",
+            "    Usina.setAnimationName(ModosNaFase[2].efeito)",
+            "",
             "    setBackgroundColorThroughObject(ModosNaFase[2].cor)",
             "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFase[0].efeito, false)",
             "    runtimeScene.getLayer(\"UI\").enableEffect(ModosNaFase[2].efeito, true)",
@@ -7417,11 +8985,17 @@
             "if(ModosNaFase[0].carga > 0)",
             "    Aviso.hide(true)",
             "else",
-            "    Aviso.hide(false)"
+            "    Aviso.hide(false)",
+            "    ",
+            "Helice.rotate(BPM)",
+            "if(ModosNaFase[0].efeito == \"corEolica\")",
+            "    Helice.hide(false);",
+            "else",
+            "    Helice.hide(true);"
           ],
           "parameterObjects": "",
           "useStrict": true,
-          "eventsSheetExpanded": true
+          "eventsSheetExpanded": false
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
@@ -7448,7 +9022,7 @@
             "const hitWidth = Hit.getWidth()",
             "let tappableBeats = []",
             "Taps.forEach(tap => {",
-            "    if(tap.x < Hit.x + hitWidth * 2){",
+            "    if(tap.x < Hit.x + hitWidth * 0.80){",
             "        tappableBeats.push(tap)",
             "    }",
             "})",
@@ -7466,7 +9040,7 @@
             "        let pontos = 0;",
             "",
             "        if(ModoAtual.carga > 0){",
-            "            if(tapToHitDistance < hitWidth * 1.5){",
+            "            if(tapToHitDistance < hitWidth * 1.2){",
             "                hitTap.deleteFromScene(hitTap.getInstanceContainer())",
             "                Sustentabilidade += ModoAtual.sustentabilidade * BPM/10;",
             "                BarraSustentabilidade.SetValue(Sustentabilidade)",
@@ -7495,12 +9069,12 @@
             "                pontos = 2 * multiplicador",
             "                Acertos.ok.setValue(Acertos.ok.getValue() + 1)",
             "            }",
-            "            else if(tapToHitDistance <= hitWidth * 0.75){",
+            "            else if(tapToHitDistance <= hitWidth * 0.80){",
             "                Performance.setString(\"Ruim...\")",
             "                pontos = 1 * multiplicador",
             "                Acertos.ruim.setValue(Acertos.ruim.getValue() + 1)",
             "            }",
-            "            else if(tapToHitDistance < hitWidth * 1.5){",
+            "            else if(tapToHitDistance < hitWidth * 1.2){",
             "                Performance.setString(\"Errou?!\")",
             "                Acertos.errou.setValue(Acertos.errou.getValue() + 1)",
             "            }",
@@ -7518,9 +9092,9 @@
             "    if(runtimeScene.getGame().getInputManager().wasKeyReleased(90))",
             "        HitCoolDown.setBoolean(true)",
             "        ",
-            "    if(Taps.length != 0){",
+            "    if(tappableBeats.length != 0){",
             "        const tapToHitDistance = hitTap.getDistanceToObject(Hit)",
-            "        if(hitTap.x > Hit.x + hitWidth * 1.5){",
+            "        if(hitTap.x > Hit.x + hitWidth * 0.70){",
             "            Performance.setString(\"Errou?!\")",
             "            const Acertos = runtimeScene.getGame().getVariables().get(\"acertos\")._children",
             "            Acertos.errou.setValue(Acertos.errou.getValue() + 1)",
@@ -7694,10 +9268,10 @@
             "    if(runtimeScene.getGame().getInputManager().isMouseButtonPressed(0) && runtimeScene.getOnceTriggers().triggerOnce()){",
             "        console.log(isClicked(btn_recomecar))",
             "        if(isClicked(btn_recomecar))",
-            "            runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"base\")",
+            "            runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, runtimeScene.getVariables().get(\"nomeLevel\")._str)",
             "            ",
             "        else if(isClicked(btn_exit))",
-            "            runtimeScene.requestChange(gdjs.SceneChangeRequest.STOP_GAME, \"base\")",
+            "                    runtimeScene.requestChange(gdjs.SceneChangeRequest.STOP_GAME, runtimeScene.getVariables().get(\"nomeLevel\")._str)",
             "",
             "        else if(isClicked(btn_mainMenu))",
             "            runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"titleScreen\") ",
@@ -7712,7 +9286,7 @@
           ],
           "parameterObjects": "gameOver",
           "useStrict": true,
-          "eventsSheetExpanded": false
+          "eventsSheetExpanded": true
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
@@ -7752,9 +9326,10 @@
           ],
           "parameterObjects": "",
           "useStrict": true,
-          "eventsSheetExpanded": false
+          "eventsSheetExpanded": true
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
             "// functions",
@@ -7825,7 +9400,10 @@
             "    Object.values(Acertos).forEach(valor => valor.setValue(0));",
             "    Object.values(Score).forEach(valor => valor.setValue(0));",
             "    cover.setOpacity(255)",
-            "    ",
+            "    Hit.hide(false);",
+            "    Hit.setOpacity(255)",
+            "    runtimeScene.getLayer(\"Camada Base\").show(true);",
+            "    runtimeScene.getLayer(\"Camada Base\").setOpacity(255);",
             "}",
             "const levelTimer = runtimeScene.getTimeManager().getTimer(\"levelTimer\");",
             "",
