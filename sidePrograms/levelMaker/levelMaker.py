@@ -31,5 +31,8 @@ print("\n\nAaaand, we are done!")
 name = input("Now please name your level: ")
 with open(f"{name}.txt", "a") as level:
     for instance in timeInstances:
-        command = f'createBeat({instance}, {timeInstances.index(instance)})\n'
+        if(instance <= 1):
+            command = f'createStartFlag({instance}, {timeInstances.index(instance)})\n'
+        else:
+            command = f'createBeat({instance}, {timeInstances.index(instance)})\n'
         level.write(command)
