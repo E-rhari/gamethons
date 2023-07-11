@@ -50,10 +50,16 @@
       "placement": "top-right",
       "showWatermark": true
     },
-    "authorIds": [],
-    "authorUsernames": [],
+    "authorIds": [
+      "SstMa0Y5WATVVslU8JRCcB3w5HS2"
+    ],
+    "authorUsernames": [
+      "Enlightening_Game_Orchestra"
+    ],
     "categories": [],
-    "playableDevices": [],
+    "playableDevices": [
+      "keyboard"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
@@ -394,7 +400,7 @@
         "alwaysLoaded": false,
         "file": "assets/Square White Slider Fill Bar.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Square White Slider Fill Bar.png\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "Square White Slider Fill Bar.png",
         "smoothed": false,
         "userAdded": false,
@@ -1798,7 +1804,6 @@
       "value": false
     },
     {
-      "folded": true,
       "name": "pontuacao",
       "type": "structure",
       "children": [
@@ -2338,9 +2343,9 @@
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           }
         },
         {
@@ -2360,9 +2365,9 @@
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           }
         },
         {
@@ -2382,9 +2387,9 @@
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           }
         },
         {
@@ -2404,9 +2409,9 @@
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           }
         },
         {
@@ -2491,9 +2496,9 @@
           "textAlignment": "left",
           "characterSize": 50,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           }
         },
         {
@@ -2513,9 +2518,9 @@
           "textAlignment": "left",
           "characterSize": 50,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           }
         },
         {
@@ -2535,9 +2540,9 @@
           "textAlignment": "left",
           "characterSize": 35,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           }
         },
         {
@@ -3235,7 +3240,7 @@
           "isLocked": false,
           "name": "",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [
             {
               "defaultSize": true,
@@ -3294,7 +3299,7 @@
           "isLocked": false,
           "name": "creditos",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": []
         },
@@ -3563,7 +3568,7 @@
           "persistentUuid": "b0e99a54-a28f-4967-b6a7-19f7df7b3070",
           "width": 0,
           "x": 1105,
-          "y": 292,
+          "y": 318,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -3578,7 +3583,7 @@
           "persistentUuid": "19cf0c90-a2fb-4f77-9eb8-437566ae0fda",
           "width": 0,
           "x": 1105,
-          "y": 274,
+          "y": 300,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -3783,7 +3788,6 @@
             "    runtimeScene.getTimeManager().addTimer(\"revelaPontuacao\");",
             "}",
             "",
-            "",
             "if(interacoes == 0 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 1500){",
             "    interacoes++;",
             "    acertoLabels.forEach(label => label.hide(false));",
@@ -3797,6 +3801,12 @@
             "}",
             "",
             "if(interacoes == 2 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 6000){",
+            "    interacoes++;",
+            "    avaliacaoLabel.hide(false);",
+            "    avaliacao.hide(false);",
+            "}",
+            "    ",
+            "if(interacoes == 3 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 7000){",
             "    btn_menu.hide(false);",
             "    btn_nextLevel.hide(false);",
             "}"
@@ -3851,10 +3861,48 @@
             "    btn_menu.setString(\"Menu\");",
             "    btn_nextLevel.setString(\"Prossegir\");",
             "",
-            "    // const totalDeBeats = Object.values(acertos).reduce((acum, tipoAcerto) => acum + tipoAcerto.getValue(), 0);",
-            "    // if((pontuacao.producao.getValue() + pontuacao.sustentabilidade)/(totalDeBeats/4))",
+            "    ",
+            "    let ava = 0;",
             "",
-            "    // avaliacao.setString();",
+            "    if(pontuacao.sustentabilidade._value >= 100)",
+            "        ava = 3;",
+            "    else if(pontuacao.sustentabilidade._value >= 75)",
+            "        ava = 2;",
+            "    else if(pontuacao.sustentabilidade._value >= 25)",
+            "        ava = 1;",
+            "    else",
+            "        ava = 0;",
+            "    ",
+            "    console.log(`AVA sustent. :  ${ava}`)",
+            "",
+            "    const totalDeBeats = Object.values(acertos).reduce((acum, tipoAcerto) => acum + tipoAcerto.getValue(), 0);",
+            "    if(pontuacao.producao._value >= totalDeBeats * 100)",
+            "        ava += 3;",
+            "    else if(pontuacao.producao._value >= (totalDeBeats * 100*3) /4)",
+            "        ava += 2;",
+            "    else if(pontuacao.producao._value >= (totalDeBeats * 100)/2)",
+            "        ava += 1;",
+            "    else",
+            "        ava += 0;",
+            "    console.log(ava)",
+            "    ",
+            "    let textoAvaliacao = \"\";",
+            "    if(ava == 6)",
+            "        textoAvaliacao = \"PERFEITO!\";",
+            "    else if(ava == 5)",
+            "        textoAvaliacao = \"Eficiente!\";",
+            "    else if(ava == 4)",
+            "        textoAvaliacao = \"Bom\";",
+            "    else if(ava == 3)",
+            "        textoAvaliacao = \"ok.\";",
+            "    else if(ava == 2)",
+            "        textoAvaliacao = \"meh\";",
+            "    else if(ava == 1)",
+            "        textoAvaliacao = \"ruim...\"",
+            "    else if(ava == 0)",
+            "        textoAvaliacao = \"terrível!\";",
+            "",
+            "    avaliacao.setString(textoAvaliacao);",
             "}",
             "",
             "",
@@ -4445,7 +4493,7 @@
             "/////////////////////",
             "////////LEVEL////////",
             "/////////////////////",
-            "createStartFlag(100, 0)",
+            "createStartFlag(120, 0)",
             "createBeat(1071, 1)",
             "createBeat(1963, 2)",
             "createBeat(2912, 3)",
