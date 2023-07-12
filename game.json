@@ -1,5 +1,5 @@
 {
-  "firstLayout": "titleScreen",
+  "firstLayout": "abertura",
   "gdVersion": {
     "build": 99,
     "major": 4,
@@ -726,6 +726,36 @@
         "kind": "audio",
         "metadata": "",
         "name": "assets\\musicas\\level-03.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/polin01.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\polin01.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/polin02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\polin02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/polin03.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\polin03.wav",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
@@ -1821,6 +1851,203 @@
     }
   ],
   "layouts": [
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "abertura",
+      "name": "abertura",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.20746499616301342,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "interacoes",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 946,
+          "layer": "",
+          "name": "introducaoAviso",
+          "persistentUuid": "2b5f04f4-fd94-4948-859e-60f3d8dc0018",
+          "width": 1561,
+          "x": 172,
+          "y": 63,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 1396,
+          "layer": "",
+          "name": "cover",
+          "persistentUuid": "2cf87f8f-ee69-411f-96b0-0df5674606a9",
+          "width": 2273,
+          "x": -197,
+          "y": -161,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "name": "introducaoAviso",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "[size=100][b]AVISO[/b][/size]\n\n\nO sistema de \"jogo de ritmo\" implementado em [b]Electrical Conductor[/b] é sensível, dada uma falta de suporte do gdevelop e o controle insatisfatório da plataforma sobre recursos sonoros. A engine nem sequer traz \"ritmo\" ou \"música\" como um dos gêneros jogos em seus sites e plataformas. \n\nPrezamos pelo seu entreterimento e aprendizagem em [b]Electrical Conductor[/b]. Caso perceba que a música não começou sincronizada com as batidas de uma fase, saiba que fones de ouvido bluetooth, o navegador que está usando ou o processamento da sua máquina podem ser os causadores dos problemas. \n\n\nO jogo pode conter [size=40][b]luzes fortes e rápidas[/b][/size], ao poder do jogador.\n\n\nCaso encontre algum erro, entre em contado com apalemachine@gmail.com\n\nUm [i]forte[/i] abraço, [b]Maestro[/b]!\n([size=20]Pressiona Z ou clique do mouse para prosseguir[/size])",
+            "opacity": 255,
+            "fontSize": 30,
+            "visible": true,
+            "color": "255;255;255",
+            "fontFamily": "assets\\Kenney Pixel Square.ttf",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "cover",
+          "tags": "",
+          "texture": "New image",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "runtimeScene.setBackgroundColor(0,0,0);",
+            "// functions",
+            "const getMiddleScreenX   = obj => gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)/2  - obj.getWidth()/2;",
+            "const setToMiddleScreenX = obj => obj.setPosition(getMiddleScreenX(obj), obj.y, 1)",
+            "",
+            "const fade = (obj, speed, way) => {",
+            "    if(way == \"out\")",
+            "        if(obj.opacity != 0)",
+            "            obj.setOpacity(obj.opacity - speed)",
+            "    if(way == \"in\")",
+            "        if(obj.opacity != 255)",
+            "            obj.setOpacity(obj.opacity + speed)",
+            "}",
+            "",
+            "// setup",
+            "const cover   = runtimeScene.getObjects(\"cover\")[0]; ",
+            "const aviso   = runtimeScene.getObjects(\"instroducaoAviso\")[0]; ",
+            "",
+            "const interacoes = runtimeScene.getVariables().get(\"interacoes\");",
+            "",
+            "if(runtimeScene.getTimeManager().isFirstFrame()){",
+            "    runtimeScene.getTimeManager().addTimer(\"fade\");",
+            "",
+            "    runtimeScene.getLayer(\"cover\").show(true);",
+            "    cover.hide(false)",
+            "}",
+            "",
+            "// code",
+            "// setToMiddleScreenX(dialogo)",
+            "",
+            "if(interacoes._value == 0)",
+            "    fade(cover, 2, \"out\")",
+            "",
+            "if((runtimeScene.getGame().getInputManager().isKeyPressed(90) || runtimeScene.getGame().getInputManager().isKeyPressed(32) || runtimeScene.getGame().getInputManager().isMouseButtonPressed(0)) && runtimeScene.getOnceTriggers().triggerOnce() && interacoes._value == 0)  ",
+            "    interacoes.setValue(interacoes.getValue() + 1)",
+            "",
+            "if(interacoes._value >= 1){",
+            "    fade(cover, 3, \"in\")",
+            "    if(cover.opacity == 255)",
+            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"titleScreen\")",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "cover",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
@@ -3114,10 +3341,10 @@
             "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"tutorial01\")",
             "",
             "    else if((isClicked(btn_levels[1]) || isClicked(imgs_levels[1]) && (!isClicked(btn_jogar)) && runtimeScene.getLayer(\"Camada Base\")._hidden) && levelUnlockedStatus.level02._bool)  ",
-            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"level02\")",
+            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"tutorial02\")",
             "",
             "    else if((isClicked(btn_levels[2]) || isClicked(imgs_levels[2])) && levelUnlockedStatus.level03._bool)",
-            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"level03\")",
+            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"tutorial03\")",
             "        ",
             "    else if(isClicked(btn_menu)){",
             "            runtimeScene.getLayer(\"levelSelection\").show(false);",
@@ -3346,7 +3573,14 @@
         "windowMask": false
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "interacoes",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -3748,6 +3982,48 @@
       ],
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "assets\\polin01.wav"
+              ]
+            },
+            {
+              "type": {
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "assets\\polin02.wav"
+              ]
+            },
+            {
+              "type": {
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "assets\\polin03.wav"
+              ]
+            }
+          ]
+        },
+        {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
             "// functions",
@@ -3771,7 +4047,9 @@
             "const avaliacao       = runtimeScene.getObjects(\"avaliacao\")[0];",
             "const avaliacaoLabel  = runtimeScene.getObjects(\"avaliacaoLabel\")[0];",
             "",
-            "let interacoes = 0;",
+            "const volume = runtimeScene.getGame().getVariables().get(\"volume\")._children",
+            "",
+            "let interacoes = runtimeScene.getVariables().get(\"interacoes\");",
             "",
             "",
             "// code",
@@ -3788,25 +4066,28 @@
             "    runtimeScene.getTimeManager().addTimer(\"revelaPontuacao\");",
             "}",
             "",
-            "if(interacoes == 0 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 1500){",
-            "    interacoes++;",
+            "if(interacoes._value == 0 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 1500){",
+            "    runtimeScene.getSoundManager().playSound(\"assets\\\\polin01.wav\", false, volume.musica._value * 100, 1)",
+            "    interacoes.setValue(interacoes.getValue() + 1);",
             "    acertoLabels.forEach(label => label.hide(false));",
             "    acertosScore.forEach(score => score.hide(false));",
             "}",
             "",
-            "if(interacoes == 1 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 3500){",
-            "    interacoes++;",
+            "if(interacoes._value == 1 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 3500){",
+            "    runtimeScene.getSoundManager().playSound(\"assets\\\\polin02.wav\", false, volume.musica._value * 100, 1)",
+            "    interacoes.setValue(interacoes.getValue() + 1);",
             "    pontuacoes.forEach(pontuacao => pontuacao.hide(false));",
             "    pontuacaoLabels.forEach(label => label.hide(false));",
             "}",
             "",
-            "if(interacoes == 2 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 6000){",
-            "    interacoes++;",
+            "if(interacoes._value == 2 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 6000){",
+            "    runtimeScene.getSoundManager().playSound(\"assets\\\\polin03.wav\", false, volume.musica._value * 100, 1)",
+            "    interacoes.setValue(interacoes.getValue() + 1);",
             "    avaliacaoLabel.hide(false);",
             "    avaliacao.hide(false);",
             "}",
             "    ",
-            "if(interacoes == 3 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 7000){",
+            "if(interacoes._value == 3 && runtimeScene.getTimeManager().getTimer(\"revelaPontuacao\").getTime() >= 7000){",
             "    btn_menu.hide(false);",
             "    btn_nextLevel.hide(false);",
             "}"
@@ -3919,7 +4200,7 @@
             "                acum += 1;",
             "            return acum;",
             "        }, 0)",
-            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, `level0${nextLevel}`)",
+            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, `tutorial0${nextLevel}`)",
             "    }",
             "}"
           ],
@@ -6809,7 +7090,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8353591827059916,
+        "zoomFactor": 0.19415059112740818,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -7704,7 +7985,7 @@
             "//     runtimeScene.getTimeManager().getTimer(\"dialogo\").reset();",
             "",
             "",
-            "criaDialogo(0, \"Alô? Consegue me ouvir?\");",
+            "criaDialogo(0, \"Alô? Você está ai?\");",
             "interacoes._value == 0 && runtimeScene.getTimeManager().getTimer(\"dialogo\").getTime() >= 2000 ? runtimeScene.getObjects(\"pressioneZ\")[0].hide(false) : runtimeScene.getObjects(\"pressioneZ\")[0].hide(true)",
             "criaDialogo(1, \"Ah, que bom!\\nNesse caso, é um prazer te ter conosco no [b]OMSE[/b], o Operador [b]Musical[/b] do Sistema elétrico!\");",
             "criaDialogo(2, \"Eu sou [i]O Instrutor[/i], e vou te explicar como as coisas funcionam por aqui.\");",
@@ -7712,7 +7993,7 @@
             "if(sair.opacity != 255 && interacoes._value >= 2)",
             "    fade(sair, 1, \"in\");",
             "",
-            "criaDialogo(3, \"Como você sabe, nós da OMSE somos responsáveis por manter o sistema de energia elétrica do país sempre funcionando.\");",
+            "criaDialogo(3, \"Como você sabe, nós do OMSE somos responsáveis por manter o sistema de energia elétrica do país sempre funcionando.\");",
             "criaDialogo(4, \"E você, como mais novo condutor, vai nos ajudar nisso.\");",
             "",
             "if(hit.opacity != 255 && interacoes._value >= 5)",
@@ -7737,7 +8018,7 @@
             "",
             "criaDialogo(10, \"Muito bem. Simples, né?\\nQuando chegar algum tipo de energia pra você, faça exatamente o que fez agora.\");",
             "criaDialogo(11, \"Quando fizer isso, você irá enviar energia para as cidades da região.\");",
-            "criaDialogo(12, \"Porém, temos algumas nuâncias:\\nNão podemos gerar pouca energia, se não a cidade fica no escuro,\\n mas também não podemos gerar de mais, se não estamos desperdição os recursos e combustíveis das usinas, além da própria eletricidade.\");",
+            "criaDialogo(12, \"Porém, temos alguns desafios nessa operação: Não podemos gerar pouca energia, senão a cidade fica no escuro,\\n mas também não podemos gerar de mais, se não estamos desperdição os recursos e combustíveis das usinas, além da própria eletricidade.\");",
             "criaDialogo(13, \"Em outras palavras, precisamos [i]seguir o ritmo[/i] da demanda de energia da cidade.\");",
             "criaDialogo(14, \"Vê a barra colorida? Ela vai simbolizar a [i]demanda[/i] de energia da região.\");",
             "",
@@ -7746,8 +8027,8 @@
             "",
             "",
             "criaDialogo(15, \"Ela desce de acordo com o uso de energia da cidade.\\nEm outras palavras, quanto maior a cidade, mais rápido ela gasta energia e, logo, mais rápido a barra vai estar descendo\");",
-            "criaDialogo(16, \"Outra característica dela é que ela está sempre descendo, ou seja, a cidade sempre esta gastando energia, e ela não vai voltar a subir até que a cidade seja suprida com eletricidade.\");",
-            "criaDialogo(17, \"E você entra aí. Tá vendo aquela usina ali na frente? Ela vai te enviar um quantidade ideal de energia para suprir a demanda da região. Seu objetivo é seguir o ritmo dessa demanda e enviar a energia para lá, apertando [z], como você tinha feito antes!\");",
+            "criaDialogo(16, \"Outra característica dela é que ela está sempre descendo, ou seja, a cidade sempre esta gastando energia, e a barra não vai voltar a subir até que a cidade seja suprida com eletricidade.\");",
+            "criaDialogo(17, \"E VOCÊ ENTRAR AÍ! TÁ VENDO AQUELA USINA À SUA ESQUERDA? ELA VAI ENVIAR UMA QUANTIDADE IDEAL DE ENERGIA PARA SUPRIR A DEMANDA DA REGIÃO. SEU OBJETIVO É SEGUIR O RITMO DESSA GERAÇÃO E ENTREGAR A DEMANDA DE MANEIRA EFICIENTE, APERTANDO A TECLA [Z].\");",
             "",
             "if(usina.opacity != 255 && interacoes._value >= 17)",
             "    fade(usina, 3, \"in\");",
@@ -7773,7 +8054,7 @@
             "        interacoes.setValue(interacoes._value + 1);",
             "    }",
             "    else{",
-            "        dialogo.setBBText(\"Show, nada mal. Com isso acho que ficou mais claro. Sempre que precisamente acertar uma carga de energia, ela vai para as cidades e supre um pouco a demanda\");",
+            "        dialogo.setBBText(\"SHOW! ACHO QUE FICOU MAIS CLARO. SEMPRE QUE ACERTAR UMA CARGA GERADA, DE MANEIRA PRECISA, ELA VAI ATENDER PARCIALMENTE AS DEMANDAS DAS CIDADES.\");",
             "        setToMiddleScreenX(dialogo);",
             "    }",
             "}",
@@ -7783,24 +8064,24 @@
             "if(barraSustentabilidade.opacity != 255 && interacoes._value >= 21)",
             "    fade(barraSustentabilidade, 3, \"in\");",
             "    ",
-            "criaDialogo(22, \"Resumindo, a sustentabilidade é a capacidade de se manter em equilibrio de um sistema.Esse equilibrio pode ser tanto da prória estação - o quanto ela se sustenta - tanto quanto da relação dela com o meio ambiente - quantos recursos ela consome e o quanto polue.\");",
+            "criaDialogo(22, \"A SUSTENTABILIDADE É A CAPACIDADE QUE AQUELA FONTE DE GERAÇÃO POSSUI PARA SE MANTER EM EQUILÍBRIO ENQUANTO É CONSUMIDA. ISTO É, O QUANTO DE RECURSO AQUELA FONTE DE GERAÇÃO POSSUI PARA SE MANTER PERENE POR UM TEMPO. RECURSOS QUE, EM SUA MAIORIA, SÃO EXTRAÍDOS DO MEIO AMBIENTE OU IMPACTAM DIRETAMENTE NELE.\");",
             "criaDialogo(23, \"Se tomarmos atitudes muito insustentáveis, como empresa e orgão público, podemos levar multas e processos que vão nos levar a falência. Também não gostaria de continuar trabalhando se estivermos destruindo o mundo. Não somos vilões.\");",
-            "criaDialogo(24, \"O nivel de sustentabilidade da OMSE vai estar nas suas mãos sempre que você operar as estações, então tome cuidado para não deixar esse barrinha cair! Porque, se não... ha..haha...\\nJá sabe, né?\");",
-            "criaDialogo(25, \"Para impedir que isso aconteça, você vai ter que fazer decisões sábias de forma rápida.A maneira que você pode mudar sua sustentabilidade é através dos diferentes [i]tipos de geração de energia.[/i]\");",
+            "criaDialogo(24, \"O nivel de sustentabilidade do OMSE vai estar nas suas mãos sempre que você operar as estações, então tome cuidado para não deixar esse barrinha cair! Porque, se não... ha..haha...\\nJá sabe, né?\");",
+            "criaDialogo(25, \"Para impedir que isso aconteça, você vai ter que fazer decisões sábias de forma rápida.A maneira que você pode mudar sua sustentabilidade É ATRAVÉS DOS DIFERENTES TIPOS DE [i]FONTE[/i] DE GERAÇÃO DE ENERGIA.\");",
             "criaDialogo(26, \"Observe o botão abaixo. Ele representa o tipo de usina que você está utilizando atualmente. O ícone da usina à esquerda também representa isso.\");",
             "",
             "if(botoes[0].opacity != 255 && interacoes._value >= 26)",
             "    fade(botoes[0], 3, \"in\");",
             "",
-            "criaDialogo(27, \"No caso, atualmente estamos usando as usinas [i]hidroelétricas[/i]. É possível perceber isso através da cor [i]azul[/i] no ambiente.\");",
-            "criaDialogo(28, \"Agora observe os outros dois botões nos cantos. Esses são os outros dois modos de produção que iremos te disponibilizar.\");",
+            "criaDialogo(27, \"No caso, atualmente estamos usando as usinas [i]hidrelétricas[/i]. É possível perceber isso através da cor [i]azul[/i] no ambiente.\");",
+            "criaDialogo(28, \"Agora observe os outros dois botões nos cantos. ESSES SÃO OS OUTROS DOIS TIPOS DE FONTE DE GERAÇÃO que vamos te disponibilizar.\");",
             "",
             "if(botoes[1].opacity != 255 && interacoes._value >= 28){",
             "    fade(botoes[1], 3, \"in\");",
             "    fade(botoes[2], 3, \"in\");",
             "}",
             "",
-            "criaDialogo(29, \"Eles são, respectivamente, [i]eólico[/i] e [i]termelétrico[/i].\");",
+            "criaDialogo(29, \"Eles são, respectivamente, [i]eólica[/i] e [i]termelétrica[/i].\");",
             "",
             "if(interacoes._value == 30){",
             "    let ModosNaFase = runtimeScene.getScene().getVariables().get(\"ModosNaFase\")._children;",
@@ -7860,7 +8141,7 @@
             "criaDialogo(40, \"Alguns deles são mais simples de conseguir e vão carregar mais rápido. O termoelétrico, por exemplo, praticamente só um telefonema e dinheiro na mesa e já temos combustíveis fósseis para gastar.\");",
             "criaDialogo(41, \"Porém, como já disse, o termelétrico causa muitos impactos ao ambiente e consome o combustível. Não é NADA sustentável!\");",
             "criaDialogo(42, \"Por outro lado, a eólica demora para carregar e produz pouco, mas é um tipo de produção limpo.\");",
-            "criaDialogo(43, \"Então eis sua orquestra! Você tem diversos elementos para coordenar: o ritmo da demanda e produção, seu nível de sustentabilidade e as cargas e descargas das usinas.\");",
+            "criaDialogo(43, \"Então eis sua orquestra! Você tem diversos elementos para coordenar:  O RITMO DA GERAÇÃO, SEU NÍVEL DE SUSTENTABILIDADE, O ATENDIMENTO À DEMANDAS e as cargas e descargas das usinas.\");",
             "criaDialogo(44, \"Não se descontrole de nenhum deles e alcançará o sucesso.\");",
             "criaDialogo(45, 'Melhor que isso, você, como [i]\"Maestro\"[/i], vai ter seu desempenho avaliado no quanto conseguiu produzir [i]e[/i] o quão sustentável foi, então tente sempre manter esses valores o mais alto possível!');",
             "criaDialogo(46, \"Para finalizar, o ritmo da cidade nunca vai ser tão claro e linear como esteve sendo até agora. Vai ser como uma música, com uma velocidade mais rápida e batidas mais complexas. Mas faça o que aprendeu aqui e você vai se dar bem.\");",
@@ -8938,14 +9219,164 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3645833333333333,
+        "zoomFactor": 0.19415059112740757,
         "windowMask": false
       },
       "objectsGroups": [],
-      "variables": [],
-      "instances": [],
-      "objects": [],
-      "events": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "interacoes",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 57,
+          "layer": "",
+          "name": "dialogo",
+          "persistentUuid": "893a8550-f830-407c-8ab7-685db5ae31b0",
+          "width": 1406,
+          "x": 274,
+          "y": 686,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 1656,
+          "layer": "cover",
+          "name": "cover",
+          "persistentUuid": "bcef80ec-dcc6-48f6-a508-faa9965c2603",
+          "width": 2896,
+          "x": -477,
+          "y": -276,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "name": "dialogo",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "DIALOGO",
+            "opacity": 255,
+            "fontSize": 35,
+            "visible": true,
+            "color": "0;0;0",
+            "fontFamily": "assets\\Kenney Pixel Square.ttf",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "cover",
+          "tags": "",
+          "texture": "New image",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// functions",
+            "const getMiddleScreenX   = obj => gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)/2  - obj.getWidth()/2;",
+            "const setToMiddleScreenX = obj => obj.setPosition(getMiddleScreenX(obj), obj.y, 1)",
+            "",
+            "const fade = (obj, speed, way) => {",
+            "    if(way == \"out\")",
+            "        if(obj.opacity != 0)",
+            "            obj.setOpacity(obj.opacity - speed)",
+            "    if(way == \"in\")",
+            "        if(obj.opacity != 255)",
+            "            obj.setOpacity(obj.opacity + speed)",
+            "}",
+            "",
+            "const criaDialogo = (numInteracoes, texto, espera=10, func=()=>{}) => {",
+            "    if(interacoes._value == numInteracoes && runtimeScene.getTimeManager().getTimer(\"dialogo\").getTime() >= espera){",
+            "        if((runtimeScene.getGame().getInputManager().isKeyPressed(90) || runtimeScene.getGame().getInputManager().isKeyPressed(32)) && runtimeScene.getOnceTriggers().triggerOnce()){",
+            "            runtimeScene.getTimeManager().getTimer(\"dialogo\").reset();",
+            "            dialogo.setBBText(\"\")",
+            "            interacoes.setValue(interacoes._value + 1);",
+            "        }",
+            "        else{",
+            "            dialogo.setBBText(texto);",
+            "            setToMiddleScreenX(dialogo);",
+            "        }",
+            "        func();",
+            "    }",
+            "}",
+            "",
+            "",
+            "// setup",
+            "const dialogo = runtimeScene.getObjects(\"dialogo\")[0];",
+            "const cover   = runtimeScene.getObjects(\"cover\")[0]; ",
+            "",
+            "const interacoes = runtimeScene.getVariables().get(\"interacoes\");",
+            "",
+            "if(runtimeScene.getTimeManager().isFirstFrame()){",
+            "    runtimeScene.getTimeManager().addTimer(\"dialogo\");",
+            "    dialogo.setBBText(\"\")",
+            "",
+            "    runtimeScene.getLayer(\"cover\").show(true);",
+            "    cover.hide(false)",
+            "}",
+            "",
+            "",
+            "// code",
+            "if(runtimeScene.getGame().getInputManager().isKeyPressed(27))",
+            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"level02\")",
+            "",
+            "setToMiddleScreenX(dialogo)",
+            "",
+            "if(interacoes._value <= 9)",
+            "    fade(cover, 2, \"out\")",
+            "",
+            "",
+            "criaDialogo(0, \"Olá! Sou eu de novo, [i]O Instrutor[/i]!\");",
+            "criaDialogo(1, \"Só venho te parabenizar pelo trabalho duro até agora.\\nMesmo sendo uma cidadezinha pequena, você esteve fazendo um ótimo trabalho!\");",
+            "criaDialogo(2, \"Você percebeu, né? Você esteve administrando uma região bem pequena e pouco populada.\");",
+            "criaDialogo(3, \"Bem, agora isso vai mudar. Você acaba de ser promovido!\");",
+            "criaDialogo(4, \"Você será levado para uma cidade um tanto maior. Ainda não é tão grande, mas já é bem mais populada.\");",
+            "criaDialogo(5, \"Não espere moleza. Aqui chega uma carga muito maior de energia e com uma velocidade bem maior, sem comentar que a cidade consome bem mais.\");",
+            "criaDialogo(6, \"Mas seu trabalho continua o mesmo: siga o ritmo da demanda, controle as fontes de geração de energia e não se esqueça da demanda nem da sustentabilidade.\");",
+            "criaDialogo(7, \"E esteja sempre alerta! Mesmo que você esteja tranquilo em um momento, no outro a situação pode apertar derrepente!\");",
+            "criaDialogo(8, \"E faça seu melhor possível para ir produzir o máximo e ser o mais sustentável possível, pois sua avaliação tem base nisso!\");",
+            "criaDialogo(9, \"Era isso que eu queria te falar. Força na sua próxima orquestra, [b]maestro[/b]!\");",
+            "if(interacoes._value >= 10){",
+            "    fade(cover, 2, \"in\")",
+            "    if(cover.opacity == 255)",
+            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"level02\")",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
@@ -8972,6 +9403,246 @@
               "width": 0
             }
           ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "cover",
+          "renderingType": "",
+          "visibility": false,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "tutorial03",
+      "name": "tutorial03",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.19415059112740757,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "interacoes",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 57,
+          "layer": "",
+          "name": "dialogo",
+          "persistentUuid": "893a8550-f830-407c-8ab7-685db5ae31b0",
+          "width": 1406,
+          "x": 274,
+          "y": 686,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 1656,
+          "layer": "cover",
+          "name": "cover",
+          "persistentUuid": "bcef80ec-dcc6-48f6-a508-faa9965c2603",
+          "width": 2896,
+          "x": -477,
+          "y": -276,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "name": "dialogo",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "DIALOGO",
+            "opacity": 255,
+            "fontSize": 35,
+            "visible": true,
+            "color": "0;0;0",
+            "fontFamily": "assets\\Kenney Pixel Square.ttf",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "cover",
+          "tags": "",
+          "texture": "New image",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// functions",
+            "const getMiddleScreenX   = obj => gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)/2  - obj.getWidth()/2;",
+            "const setToMiddleScreenX = obj => obj.setPosition(getMiddleScreenX(obj), obj.y, 1)",
+            "",
+            "const fade = (obj, speed, way) => {",
+            "    if(way == \"out\")",
+            "        if(obj.opacity != 0)",
+            "            obj.setOpacity(obj.opacity - speed)",
+            "    if(way == \"in\")",
+            "        if(obj.opacity != 255)",
+            "            obj.setOpacity(obj.opacity + speed)",
+            "}",
+            "",
+            "const criaDialogo = (numInteracoes, texto, espera=10, func=()=>{}) => {",
+            "    if(interacoes._value == numInteracoes && runtimeScene.getTimeManager().getTimer(\"dialogo\").getTime() >= espera){",
+            "        if((runtimeScene.getGame().getInputManager().isKeyPressed(90) || runtimeScene.getGame().getInputManager().isKeyPressed(32)) && runtimeScene.getOnceTriggers().triggerOnce()){",
+            "            runtimeScene.getTimeManager().getTimer(\"dialogo\").reset();",
+            "            dialogo.setBBText(\"\")",
+            "            interacoes.setValue(interacoes._value + 1);",
+            "        }",
+            "        else{",
+            "            dialogo.setBBText(texto);",
+            "            setToMiddleScreenX(dialogo);",
+            "        }",
+            "        func();",
+            "    }",
+            "}",
+            "",
+            "",
+            "// setup",
+            "const dialogo = runtimeScene.getObjects(\"dialogo\")[0];",
+            "const cover   = runtimeScene.getObjects(\"cover\")[0]; ",
+            "",
+            "const interacoes = runtimeScene.getVariables().get(\"interacoes\");",
+            "",
+            "if(runtimeScene.getTimeManager().isFirstFrame()){",
+            "    runtimeScene.getTimeManager().addTimer(\"dialogo\");",
+            "    dialogo.setBBText(\"\")",
+            "",
+            "    runtimeScene.getLayer(\"cover\").show(true);",
+            "    cover.hide(false)",
+            "}",
+            "",
+            "",
+            "// code",
+            "if(runtimeScene.getGame().getInputManager().isKeyPressed(27))",
+            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"level03\")",
+            "",
+            "setToMiddleScreenX(dialogo)",
+            "",
+            "if(interacoes._value <= 8)",
+            "    fade(cover, 2, \"out\")",
+            "",
+            "",
+            "criaDialogo(0, \"[i]Maestro[/i]! Amigo! Bom te ver de novo.\");",
+            "criaDialogo(1, \"Você andou trabalhando bastante nesse posto. Conseguiu trabalhar bem com essa cidade maiorzinha.\");",
+            "criaDialogo(2, \"Pois bem, agora eu te trago um mais novo aumento!\");",
+            "criaDialogo(3, \"Te arranjamos uma vaga na estação da cidade grande!\");",
+            "criaDialogo(4, \"Lá é onde a chapa realmente esquenta. A demanda é muito maior e mais difícil de acompanhar. Você realmente vai usar tudo o que aprendeu até agora para conseguir dar conta dessa região.\");",
+            "criaDialogo(5, \"Os princípios ainda se mantêm, mas o esforço vai ser dobrado!\");",
+            "criaDialogo(6, \"Não se preocupe, sei que você consegue ir no fluxo dessa melodia.\");",
+            "criaDialogo(7, \"Sem mais delongas, chegou a hora de você realmente se desafiar como [i]condutor elétrico[/i].\");",
+            "criaDialogo(8, \"Força, [i]maestro[/i]! Nós todos, da OMSE e das cidades, contamos com você!\");",
+            "if(interacoes._value >= 9){",
+            "    fade(cover, 2, \"in\")",
+            "    if(cover.opacity == 255)",
+            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"level03\")",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "cover",
+          "renderingType": "",
+          "visibility": false,
+          "cameras": [],
           "effects": []
         }
       ],
