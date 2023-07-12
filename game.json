@@ -1902,11 +1902,17 @@
           "folded": true,
           "name": "level02",
           "type": "boolean",
-          "value": false
+          "value": true
         },
         {
           "folded": true,
           "name": "level03",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "folded": true,
+          "name": "level04",
           "type": "boolean",
           "value": false
         }
@@ -4345,7 +4351,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.38958562738272906,
+        "zoomFactor": 0.2987985363606907,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -5217,21 +5223,6 @@
           "initialVariables": []
         },
         {
-          "angle": 0,
-          "customSize": true,
-          "height": 432,
-          "layer": "UI",
-          "name": "cidade",
-          "persistentUuid": "878589b9-b0a9-45ae-ba89-4ab64f6d70c6",
-          "width": 864,
-          "x": 1573,
-          "y": 205,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
           "angle": 270,
           "customSize": true,
           "depth": 32,
@@ -5291,22 +5282,6 @@
           "x": 1700,
           "y": 859,
           "zOrder": 14,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 448,
-          "layer": "UI",
-          "name": "cidade",
-          "persistentUuid": "77795e51-f683-40ed-815c-aca81f6871a0",
-          "width": 896,
-          "x": -411,
-          "y": 189,
-          "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6045,7 +6020,7 @@
           "folded": true,
           "name": "BPM",
           "type": "number",
-          "value": 90
+          "value": 95
         },
         {
           "name": "alreadyAway",
@@ -6116,21 +6091,6 @@
           "initialVariables": []
         },
         {
-          "angle": 0,
-          "customSize": true,
-          "height": 432,
-          "layer": "UI",
-          "name": "cidade",
-          "persistentUuid": "878589b9-b0a9-45ae-ba89-4ab64f6d70c6",
-          "width": 864,
-          "x": 1573,
-          "y": 205,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
           "angle": 270,
           "customSize": true,
           "depth": 32,
@@ -6190,22 +6150,6 @@
           "x": 1700,
           "y": 859,
           "zOrder": 14,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 448,
-          "layer": "UI",
-          "name": "cidade",
-          "persistentUuid": "77795e51-f683-40ed-815c-aca81f6871a0",
-          "width": 896,
-          "x": -411,
-          "y": 189,
-          "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6517,7 +6461,7 @@
             "",
             "if(!runtimeScene.getLayer(\"GameOver\").isVisible() && levelTimer.getTime() >= 138180){",
             "    const levelUnlockedStatus = runtimeScene.getGame().getVariables().get(\"unlockedLevels\")._children",
-            "    levelUnlockedStatus.level03.setBoolean(true)",
+            "    levelUnlockedStatus.level04.setBoolean(true)",
             "    runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"pontuacao\")",
             "}",
             "",
@@ -9705,6 +9649,354 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
+      "mangledName": "tutorial04",
+      "name": "tutorial04",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.19415059112740757,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "interacoes",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 57,
+          "layer": "",
+          "name": "dialogo",
+          "persistentUuid": "893a8550-f830-407c-8ab7-685db5ae31b0",
+          "width": 1406,
+          "x": 279,
+          "y": 774,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 1656,
+          "layer": "cover",
+          "name": "cover",
+          "persistentUuid": "bcef80ec-dcc6-48f6-a508-faa9965c2603",
+          "width": 2896,
+          "x": -477,
+          "y": -276,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 377,
+          "layer": "",
+          "name": "logo",
+          "persistentUuid": "24630840-6c63-4a44-ac60-1ab6494006ad",
+          "width": 1417,
+          "x": 294,
+          "y": 356,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "name": "dialogo",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "DIALOGO",
+            "opacity": 255,
+            "fontSize": 35,
+            "visible": true,
+            "color": "0;0;0",
+            "fontFamily": "assets\\Kenney Pixel Square.ttf",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "cover",
+          "tags": "",
+          "texture": "New image",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "name": "logo",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\logo.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PreloadMusic"
+              },
+              "parameters": [
+                "",
+                "assets\\musicas\\level-03.wav"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// functions",
+            "const getMiddleScreenX   = obj => gdjs.evtTools.window.getGameResolutionWidth(runtimeScene)/2  - obj.getWidth()/2;",
+            "const setToMiddleScreenX = obj => obj.setPosition(getMiddleScreenX(obj), obj.y, 1)",
+            "",
+            "const fade = (obj, speed, way) => {",
+            "    if(way == \"out\")",
+            "        if(obj.opacity != 0)",
+            "            obj.setOpacity(obj.opacity - speed)",
+            "    if(way == \"in\")",
+            "        if(obj.opacity != 255)",
+            "            obj.setOpacity(obj.opacity + speed)",
+            "}",
+            "",
+            "const criaDialogo = (numInteracoes, texto, espera=10, func=()=>{}) => {",
+            "    if(interacoes._value == numInteracoes && runtimeScene.getTimeManager().getTimer(\"dialogo\").getTime() >= espera){",
+            "        if(runtimeScene.getTimeManager().getTimer(\"end\").getTime() >= 3850){",
+            "            runtimeScene.getTimeManager().getTimer(\"dialogo\").reset();",
+            "            runtimeScene.getTimeManager().getTimer(\"end\").setTime(runtimeScene.getTimeManager().getTimer(\"end\").getTime() - 3850);",
+            "            dialogo.setBBText(\"\")",
+            "            interacoes.setValue(interacoes._value + 1);",
+            "        }",
+            "        else{",
+            "            dialogo.setBBText(texto);",
+            "            setToMiddleScreenX(dialogo);",
+            "        }",
+            "        func();",
+            "    }",
+            "}",
+            "",
+            "",
+            "// setup",
+            "const dialogo = runtimeScene.getObjects(\"dialogo\")[0];",
+            "const cover   = runtimeScene.getObjects(\"cover\")[0]; ",
+            "const logo    = runtimeScene.getObjects(\"logo\")[0];",
+            "",
+            "const interacoes = runtimeScene.getVariables().get(\"interacoes\");",
+            "const volume     = runtimeScene.getGame().getVariables().get(\"volume\")._children;",
+            "",
+            "if(runtimeScene.getTimeManager().isFirstFrame()){",
+            "    runtimeScene.getTimeManager().addTimer(\"dialogo\");",
+            "    runtimeScene.getTimeManager().addTimer(\"end\");",
+            "    dialogo.setBBText(\"\")",
+            "",
+            "    runtimeScene.getGame().getSoundManager().playMusicOnChannel(\"assets\\\\musicas\\\\level-03.wav\", 0, false, volume.musica._value * 100, 1);",
+            "",
+            "    logo.setOpacity(0);",
+            "",
+            "    runtimeScene.getLayer(\"cover\").show(true);",
+            "    cover.hide(false)",
+            "}",
+            "",
+            "",
+            "// code",
+            "if(runtimeScene.getGame().getInputManager().isKeyPressed(27))",
+            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"level03\")",
+            "",
+            "setToMiddleScreenX(dialogo)",
+            "",
+            "if(interacoes._value <= 8)",
+            "    fade(cover, 2, \"out\")",
+            "",
+            "",
+            "criaDialogo(0, \"Ah, [i]Maestro[/i]..! A hora finalmente chegou...\");",
+            "criaDialogo(1, \"Depois de todo esse tempo, você finalmente se aposentou. Chegou sua hora de descansar.\");",
+            "criaDialogo(2, \"É uma ida dolorosa para nós, mas esse é o momento.\");",
+            "criaDialogo(3, \"Mas saiba que, mesmo você indo embora, a demanda nunca vai acabar.\");",
+            "criaDialogo(4, \"Mesmo que os músicos e seus instrumentos se alterem com o tempo, \");",
+            "criaDialogo(5, \"mesmo com os gênero musicais mudando, se misturando e caindo, \");",
+            "criaDialogo(6, \"a música é eterna.\");",
+            "criaDialogo(7, \"E as pessoas sempre vão precisar de quem a toque.\");",
+            "criaDialogo(8, \"Precisamos de [i]maestros[/i] na nossa vida, e o seu trabalho aqui foi um espetaculo.\");",
+            "criaDialogo(9, \"Lembre-se das melodias que viveu, [i]maestro[/i], e nunca pare de tocar seus ritmos para os outros.\");",
+            "",
+            "if(interacoes._value >= 10){",
+            "    fade(logo, 2, \"in\")",
+            "    if(runtimeScene.getTimeManager().getTimer(\"end\").getTime() >= 3850){",
+            "        runtimeScene.getTimeManager().getTimer(\"dialogo\").reset();",
+            "        interacoes.setValue(interacoes._value + 1);",
+            "    }",
+            "    else{",
+            "        dialogo.setBBText(\"[i]E a demanda continua...[/i]\");",
+            "        setToMiddleScreenX(dialogo);",
+            "    }",
+            "}",
+            "",
+            "if(interacoes._value == 11){",
+            "    runtimeScene.getSoundManager().getMusicOnChannel(0).fade(volume.musica._value * 100, 0, 5000)",
+            "        interacoes.setValue(interacoes._value + 1);",
+            "}",
+            "",
+            "if(interacoes._value >= 12){",
+            "    fade(cover, 1, \"in\")",
+            "    if(cover.opacity == 255)",
+            "        runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, \"titleScreen\")",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "titulo",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "cover",
+          "renderingType": "",
+          "visibility": false,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
       "mangledName": "base",
       "name": "base",
       "r": 209,
@@ -11365,7 +11657,7 @@
             "",
             "",
             "// code",
-            "if(runtimeScene.getTimeManager().getTimer(\"demanda\").getTime() >= 10){",
+            "if(runtimeScene.getTimeManager().getTimer(\"demanda\").getTime() >= 18){",
             "    Demanda -= 4 * (BPM/60);",
             "    runtimeScene.getTimeManager().getTimer(\"demanda\").reset();",
             "}",
