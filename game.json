@@ -760,6 +760,33 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/cidadeFase01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\cidadeFase01.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/cidadeFase02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\cidadeFase02.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/cidadeFase03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\cidadeFase03.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1326,7 +1353,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "level01",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1335,7 +1362,65 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\cidade.png",
+                  "image": "assets\\cidadeFase01.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "level02",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\cidadeFase02.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "level03",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\cidadeFase03.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4260,7 +4345,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2705012603962552,
+        "zoomFactor": 0.43034038022076576,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -4345,21 +4430,6 @@
           "initialVariables": []
         },
         {
-          "angle": 0,
-          "customSize": true,
-          "height": 432,
-          "layer": "UI",
-          "name": "cidade",
-          "persistentUuid": "d177ebdf-b62a-477c-ba05-19ef7edcadaf",
-          "width": 864,
-          "x": 1578,
-          "y": 190,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
           "angle": 270,
           "customSize": true,
           "depth": 32,
@@ -4419,22 +4489,6 @@
           "x": 1705,
           "y": 844,
           "zOrder": 14,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 448,
-          "layer": "UI",
-          "name": "cidade",
-          "persistentUuid": "cb9f595d-095a-4319-90a4-2dfe5ec2ea8c",
-          "width": 896,
-          "x": -406,
-          "y": 174,
-          "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
